@@ -135,19 +135,37 @@
             publicationsList.innerHTML = ''; // Clear existing content
         
             publications.forEach((publication) => {
+                // Replace "Jisu Kim" with an underlined version
+                const updatedDescription = publication.description.replace(
+                    /Jisu Kim/g,
+                    '<span style="text-decoration: underline;">Jisu Kim</span>'
+                );
+
+                // Generate buttons for each link
+                const buttons = publication.links
+                    .map(
+                        (link) => `
+                        <button
+                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 flex-row-reverse bg-[#f1f2f4] text-[#121417] text-sm font-medium leading-normal w-fit"
+                            onclick="window.location.href='${link.url}'"
+                        >
+                            <span class="truncate">${link.label}</span>
+                        </button>
+                    `
+                    )
+                    .join('');
+
                 const publicationItem = `
                 <div class="flex items-stretch justify-between gap-4 rounded-xl mb-4">
                     <div class="flex flex-[2_2_0px] flex-col gap-4">
                     <div class="flex flex-col gap-1">
                         <p class="text-[#121417] text-base font-bold leading-tight">${publication.title}</p>
-                        <p class="text-[#677583] text-sm font-normal leading-normal">${publication.description}</p>
+                        <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
+                        <p class="text-[#677583] text-sm font-normal leading-normal">${publication.confernece}</p>
                     </div>
-                    <button
-                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 flex-row-reverse bg-[#f1f2f4] text-[#121417] text-sm font-medium leading-normal w-fit"
-                        onclick="window.location.href='${publication.link}'"
-                    >
-                        <span class="truncate">Read More</span>
-                    </button>
+                    <div class="flex gap-2">
+                        ${buttons}
+                    </div>
                     </div>
                     <div
                     class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
