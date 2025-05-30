@@ -1,25 +1,238 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
     <title>Jisu Kim</title>
-    <link rel="icon" href="https://ddiddu.github.io/smile.png" type="image/png">
-    <style>
-        /* Reset padding and margin to ensure the iframe can fill the entire viewport */
-        html, body {
-            padding: 0;
-            margin: 0;
-            height: 100%; /* Ensures the body takes full height of the viewport */
-            overflow: hidden; /* Optional: Prevents scrolling */
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f2f4] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#121417]">
+            <div class="size-4">
+              <!-- <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_319)">
+                  <path
+                    d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_319"><rect width="48" height="48" fill="white"></rect></clipPath>
+                </defs>
+              </svg> -->
+            </div>
+            <!-- <h2 class="text-[#121417] text-lg font-bold leading-tight tracking-[-0.015em]">Jisu Kim</h2> -->
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#121417] text-sm font-medium leading-normal" href="#about">About</a>
+              <a class="text-[#121417] text-sm font-medium leading-normal" href="#publications">Publications</a>
+              <a class="text-[#121417] text-sm font-medium leading-normal" href="https://jisulog.kim/pdf/JisuKim_CV.pdf">CV</a>
+            </div>
+            <!-- <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCnF2lonxkh1LHbOr7o9GkuOe5K0MVy08ehlczBS6vISDfSTqoq7_a05ctvcgP-gXOZA2uuJoKd222de5JhlP2ZkKppW1a2so6fs35w7ceSzgsV_60p3URnD5F23JOv-jHhKXPVxG3PHqWbDE9CXYTTxi675mWnN8nHpGAfffPDcxH1W26PFM5z0S2D-c-NGLlxMRgN6ZxqQd-HZkx7_9oflatZCN0e8_InG3NrY7LlFyO6Z1HMHBbhSlr3pZMsKk43waHzxjKOMmUQ");'
+            ></div> -->
+          </div>
+        </header>
+        <!-- About Section -->
+        <div id="about" class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex p-4 @container">
+              <div class="flex w-full flex-col gap-4 items-center">
+                <div class="flex gap-4 flex-col items-center">
+                    <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32"
+                    style='background-image: url("img/profile.jpeg"); background-size: 240%; background-position: -97px -100px;'
+                  ></div>
+                  <div class="flex flex-col items-center justify-center justify-center">
+                    <p class="text-[#121417] text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">Jisu Kim</p>
+                    <p class="text-[#677583] text-base font-normal leading-normal text-center">MS @ Georgia Tech</p>
+                    <!-- <p class="text-[#677583] text-base font-normal leading-normal text-center">jisu.kim@gatech.edu</p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="text-[#121417] text-base font-normal leading-normal pb-3 pt-1 px-4">
+                I am a graduating master's student at the <strong>Interactive Computing</strong> at <strong>Georgia Tech</strong>
+                <img src="path/to/georgia-tech-logo.png" alt="Georgia Tech Logo" class="inline-block h-6 w-auto ml-2" />
+                . I am advised by <strong>Ashok Goel</strong> and <strong>Richmond Wong</strong>, and was previously advised by <strong>Juho Kim</strong> at <strong>KAIST</strong>
+                <img src="path/to/kaist-logo.png" alt="KAIST Logo" class="inline-block h-6 w-auto ml-2" />
+                . My research interests are in <strong>responsible AI</strong> and <strong>human-AI interaction</strong>. I am especially interested in building AI technologies that help users more informed and critical consumption of AI-generated content. I am currently exploring job opportunities as I prepare to graduate in <strong>July 2025</strong>!
+            </p>
+            <p class="text-[#677583] text-sm font-normal leading-normal pb-3 pt-1 px-2">
+                <a href="mailto:jisu.kim@gatech.edu" target="_blank" class="mx-2">
+                    <i class="fas fa-envelope h-6 w-auto"></i>
+                    <!-- <span class="ml-2">jisu.kim@gatech.edu</span> -->
+                </a>
+                <a href="https://www.linkedin.com/in/jisulog/" target="_blank" class="mx-2">
+                  <i class="fab fa-linkedin h-6 w-auto"></i>
+                </a>
+                <a href="https://x.com/jisukiim?s=21" target="_blank" class="mx-2">
+                  <i class="fab fa-twitter h-6 w-auto"></i>
+                </a>
+                <a href="https://youtu.be/btZOScj22jE?si=0zz5y61KNLsBJXcm" target="_blank" class="mx-2">
+                  <i class="fab fa-youtube h-6 w-auto"></i>
+                </a>
+                <a href="https://ddiddu.medium.com" target="_blank" class="mx-2">
+                  <i class="fab fa-medium h-6 w-auto"></i>
+                </a>
+                <a href="https://calendly.com/jisulogkim" target="_blank" class="mx-2">
+                    <i class="fas fa-calendar-alt h-6 w-auto"></i>
+                </a>
+            </p>
+            <h2 class="text-[#121417] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">News</h2>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-xl">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[#121417] text-base font-bold leading-tight">Dr. Carter's Research Featured in National Publication</p>
+                    <p class="text-[#677583] text-sm font-normal leading-normal">An article highlighting Dr. Carter's latest findings on memory retention techniques.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Publications Section -->
+            <div id="publications">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                    <h2 class="text-[#121417] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+                    Publications
+                    </h2>
+                    <div id="publications-list" class="p-4">
+                    <!-- Dynamic content will be rendered here -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="publications">
+            <h2 class="text-[#121417] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+                Publications
+            </h2>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-xl">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[#121417] text-base font-bold leading-tight">The Impact of Active Recall on Long-Term Memory Retention</p>
+                    <p class="text-[#677583] text-sm font-normal leading-normal">
+                      A study exploring the effectiveness of active recall techniques in enhancing memory retention over extended periods.
+                    </p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 flex-row-reverse bg-[#f1f2f4] text-[#121417] text-sm font-medium leading-normal w-fit"
+                  >
+                    <span class="truncate">Read More</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDWuojgcW_imgS9ejiKhBtKtRtbhvzYwnzAuFz3lUJUnJl-4JnIMbzUhhXgwh6ueJ3Cj8c90lR5ScuheYV20SHYVEkQ9Df-WHUeejzj2sDDRNNjIz4guk80R5xSzH7JaRt_l93Pin5CEONNxAvtpwjbCDP2mJlxt5jtmXZ8_TMy4UmMwTMLRhcVfhuoBwvKCkfoZroH1bMlkCSvyN-ychT4eDCebGdHzYrtiapZHfTl4BNILBI9nQQZbkchsHawcwkzRrXc7jEaHGbb");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-xl">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[#121417] text-base font-bold leading-tight">Integrating Neuroscience into Educational Practices</p>
+                    <p class="text-[#677583] text-sm font-normal leading-normal">
+                      An overview of how neuroscience findings can inform and improve educational practices, focusing on brain-based learning strategies.
+                    </p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 flex-row-reverse bg-[#f1f2f4] text-[#121417] text-sm font-medium leading-normal w-fit"
+                  >
+                    <span class="truncate">Read More</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCb_FWod8TVZVwy480ty-ADxZ1Bc4s2Hkrdu4GagmDWD462umVhw1sq2QOJeSZtGlBE0X8Lu4ZODidwqyF8uOk35KU5XLv7tnjwoHzPZtDtqkYimzCwcEnTvI0CPl4A2-qXzeddCa2kFe4TbUZV_xu0nblRtihz6ULCBTSBWBG_d9wW7V9esb23IwVAyZEsq2zVNyfcIoLTKgw1y2MWdjprKNixjpeDN6FUHhSVfqLaejRIjv9jO6Tmjqzpzyo24YS4yufeKOHhjf3c");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-xl">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[#121417] text-base font-bold leading-tight">The Role of Metacognition in Children's Learning</p>
+                    <p class="text-[#677583] text-sm font-normal leading-normal">
+                      An investigation into the development of metacognitive skills in children and their impact on academic performance.
+                    </p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 flex-row-reverse bg-[#f1f2f4] text-[#121417] text-sm font-medium leading-normal w-fit"
+                  >
+                    <span class="truncate">Read More</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDf5UvmTqM78SdE6zjGtmGuJ5QfxwO7rclZwUjeDPIz8X2gRoH6YY_biubgtNTSEGTuJVJ-wFxkzjvGo7pGHwLDXg5epz2c83pCdyB6T72CEv7BXjBjq96k22-52nbKXGfd7w0vpRQ6UTI8OsCuj1GEHYJD_Kal5-1YBbqMZck-xVW1-AolUUrtx7XNCMtqRotNc0aBq6pWYAW0EaLsVa_ExGj8gqjqw1klabkK4x4GgSdAtDsWOUjTze9DYLQVgbP-9QDAMysBEA5j");'
+                ></div>
+              </div>
+            </div>
+            <!-- <div class="flex px-4 py-3 justify-end">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#f1f2f4] text-[#121417] text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">See All</span>
+              </button> -->
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        // Fetch the JSON file and render publications
+        async function fetchPublications() {
+            try {
+            const response = await fetch('publications.json'); // Path to your JSON file
+            const publications = await response.json();
+        
+            const publicationsList = document.getElementById('publications-list');
+            publicationsList.innerHTML = ''; // Clear existing content
+        
+            publications.forEach((publication) => {
+                const publicationItem = `
+                <div class="flex items-stretch justify-between gap-4 rounded-xl mb-4">
+                    <div class="flex flex-[2_2_0px] flex-col gap-4">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-[#121417] text-base font-bold leading-tight">${publication.title}</p>
+                        <p class="text-[#677583] text-sm font-normal leading-normal">${publication.description}</p>
+                    </div>
+                    <button
+                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 flex-row-reverse bg-[#f1f2f4] text-[#121417] text-sm font-medium leading-normal w-fit"
+                        onclick="window.location.href='${publication.link}'"
+                    >
+                        <span class="truncate">Read More</span>
+                    </button>
+                    </div>
+                    <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                    style="background-image: url('${publication.image}');"
+                    ></div>
+                </div>
+                `;
+                publicationsList.innerHTML += publicationItem;
+            });
+            } catch (error) {
+            console.error('Error fetching publications:', error);
+            }
         }
-    </style>
-</head>
-<body>
-    <iframe
-        src="https://ddiddu-chatbot.hf.space"
-        frameborder="0"
-        style="width:100%; height:100%; border:none;"> <!-- Inline CSS to ensure full width and height -->
-    </iframe>
-</body>
+        
+        // Call the function to fetch and render publications
+        fetchPublications();
+    </script>
+  </body>
 </html>
