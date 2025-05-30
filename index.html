@@ -200,20 +200,29 @@
                         : '';
     
                     const publicationItem = `
-                        <div class="flex flex-col md:flex-row items-stretch justify-between gap-4 rounded-xl mb-6">
-                            <div class="flex flex-[2_2_0px] flex-col gap-4">
-                                <div class="flex flex-col gap-1 max-w-[95%]">
-                                    <p class="text-[#121417] text-base font-bold leading-tight">${publication.title}</p>
-                                    <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
-                                    <p class="text-[#677583] text-sm font-normal leading-normal">${publication.confernece}</p>
-                                </div>
-                                <div class="flex gap-2">
-                                    ${buttons}
-                                </div>
+                        <div class="flex flex-col md:flex-row justify-between gap-4 rounded-xl mb-6">
+
+                            <!-- Left (Text and Buttons on desktop) -->
+                            <div class="flex flex-col gap-4 flex-[2_2_0px] order-2 md:order-1">
+                            <div class="flex flex-col gap-1 max-w-[95%]">
+                                <p class="text-[#121417] text-base font-bold leading-tight">${publication.title}</p>
+                                <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
+                                <p class="text-[#677583] text-sm font-normal leading-normal">${publication.confernece}</p>
                             </div>
-                            ${imageContainer}
+                            <div class="flex gap-2">
+                                ${buttons}
+                            </div>
+                            </div>
+
+                            <!-- Right (Image on desktop) -->
+                            ${publication.image
+                            ? `<div class="w-full md:min-w-[300px] md:w-[300px] aspect-video bg-center bg-no-repeat bg-cover rounded-xl order-1 md:order-2"
+                                    style="background-image: url('${publication.image}');">
+                                </div>`
+                            : ''}
                         </div>
-                        `;
+                    `;
+
                     publicationsList.innerHTML += publicationItem;
                 });
             } catch (error) {
