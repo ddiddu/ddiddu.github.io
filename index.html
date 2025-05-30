@@ -10,10 +10,20 @@
     <title>Jisu Kim</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+    />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        :root {
+            --primary-blue: rgb(38, 86, 201); /* Google blue color */
+            --primary-font: "Roboto", sans-serif;
+        }
+    </style>
   </head>
 
-  <body>
+  <body style="font-family: var(--primary-font);">
     <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
         <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f2f4] px-10 py-3">
@@ -31,7 +41,7 @@
                 </defs>
               </svg> -->
             </div>
-            <!-- <h2 class="text-[#121417] text-lg font-bold leading-tight tracking-[-0.015em]">Jisu Kim</h2> -->
+            <h2 class="text-[#121417] text-lg font-bold leading-tight tracking-[-0.015em]">Jisu Kim</h2>
           </div>
           <div class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-9">
@@ -57,18 +67,22 @@
                   ></div>
                   <div class="flex flex-col items-center justify-center justify-center">
                     <p class="text-[#121417] text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">Jisu Kim</p>
-                    <p class="text-[#677583] text-base font-normal leading-normal text-center">MS @ Georgia Tech</p>
+                    <p class="text-[#677583] text-base font-normal leading-normal text-center">MS @ GT Interactive Computing</p>
                     <!-- <p class="text-[#677583] text-base font-normal leading-normal text-center">jisu.kim@gatech.edu</p> -->
                   </div>
                 </div>
               </div>
             </div>
-            <p class="text-[#121417] text-base font-normal leading-normal pb-3 pt-1 px-4">
-                I am a graduating master's student at the <strong>Interactive Computing</strong> at <strong>Georgia Tech</strong>
-                <img src="path/to/georgia-tech-logo.png" alt="Georgia Tech Logo" class="inline-block h-6 w-auto ml-2" />
-                . I am advised by <strong>Ashok Goel</strong> and <strong>Richmond Wong</strong>, and was previously advised by <strong>Juho Kim</strong> at <strong>KAIST</strong>
-                <img src="path/to/kaist-logo.png" alt="KAIST Logo" class="inline-block h-6 w-auto ml-2" />
-                . My research interests are in <strong>responsible AI</strong> and <strong>human-AI interaction</strong>. I am especially interested in building AI technologies that help users more informed and critical consumption of AI-generated content. I am currently exploring job opportunities as I prepare to graduate in <strong>July 2025</strong>!
+            <p class="text-[#121417] text-base font-normal leading-normal pb-3 pt-1 px-4 text-justify">
+                I am a graduating master's student at
+                <!-- <img src="https://1000logos.net/wp-content/uploads/2019/11/Georgia-Tech-Yellow-Jackets-Logo-1967.png" alt="GT Logo" class="inline-block h-5 w-auto ml-0 align-middle" style="margin-right: -3px;"/> -->
+                <a href="https://www.ic.gatech.edu/" target="_blank" class="text-[var(--primary-blue)] hover:underline">GT Interactive Computing</a>. I am advised by 
+                <a href="https://dilab.gatech.edu/ashok-k-goel/" target="_blank" class="text-[var(--primary-blue)] hover:underline">Ashok Goel</a> and 
+                <a href="https://richmondywong.com/" target="_blank" class="text-[var(--primary-blue)] hover:underline">Richmond Wong</a>, and was previously advised by 
+                <a href="https://juhokim.com/" target="_blank" class="text-[var(--primary-blue)] hover:underline">Juho Kim</a> during my undergraduate studies at 
+                <!-- <img src="https://storageprdv2inwink.blob.core.windows.net/1a2965b3-2132-40f9-983f-3f92a35743fe/ad3cd636-8124-424a-a28c-25874e2962db" alt="KAIST Logo" class="inline-block h-5 -auto ml-0 align-middle" style="margin-right: -5px" /> -->
+                <a href="https://cs.kaist.ac.kr/" target="_blank" class="text-[var(--primary-blue)] hover:underline">KAIST School of Computing</a>. My research interests are in <strong>responsible AI</strong> and <strong>human-AI interaction</strong>. I am especially interested in helping users more informed and critical consumption of AI-generated content.
+                I am currently exploring job opportunities as I prepare to graduate in <strong>July 2025</strong>!
             </p>
             <p class="text-[#677583] text-sm font-normal leading-normal pb-3 pt-1 px-2">
                 <a href="mailto:jisu.kim@gatech.edu" target="_blank" class="mx-2">
@@ -93,14 +107,38 @@
             </p>
             <h2 class="text-[#121417] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">News</h2>
             <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-xl">
-                <div class="flex flex-[2_2_0px] flex-col gap-4">
-                  <div class="flex flex-col gap-1">
-                    <p class="text-[#121417] text-base font-bold leading-tight">Dr. Carter's Research Featured in National Publication</p>
-                    <p class="text-[#677583] text-sm font-normal leading-normal">An article highlighting Dr. Carter's latest findings on memory retention techniques.</p>
-                  </div>
-                </div>
-              </div>
+                <ul class="list-none space-y-2">
+                    <li class="flex gap-4 items-start">
+                      <span class="inline-flex text-[#677583] text-sm font-medium min-w-[70px] justify-between">
+                        <span>Jan</span><span>2025</span>
+                      </span>
+                      <span class="text-[#121417] text-sm font-normal flex-1">
+                        Started as a Graduate Research Assistant at 
+                        <!-- <img src="https://dilab.gatech.edu/test/wp-content/uploads/2024/11/DiLab-short-logo-e1731505746518-621x1024.png" alt="DILab Logo" class="inline-block h-5 w-auto ml-1 align-middle" /> -->
+                        <a href="https://dilab.gatech.edu/" target="_blank" class="text-[var(--primary-blue)] hover:underline">GT DILab</a>, with a full tuition scholarship throughout Summer 2025.
+                      </span>
+                    </li>
+                    <li class="flex gap-4 items-start">
+                      <span class="inline-flex text-[#677583] text-sm font-medium min-w-[70px] justify-between">
+                        <span>Aug</span><span>2024</span>
+                      </span>
+                      <span class="text-[#121417] text-sm font-normal flex-1">
+                        Began a Data Science Internship at 
+                        <!-- <img src="https://cdn.iconscout.com/icon/free/png-256/free-tesla-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-vol-7-pack-logos-icons-3030326.png?f=webp&w=256" alt="Tesla Logo" class="inline-block h-5 w-auto ml-1 align-middle" /> -->
+                        <a href="https://www.tesla.com/" target="_blank" class="text-[var(--primary-blue)] hover:underline">Tesla</a> in Fremont, CA.
+                      </span>
+                    </li>
+                    <li class="flex gap-4 items-start">
+                      <span class="inline-flex text-[#677583] text-sm font-medium min-w-[70px] justify-between">
+                        <span>Jul</span><span>2024</span>
+                      </span>
+                      <span class="text-[#121417] text-sm font-normal flex-1">
+                        Presented Workshop Paper at 
+                        <!-- <img src="https://learningatscale.acm.org/home/wp-content/uploads/2021/02/acm-logo.png" alt="L@S Logo" class="inline-block h-3.5 w-auto ml-1 align-middle" /> -->
+                        <a href="https://learningatscale.acm.org/las2024/" target="_blank" class="text-[var(--primary-blue)] hover:underline">ACM L@S 2024</a>.
+                      </span>
+                    </li>
+                  </ul>
             </div>
 
             <!-- Publications Section -->
@@ -128,58 +166,65 @@
         // Fetch the JSON file and render publications
         async function fetchPublications() {
             try {
-            const response = await fetch('https://jisulog.kim/json/publications.json'); // Path to your JSON file
-            const publications = await response.json();
-        
-            const publicationsList = document.getElementById('publications-list');
-            publicationsList.innerHTML = ''; // Clear existing content
-        
-            publications.forEach((publication) => {
-                // Replace "Jisu Kim" with an underlined version
-                const updatedDescription = publication.description.replace(
-                    /Jisu Kim/g,
-                    '<span style="text-decoration: underline;">Jisu Kim</span>'
-                );
-
-                // Generate buttons for each link
-                const buttons = publication.links
-                    .map(
-                        (link) => `
-                        <button
-                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 flex-row-reverse bg-[#f1f2f4] text-[#121417] text-sm font-medium leading-normal w-fit"
-                            onclick="window.location.href='${link.url}'"
-                        >
-                            <span class="truncate">${link.label}</span>
-                        </button>
-                    `
-                    )
-                    .join('');
-
-                const publicationItem = `
-                <div class="flex items-stretch justify-between gap-4 rounded-xl mb-4">
-                    <div class="flex flex-[2_2_0px] flex-col gap-4">
-                    <div class="flex flex-col gap-1">
-                        <p class="text-[#121417] text-base font-bold leading-tight">${publication.title}</p>
-                        <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
-                        <p class="text-[#677583] text-sm font-normal leading-normal">${publication.confernece}</p>
-                    </div>
-                    <div class="flex gap-2">
-                        ${buttons}
-                    </div>
-                    </div>
-                    <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
-                    style="background-image: url('${publication.image}');"
-                    ></div>
-                </div>
-                `;
-                publicationsList.innerHTML += publicationItem;
-            });
+                const response = await fetch('https://jisulog.kim/json/publications.json'); // Path to your JSON file
+                const publications = await response.json();
+    
+                const publicationsList = document.getElementById('publications-list');
+                publicationsList.innerHTML = ''; // Clear existing content
+    
+                publications.forEach((publication) => {
+                    // Replace "Jisu Kim" with an underlined version
+                    const updatedDescription = publication.description.replace(
+                        /Jisu Kim/g,
+                        '<span style="text-decoration: underline;">Jisu Kim</span>'
+                    );
+    
+                    // Generate buttons for each link (if links exist)
+                    const buttons = publication.links
+                        ? publication.links
+                                .map(
+                                    (link) => `
+                                        <button
+                                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[var(--primary-blue)] text-white text-sm font-medium leading-normal w-fit hover:bg-white hover:text-[var(--primary-blue)] hover:outline hover:outline-[var(--primary-blue)] transition-all duration-200"
+                                        onclick="window.location.href='${link.url}'"
+                                        >
+                                        <span class="truncate">${link.label}</span>
+                                        </button>
+                                `
+                                )
+                                .join('')
+                        : ``;
+    
+                    // Conditionally render the image container
+                    const imageContainer = publication.image
+                        ? `<div
+                            class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                            style="background-image: url('${publication.image}');"
+                        ></div>`
+                        : '';
+    
+                    const publicationItem = `
+                        <div class="flex items-stretch justify-between gap-4 rounded-xl mb-6">
+                            <div class="flex flex-[2_2_0px] flex-col gap-4">
+                                <div class="flex flex-col gap-1 max-w-[95%]">
+                                    <p class="text-[#121417] text-base font-bold leading-tight">${publication.title}</p>
+                                    <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
+                                    <p class="text-[#677583] text-sm font-normal leading-normal">${publication.confernece}</p>
+                                </div>
+                                <div class="flex gap-2">
+                                    ${buttons}
+                                </div>
+                            </div>
+                            ${imageContainer}
+                        </div>
+                        `;
+                    publicationsList.innerHTML += publicationItem;
+                });
             } catch (error) {
-            console.error('Error fetching publications:', error);
+                console.error('Error fetching publications:', error);
             }
         }
-        
+    
         // Call the function to fetch and render publications
         fetchPublications();
     </script>
