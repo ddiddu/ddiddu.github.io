@@ -1,19 +1,29 @@
 [
     {
-      "title": "The Impact of Active Recall on Long-Term Memory Retention",
-      "description": "A study exploring the effectiveness of active recall techniques in enhancing memory retention over extended periods.",
+      "title": "One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations",
+      "description": "Yoonjoo Lee, Kihoon Son, Tae Soo Kim, Jisu Kim, John Joon Young Chung, Eytan Adar, Juho Kim",
+      "confernece": "ACM FAccT 2024: ACM Conference on Fairness, Accountability, and Transparency",
       "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDWuojgcW_imgS9ejiKhBtKtRtbhvzYwnzAuFz3lUJUnJl-4JnIMbzUhhXgwh6ueJ3Cj8c90lR5ScuheYV20SHYVEkQ9Df-WHUeejzj2sDDRNNjIz4guk80R5xSzH7JaRt_l93Pin5CEONNxAvtpwjbCDP2mJlxt5jtmXZ8_TMy4UmMwTMLRhcVfhuoBwvKCkfoZroH1bMlkCSvyN-ychT4eDCebGdHzYrtiapZHfTl4BNILBI9nQQZbkchsHawcwkzRrXc7jEaHGbb",
       "link": "#"
     },
     {
-      "title": "Integrating Neuroscience into Educational Practices",
-      "description": "An overview of how neuroscience findings can inform and improve educational practices, focusing on brain-based learning strategies.",
+      "title": "Engaging Learnersourcing with an AI Social Agent in Online Learning",
+      "description": "Jisu Kim, Ashok Goel",
+      "confernece": "ACM L@S 2024 Workshop on Learnersourcing: Student-generated Content @ Scale",
       "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCb_FWod8TVZVwy480ty-ADxZ1Bc4s2Hkrdu4GagmDWD462umVhw1sq2QOJeSZtGlBE0X8Lu4ZODidwqyF8uOk35KU5XLv7tnjwoHzPZtDtqkYimzCwcEnTvI0CPl4A2-qXzeddCa2kFe4TbUZV_xu0nblRtihz6ULCBTSBWBG_d9wW7V9esb23IwVAyZEsq2zVNyfcIoLTKgw1y2MWdjprKNixjpeDN6FUHhSVfqLaejRIjv9jO6Tmjqzpzyo24YS4yufeKOHhjf3c",
       "link": "#"
     },
     {
-      "title": "The Role of Metacognition in Children's Learning",
-      "description": "An investigation into the development of metacognitive skills in children and their impact on academic performance.",
+      "title": "Contextual Questioner, Generate Contextual Questions with AI in Google Slides",
+      "description": "Jisu Kim*, Debbie Hsu*, Vijay Farmah, Richmond Wong",
+      "confernece": "In preparation for ACM CHI 2026",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDf5UvmTqM78SdE6zjGtmGuJ5QfxwO7rclZwUjeDPIz8X2gRoH6YY_biubgtNTSEGTuJVJ-wFxkzjvGo7pGHwLDXg5epz2c83pCdyB6T72CEv7BXjBjq96k22-52nbKXGfd7w0vpRQ6UTI8OsCuj1GEHYJD_Kal5-1YBbqMZck-xVW1-AolUUrtx7XNCMtqRotNc0aBq6pWYAW0EaLsVa_ExGj8gqjqw1klabkK4x4GgSdAtDsWOUjTze9DYLQVgbP-9QDAMysBEA5j",
+      "link": "#"
+    },
+    {
+      "title": "HierichiCraft: Interactive Hierarchy Task to Help Users Gain More Control in Interactive Task Planning",
+      "description": "Jieyu Zhou, Jisu Kim, Christopher MacLellan",
+      "confernece": "In preparation for ACM CHI 2026",
       "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDf5UvmTqM78SdE6zjGtmGuJ5QfxwO7rclZwUjeDPIz8X2gRoH6YY_biubgtNTSEGTuJVJ-wFxkzjvGo7pGHwLDXg5epz2c83pCdyB6T72CEv7BXjBjq96k22-52nbKXGfd7w0vpRQ6UTI8OsCuj1GEHYJD_Kal5-1YBbqMZck-xVW1-AolUUrtx7XNCMtqRotNc0aBq6pWYAW0EaLsVa_ExGj8gqjqw1klabkK4x4GgSdAtDsWOUjTze9DYLQVgbP-9QDAMysBEA5j",
       "link": "#"
     }
