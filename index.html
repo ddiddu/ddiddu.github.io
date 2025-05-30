@@ -47,7 +47,7 @@
             <div class="flex items-center gap-9">
               <a class="text-[#121417] text-sm font-medium leading-normal" href="#about">About</a>
               <a class="text-[#121417] text-sm font-medium leading-normal" href="#publications">Publications</a>
-              <a class="text-[#121417] text-sm font-medium leading-normal" href="https://jisulog.kim/pdf/JisuKim_CV.pdf">CV</a>
+              <a class="text-[#121417] text-sm font-medium leading-normal" href="https://www.overleaf.com/read/cwdkfdngvmmt#85e717">CV</a>
             </div>
             <!-- <div
               class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
@@ -85,26 +85,30 @@
                 I am currently exploring job opportunities as I prepare to graduate in <strong>July 2025</strong>!
             </p>
             <p class="text-[#677583] text-sm font-normal leading-normal pb-3 pt-1 px-2">
-                <a href="mailto:jisu.kim@gatech.edu" target="_blank" class="mx-2">
-                    <i class="fas fa-envelope h-6 w-auto"></i>
-                    <!-- <span class="ml-2">jisu.kim@gatech.edu</span> -->
+                <a href="mailto:jisu.kim@gatech.edu" target="_blank" class="mx-2 hover:text-[var(--primary-blue)]">
+                    <i class="fas fa-envelope" style="font-size: 16px;"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/jisulog/" target="_blank" class="mx-2">
-                  <i class="fab fa-linkedin h-6 w-auto"></i>
+                <a href="https://www.linkedin.com/in/jisulog/" target="_blank" class="mx-2 hover:text-[var(--primary-blue)]">
+                    <i class="fab fa-linkedin" style="font-size: 16px;"></i>
                 </a>
-                <a href="https://x.com/jisukiim?s=21" target="_blank" class="mx-2">
-                  <i class="fab fa-twitter h-6 w-auto"></i>
+                <a href="https://x.com/jisukiim?s=21" target="_blank" class="mx-2 hover:text-[var(--primary-blue)]">
+                    <i class="fab fa-twitter" style="font-size: 16px;"></i>
                 </a>
-                <a href="https://youtu.be/btZOScj22jE?si=0zz5y61KNLsBJXcm" target="_blank" class="mx-2">
-                  <i class="fab fa-youtube h-6 w-auto"></i>
+                <a href="https://youtu.be/btZOScj22jE?si=0zz5y61KNLsBJXcm" target="_blank" class="mx-2 hover:text-[var(--primary-blue)]">
+                    <i class="fab fa-youtube" style="font-size: 16px;"></i>
                 </a>
-                <a href="https://ddiddu.medium.com" target="_blank" class="mx-2">
-                  <i class="fab fa-medium h-6 w-auto"></i>
+                <a href="https://ddiddu.medium.com" target="_blank" class="mx-2 hover:text-[var(--primary-blue)]">
+                    <i class="fab fa-medium" style="font-size: 16px;"></i>
                 </a>
-                <a href="https://calendly.com/jisulogkim" target="_blank" class="mx-2">
-                    <i class="fas fa-calendar-alt h-6 w-auto"></i>
+                <a href="https://calendly.com/jisulogkim" target="_blank" class="mx-2 hover:text-[var(--primary-blue)]">
+                    <i class="fas fa-calendar-alt" style="font-size: 16px;"></i>
                 </a>
             </p>
+
+            <!-- Splitter -->
+            <hr class="border-t border-gray-300 w-1/6 mx-auto my-8">
+
+            <!-- News Section -->
             <h2 class="text-[#121417] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">News</h2>
             <div class="p-4">
                 <ul class="list-none space-y-2">
@@ -140,6 +144,9 @@
                     </li>
                   </ul>
             </div>
+
+            <!-- Splitter -->
+            <hr class="border-t border-gray-300 w-1/6 mx-auto my-8">
 
             <!-- Publications Section -->
             <div id="publications">
@@ -197,10 +204,9 @@
     
                     // Conditionally render the image container
                     const imageContainer = publication.image
-                        ? `<div
-                            class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
-                            style="background-image: url('${publication.image}');"
-                        ></div>`
+                        ? `  <div class="flex items-center justify-center w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                                style="background-image: url('${publication.image}');">
+                            </div>`
                         : '';
     
                     const publicationItem = `
