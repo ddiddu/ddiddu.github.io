@@ -30,21 +30,21 @@
       <div class="layout-container flex h-full grow flex-col">
         
         <!-- Header -->
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f2f4] px-10 py-3">
-          <div class="flex items-center gap-4 text-[#121417]">
-            <h2 class="text-[#121417] text-lg font-bold leading-tight tracking-[-0.015em]">Jisu Kim</h2>
-          </div>
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f2f4] px-10 py-3 bg-white fixed top-0 left-0 w-full z-50">
+          <h2 class="text-[#121417] text-lg font-bold leading-tight tracking-[-0.015em]">
+            <a href="#about" class="hover:text-[var(--primary-blue)]">Jisu Kim</a>
+          </h2>
           <div class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-9">
-              <a class="text-[#121417] text-sm font-medium leading-normal" href="#about">About</a>
-              <a class="text-[#121417] text-sm font-medium leading-normal" href="#publications">Publications</a>
-              <a class="text-[#121417] text-sm font-medium leading-normal" href="https://www.overleaf.com/read/cwdkfdngvmmt#85e717">CV</a>
+              <a class="text-[#121417] text-sm font-medium leading-normal hover:text-[var(--primary-blue)]" href="#publications">Publications</a>
+              <a class="text-[#121417] text-sm font-medium leading-normal hover:text-[var(--primary-blue)]" href="#projects">Projects</a>
+              <a class="text-[#121417] text-sm font-medium leading-normal hover:text-[var(--primary-blue)]" href="https://www.overleaf.com/read/cwdkfdngvmmt#85e717">CV</a>
             </div>
           </div>
         </header>
 
         <!-- About Section -->
-        <div id="about" class="px-4 sm:px-10 lg:px-40 flex flex-1 justify-center py-5">
+        <div id="about" class="px-4 sm:px-10 lg:px-40 flex flex-1 justify-center py-5 mt-[72px]" style="scroll-margin-top: 72px;">
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
             <div class="flex p-4 @container">
               <div class="flex w-full flex-col gap-4 items-center">
@@ -56,7 +56,6 @@
                   <div class="flex flex-col items-center justify-center justify-center">
                     <p class="text-[#121417] text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">Jisu Kim</p>
                     <p class="text-[#677583] text-base font-normal leading-normal text-center">MS @ GT Interactive Computing</p>
-                    <!-- <p class="text-[#677583] text-base font-normal leading-normal text-center">jisu.kim@gatech.edu</p> -->
                   </div>
                 </div>
               </div>
@@ -111,7 +110,7 @@
             <hr class="border-t border-gray-300 w-1/6 mx-auto my-8">
 
             <!-- Publications Section -->
-            <div id="publications">
+            <div id="publications" class="pt-8" style="scroll-margin-top: 12px;">
                 <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
                     <h2 class="text-[#121417] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
                     Publications
@@ -126,7 +125,7 @@
             <hr class="border-t border-gray-300 w-1/6 mx-auto my-8">
 
             <!-- Projects Section -->
-            <div id="projects">
+            <div id="projects" style="scroll-margin-top: 72px;">
               <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
                   <h2 class="text-[#121417] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
                   Selected Projects
