@@ -121,6 +121,21 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Splitter -->
+            <hr class="border-t border-gray-300 w-1/6 mx-auto my-8">
+
+            <!-- Projects Section -->
+            <div id="projects">
+              <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                  <h2 class="text-[#121417] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+                  Selected Projects
+                  </h2>
+                  <div id="projects-list" class="p-4">
+                  <!-- Dynamic content will be rendered here -->
+                  </div>
+              </div>
+            </div>
           </div>
         </div>
         
@@ -135,7 +150,7 @@
         // Fetch the JSON file and render news
         async function fetchNews() {
           try {
-            const response = await fetch('json/news.json'); // Path to your JSON file
+            const response = await fetch('https://jisulog.kim/json/news.json'); 
             const news = await response.json();
 
             const newsList = document.getElementById('news-list');
@@ -161,79 +176,77 @@
 
         // Call the function to fetch and render news
         fetchNews();
-        
-        // Fetch the JSON file and render publications
-        async function fetchPublications() {
-            try {
-                const response = await fetch('https://jisulog.kim/json/publications.json'); // Path to your JSON file
-                const publications = await response.json();
-    
-                const publicationsList = document.getElementById('publications-list');
-                publicationsList.innerHTML = ''; // Clear existing content
-    
-                publications.forEach((publication) => {
-                    // Replace "Jisu Kim" with an underlined version
-                    const updatedDescription = publication.description.replace(
-                        /Jisu Kim/g,
-                        '<span style="text-decoration: underline;">Jisu Kim</span>'
-                    );
-    
-                    // Generate buttons for each link (if links exist)
-                    const buttons = publication.links
-                        ? publication.links
-                                .map(
-                                    (link) => `
-                                        <button
-                                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[var(--primary-blue)] text-white text-sm font-medium leading-normal w-fit hover:bg-white hover:text-[var(--primary-blue)] hover:outline hover:outline-[var(--primary-blue)] transition-all duration-200"
-                                        onclick="window.location.href='${link.url}'"
-                                        >
-                                        <span class="truncate">${link.label}</span>
-                                        </button>
-                                `
-                                )
-                                .join('')
-                        : ``;
-    
-                    // Conditionally render the image container
-                    const imageContainer = publication.image
-                        ? `  <div class="flex items-center justify-center w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
-                                style="background-image: url('${publication.image}');">
-                            </div>`
-                        : '';
-    
-                    const publicationItem = `
-                        <div class="flex flex-col md:flex-row justify-between gap-4 rounded-xl mb-6">
 
-                            <!-- Left (Text and Buttons on desktop) -->
-                            <div class="flex flex-col gap-4 flex-[2_2_0px] order-2 md:order-1">
-                            <div class="flex flex-col gap-1 max-w-[95%]">
-                                <p class="text-[#121417] text-base font-bold leading-tight">${publication.title}</p>
-                                <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
-                                <p class="text-[#677583] text-sm font-normal leading-normal">${publication.confernece}</p>
-                            </div>
-                            <div class="flex gap-2">
-                                ${buttons}
-                            </div>
-                            </div>
+        async function fetchContent(section) {
+          try {
+            const response = await fetch(`https://jisulog.kim/json/${section}.json`); // Dynamically fetch JSON based on section
+            const content = await response.json();
 
-                            <!-- Right (Image on desktop) -->
-                            ${publication.image
-                            ? `<div class="w-full md:min-w-[300px] md:w-[300px] aspect-video bg-center bg-no-repeat bg-cover rounded-xl order-1 md:order-2"
-                                    style="background-image: url('${publication.image}');">
-                                </div>`
-                            : ''}
-                        </div>
-                    `;
+            const contentList = document.getElementById(`${section}-list`);
+            contentList.innerHTML = ''; // Clear existing content
 
-                    publicationsList.innerHTML += publicationItem;
-                });l
-            } catch (error) {
-                console.error('Error fetching publications:', error);
-            }
+            content.forEach((item) => {
+              // Replace "Jisu Kim" with an underlined version (if applicable)
+              const updatedDescription = item.description
+                ? item.description.replace(
+                    /Jisu Kim/g,
+                    '<span style="text-decoration: underline;">Jisu Kim</span>'
+                  )
+                : '';
+
+              // Generate buttons for each link (if links exist)
+              const buttons = item.links
+                ? item.links
+                    .map(
+                      (link) => `
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[var(--primary-blue)] text-white text-sm font-medium leading-normal w-fit hover:bg-white hover:text-[var(--primary-blue)] hover:outline hover:outline-[var(--primary-blue)] transition-all duration-200"
+                          onclick="window.location.href='${link.url}'"
+                        >
+                          <span class="truncate">${link.label}</span>
+                        </button>
+                      `
+                    )
+                    .join('')
+                : '';
+
+              // Conditionally render the image container
+              const imageContainer = item.image
+                ? `<div class="w-full md:min-w-[300px] md:w-[300px] aspect-video bg-center bg-no-repeat bg-cover rounded-xl order-1 md:order-2"
+                      style="background-image: url('${item.image}');">
+                    </div>`
+                : '';
+
+              const contentItem = `
+                <div class="flex flex-col md:flex-row justify-between gap-4 rounded-xl mb-6">
+
+                  <!-- Left (Text and Buttons on desktop) -->
+                  <div class="flex flex-col gap-4 flex-[2_2_0px] order-2 md:order-1">
+                    <div class="flex flex-col gap-1 max-w-[95%]">
+                      <p class="text-[#121417] text-base font-bold leading-tight">${item.title}</p>
+                      <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
+                      <p class="text-[#677583] text-sm font-normal leading-normal">${item.confernece || ''}</p>
+                    </div>
+                    <div class="flex gap-2">
+                      ${buttons}
+                    </div>
+                  </div>
+
+                  <!-- Right (Image on desktop) -->
+                  ${imageContainer}
+                </div>
+              `;
+
+              contentList.innerHTML += contentItem;
+            });
+          } catch (error) {
+            console.error(`Error fetching ${section}:`, error);
+          }
         }
-    
-        // Call the function to fetch and render publications
-        fetchPublications();
+
+        // Call the function for both sections
+        fetchContent('publications');
+        fetchContent('projects');
     </script>
     </body>
 </html>

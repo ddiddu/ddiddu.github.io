@@ -1,0 +1,21 @@
+[
+    {
+      "title": "SoundClouds, Participatory Music Generation Exhibition",
+      "description": "Lead Developer",
+      "confernece": "A participatory music exhibition based on real-time soundscape generation through user interactions with inflatables.",
+      "image": "https://jisulog.kim/img/soundclouds.jpg",
+      "links": [
+        { "label": "Website", "url": "https://www.thegoatfarm.info/events/sound-clouds" }
+      ]
+    },
+    {
+      "title": "FORECST, Online Hackathon Website",
+      "description": "Project Leader",
+      "confernece": "A full-stack hackathon website using React.js and Firebase during the COVID.",
+      "image": "https://jisulog.kim/img/forecst.png",
+      "links": [
+        { "label": "Demo", "url": "https://www.youtube.com/watch?v=l5le0iE8PNc&ab_channel=JeanneChoi" },
+        { "label": "GitHub", "url": "https://github.com/youngjae99/FORECST"}
+      ]
+    }
+  ]
