@@ -1,0 +1,14 @@
+[
+    {
+      "date": "Jan 2025",
+      "description": "Started as a Graduate Research Assistant at <a href='https://dilab.gatech.edu/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>GT DILab</a>, with a full tuition scholarship throughout Summer 2025."
+    },
+    {
+      "date": "Aug 2024",
+      "description": "Began a Data Science Internship at <a href='https://www.tesla.com/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>Tesla</a> in Fremont, CA."
+    },
+    {
+      "date": "Jul 2024",
+      "description": "Presented Workshop Paper at <a href='https://learningatscale.acm.org/las2024/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>ACM L@S 2024</a>."
+    }
+  ]
