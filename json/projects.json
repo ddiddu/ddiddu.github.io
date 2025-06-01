@@ -14,7 +14,7 @@
       "confernece": "A full-stack website built with React.js and Firebase during COVID-19 to host virtual hackathons for novice programmers.",
       "image": "https://jisulog.kim/img/forecst.png",
       "links": [
-        { "label": "Demo", "url": "https://www.youtube.com/watch?v=l5le0iE8PNc&ab_channel=JeanneChoi" },
+        { "label": "Demo", "url": "https://www.youtube.com/watch?v=l5le0iE8PNc&t=24s&ab_channel=JeanneChoi" },
         { "label": "Code", "url": "https://github.com/youngjae99/FORECST"}
       ]
     },
