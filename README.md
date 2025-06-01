@@ -6,7 +6,7 @@ Welcome to the homepage template for [Jisu Kim](https://jisulog.kim/)'s personal
 Visit the live demo of this template at [Jisu Kim's Homepage](https://jisulog.kim/).
 
 ## Usage
-Feel free to use this template for your personal website, but **please ensure the footer remains intact**. The footer includes the following text: 
+_Feel free to use this template for your personal website_, but **please ensure the footer remains intact**. The footer includes the following text: 
 Copyright © 2025 [Jisu Kim](https://jisulog.kim/). The website was designed by [Jisu Kim](https://jisulog.kim/) and built with JavaScript.
 
 ## How to Use
