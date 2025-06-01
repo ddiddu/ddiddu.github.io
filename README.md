@@ -1,5 +1,5 @@
 # Jisu Kim's Homepage Template
-Welcome to the homepage template for [Jisu Kim](https://jisulog.kim/)'s personal website. This template is designed for individuals looking to create a clean and professional personal website. It includes sections for About, Publications, News, and a Footer.
+Welcome to the homepage template for [Jisu Kim](https://jisulog.kim/)'s personal website. This template is designed for individuals looking to create a clean and professional personal website. It includes sections for About, News, Publications, and Projects.
 
 
 ## Live Demo
