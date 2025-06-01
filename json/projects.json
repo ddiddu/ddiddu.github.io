@@ -2,7 +2,7 @@
     {
       "title": "SoundClouds, Participatory Music Generation Exhibition",
       "description": "Lead Developer",
-      "confernece": "A participatory music exhibition based on real-time soundscape generation through user interactions with inflatables.",
+      "confernece": "A participatory music exhibition that generates real-time soundscapes through user interactions with inflatables. Developed an object detection model by fine-tuning YOLO, achieving 98.3% accuracy, in collaboration with music technologists and visual artists.",
       "image": "https://jisulog.kim/img/soundclouds.jpg",
       "links": [
         { "label": "Website", "url": "https://www.thegoatfarm.info/events/sound-clouds" }
@@ -11,11 +11,20 @@
     {
       "title": "FORECST, Online Hackathon Website",
       "description": "Lead Developer",
-      "confernece": "A full-stack hackathon website using React.js and Firebase during the COVID.",
+      "confernece": "A full-stack website built with React.js and Firebase during COVID-19 to host virtual hackathons for novice programmers.",
       "image": "https://jisulog.kim/img/forecst.png",
       "links": [
         { "label": "Demo", "url": "https://www.youtube.com/watch?v=l5le0iE8PNc&ab_channel=JeanneChoi" },
         { "label": "Code", "url": "https://github.com/youngjae99/FORECST"}
+      ]
+    },
+    {
+      "title": "MYFIT, Clothing Size Recommendation Android Application",
+      "description": "Lead Developer",
+      "confernece": "An Android application developed in Java to enhances online clothing shopping experience by providing visualizations of clothing sizes.",
+      "image": "https://jisulog.kim/img/myfit.png",
+      "links": [
+        { "label": "Code", "url": "https://github.com/myfitocr/myfit"}
       ]
     }
   ]
