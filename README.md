@@ -19,3 +19,6 @@ Feel free to [reach out](mailto:jisulog.k@gmail.com) if you have any questions o
 3. Change the primary color by editing the CSS variable `--primary-blue` on line 28 of `index.html`.
 4. **Ensure the footer remains unchanged.**
 5. Deploy the website using GitHub Pages or any hosting service of your choice.
+
+## TODO
+- [ ] Fix layout issue where text container width changes when an image is absent.
