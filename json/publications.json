@@ -4,7 +4,7 @@
       "description": "Yoonjoo Lee, Kihoon Son, Tae Soo Kim, Jisu Kim, John Joon Young Chung, Eytan Adar, Juho Kim",
       "confernece": "ACM FAccT 2024",
       "links": [
-        { "label": "PDF", "url": "https://arxiv.org/pdf/2405.05581" }
+        { "label": "Paper", "url": "https://arxiv.org/pdf/2405.05581" }
       ]
     },
     {
@@ -13,7 +13,7 @@
       "confernece": "ACM L@S 2024 Workshop on Learnersourcing: Student-generated Content @ Scale",
       "image": "https://jisulog.kim/img/sami-response.png",
       "links": [
-        { "label": "PDF", "url": "https://jisulog.kim/pdf/workshop1.pdf" }
+        { "label": "Paper", "url": "https://jisulog.kim/pdf/workshop1.pdf" }
       ]
     },
     {
@@ -27,12 +27,16 @@
       "confernece": "In preparation for ACM CHI 2026",
       "image": "https://jisulog.kim/img/contextq.png",
       "links": [
-        { "label": "Talk", "url": "https://www.youtube.com/watch?v=QkNbeazvdoE&t=1054s" }
+        { "label": "Talk", "url": "https://www.youtube.com/watch?v=QkNbeazvdoE&t=1054s",
+          "label": "Code", "url": "https://github.com/ddiddu/ContextQ"}
       ]
     },
     {
       "title": "HierichiCraft: Interactive Hierarchy Task to Help Users Gain More Control in Interactive Task Planning",
       "description": "Jieyu Zhou, Jisu Kim, Christopher MacLellan",
-      "confernece": "In preparation for ACM CHI 2026"
+      "confernece": "In preparation for ACM CHI 2026",
+      "links": [
+        { "label": "Code", "url": "https://github.com/jieyuzhou42/VAL_GUI" }
+      ] 
     }
   ]
