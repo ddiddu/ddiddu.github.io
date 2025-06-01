@@ -19,6 +19,14 @@
       ]
     },
     {
+      "title": "PINTOS: Operating Systems and Lab",
+      "description": "Lead Developer",
+      "confernece": "Implemented kernel threads, user program execution, file system, and virtual memory in a full operating system framework for the 80x86 architecture using C. Ran and tested the OS on the QEMU simulator.",
+      "links": [
+        { "label": "Code", "url": "https://github.com/ddiddu/juntos"}
+      ]
+    },
+    {
       "title": "MYFIT, Clothing Size Recommendation Android Application",
       "description": "Lead Developer",
       "confernece": "An Android application developed in Java to enhances online clothing shopping experience by providing visualizations of clothing sizes.",
