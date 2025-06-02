@@ -29,7 +29,7 @@
     {
       "title": "MYFIT, Clothing Size Recommendation Android Application",
       "description": "Lead Developer",
-      "confernece": "An Android application developed in Java to enhances online clothing shopping experience by providing visualizations of clothing sizes.",
+      "confernece": "An Android application developed in Java to enhance the online clothing shopping experience by providing visualizations of clothing sizes. It is currently in the process of preparing for a startup launch.",
       "image": "https://jisulog.kim/img/myfit.png",
       "links": [
         { "label": "Code", "url": "https://github.com/myfitocr/myfit"}
