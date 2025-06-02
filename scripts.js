@@ -25,6 +25,33 @@ async function fetchNews() {
     }
 }
 
+// Fetch the JSON file and render the contact section
+async function fetchContacts() {
+  try {
+      const response = await fetch('https://jisulog.kim/json/contacts.json'); // Adjust the URL if necessary
+      const contacts = await response.json();
+
+      const contactSection = document.getElementById('contact-section');
+      contactSection.innerHTML = ''; // Clear existing content
+
+      contacts.forEach((contact) => {
+          const anchor = document.createElement('a');
+          anchor.href = contact.url;
+          anchor.target = '_blank';
+          anchor.className = 'mx-2 hover:text-[var(--primary-blue)]';
+
+          const icon = document.createElement('i');
+          icon.className = contact.iconClass;
+          icon.style.fontSize = '16px';
+
+          anchor.appendChild(icon);
+          contactSection.appendChild(anchor);
+      });
+  } catch (error) {
+      console.error('Error fetching contacts:', error);
+  }
+}
+
 async function fetchContent(section) {
     try {
       const response = await fetch(`https://jisulog.kim/json/${section}.json`); // Dynamically fetch JSON based on section
@@ -73,7 +100,7 @@ async function fetchContent(section) {
               <div class="flex flex-col gap-1 max-w-[95%]">
                 <p class="text-[#121417] text-base font-bold leading-tight">${item.title}</p>
                 <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
-                <p class="text-[#677583] text-sm font-normal leading-normal">${item.confernece || ''}</p>
+                <p class="text-[#677583] text-sm font-normal leading-normal">${item.conference || ''}</p>
               </div>
               <div class="flex gap-2">
                 ${buttons}
@@ -94,6 +121,8 @@ async function fetchContent(section) {
 
 // Call the function to fetch and render news
 fetchNews();
+// Call the function to fetch and render the contact section
+fetchContacts();
 
 // Call the function for both sections
 fetchContent('publications');

@@ -2,7 +2,7 @@
     {
       "title": "One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations",
       "description": "Yoonjoo Lee, Kihoon Son, Tae Soo Kim, Jisu Kim, John Joon Young Chung, Eytan Adar, Juho Kim",
-      "confernece": "ACM FAccT 2024",
+      "conference": "ACM FAccT 2024",
       "links": [
         { "label": "Paper", "url": "https://arxiv.org/pdf/2405.05581" }
       ]
@@ -10,7 +10,7 @@
     {
       "title": "Engaging Learnersourcing with an AI Social Agent in Online Learning",
       "description": "Jisu Kim, Ashok Goel",
-      "confernece": "ACM L@S 2024 Workshop on Learnersourcing: Student-generated Content @ Scale",
+      "conference": "ACM L@S 2024 Workshop on Learnersourcing: Student-generated Content @ Scale",
       "image": "https://jisulog.kim/img/sami-response.png",
       "links": [
         { "label": "Paper", "url": "https://jisulog.kim/pdf/workshop1.pdf" }
@@ -19,12 +19,12 @@
     {
       "title": "A Unified Metacognitive Structure for Self-Explanation and Self-Correction",
       "description": "Jisu Kim, Mahimul Islam, Manuel Preston, Travis Taylor, Ashok Goel",
-      "confernece": "In preparation for Advances in Cognitive Systems 2025"
+      "conference": "In preparation for Advances in Cognitive Systems 2025"
     },
     {
       "title": "Contextual Questioner, Generate Contextual Questions with AI in Google Slides",
       "description": "Jisu Kim*, Debbie Hsu*, Vijay Farmah, Richmond Wong",
-      "confernece": "In preparation for ACM CHI 2026",
+      "conference": "In preparation for ACM CHI 2026",
       "image": "https://jisulog.kim/img/contextq.png",
       "links": [
         { "label": "Talk", "url": "https://www.youtube.com/watch?v=QkNbeazvdoE&t=1054s" },
@@ -34,7 +34,7 @@
     {
       "title": "HierichiCraft: Interactive Hierarchy Task to Help Users Gain More Control in Interactive Task Planning",
       "description": "Jieyu Zhou, Jisu Kim, Christopher MacLellan",
-      "confernece": "In preparation for ACM CHI 2026",
+      "conference": "In preparation for ACM CHI 2026",
       "links": [
         { "label": "Code", "url": "https://github.com/jieyuzhou42/VAL_GUI" }
       ] 

@@ -1,0 +1,37 @@
+[
+    {
+      "name": "Email",
+      "url": "mailto:jisu.kim@gatech.edu",
+      "iconClass": "fas fa-envelope"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/jisulog/",
+      "iconClass": "fab fa-linkedin"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/ddiddu",
+      "iconClass": "fab fa-github"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://x.com/jisukiim?s=21",
+      "iconClass": "fab fa-twitter"
+    },
+    {
+      "name": "YouTube",
+      "url": "https://youtu.be/btZOScj22jE?si=0zz5y61KNLsBJXcm",
+      "iconClass": "fab fa-youtube"
+    },
+    {
+      "name": "Medium",
+      "url": "https://ddiddu.medium.com",
+      "iconClass": "fab fa-medium"
+    },
+    {
+      "name": "Calendly",
+      "url": "https://calendly.com/jisulogkim",
+      "iconClass": "fas fa-calendar-alt"
+    }
+  ]
