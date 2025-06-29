@@ -1,22 +1,30 @@
 [
-    {
-      "date": "Jun 2025",
-      "description": "<a href='https://chrismaclellan.com/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>Christopher J. MacLellan</a> joined as a co-advisor on my ongoing master's research project, which is aimed at CHI 2026."
-    },
-    {
-      "date": "Jan 2025",
-      "description": "Started as a Graduate Research Assistant at <a href='https://dilab.gatech.edu/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>GT DILab</a>, with a full tuition scholarship throughout Summer 2025."
-    },
-    {
-      "date": "Aug 2024",
-      "description": "Began a Data Science Internship at <a href='https://www.tesla.com/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>Tesla</a> in Fremont, CA."
-    },    
-    {
-      "date": "Nov 2024",
-      "description": "Received a full-time job offer as a Multimodal AI Researcher at <a href='https://www.lgcns.com/en/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>LG CNS</a> in Seoul, Korea."
-    },
-    {
-      "date": "Jul 2024",
-      "description": "Presented Workshop Paper at <a href='https://learningatscale.acm.org/las2024/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>ACM L@S 2024</a>."
-    }
-  ]
+  {
+    "date": "Jul 2025",
+    "description": "🗽 Visiting Columbia University and Microsoft Research in New York, NY."
+  },
+  {
+    "date": "Jun 2025",
+    "description": "🇺🇸 <a href='https://chrismaclellan.com/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>Christopher J. MacLellan</a> joined as a co-advisor on my ongoing master’s research project at Georgia Tech, which is aimed at CHI 2026."
+  },
+  {        
+    "date": "Apr 2025",
+    "description": "🇺🇸 Successfully exhibited the <a href='https://www.thegoatfarm.info/events/sound-clouds' target='_blank' class='text-[var(--primary-blue)] hover:underline'>SoundClouds</a> project with 200 participants at Goat Farm, Atlanta, GA."
+  },
+  {
+    "date": "Jan 2025",
+    "description": "🇺🇸 Started as a Graduate Research Assistant at <a href='https://dilab.gatech.edu/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>GT DILab</a> with a full tuition scholarship in Atlanta, GA."
+  },
+  {
+    "date": "Aug 2024",
+    "description": "🇺🇸 Began a Data Science Internship at <a href='https://www.tesla.com/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>Tesla</a> in Fremont, CA."
+  },    
+  {
+    "date": "Nov 2024",
+    "description": "🇰🇷 Received a full-time job offer as a Multimodal AI Researcher at <a href='https://www.lgcns.com/en/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>LG CNS</a> in Seoul, Korea."
+  },
+  {
+    "date": "Jul 2024",
+    "description": "🇺🇸 Presented a workshop paper at <a href='https://learningatscale.acm.org/las2024/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>ACM L@S 2024</a> in Atlanta, GA."
+  }
+]
