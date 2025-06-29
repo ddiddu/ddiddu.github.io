@@ -30,13 +30,5 @@
         { "label": "Talk", "url": "https://www.youtube.com/watch?v=QkNbeazvdoE&t=1054s" },
         { "label": "Code", "url": "https://github.com/ddiddu/ContextQ" }
       ]
-    },
-    {
-      "title": "HierichiCraft: Interactive Hierarchy Task to Help Users Gain More Control in Interactive Task Planning",
-      "description": "Jieyu Zhou, Jisu Kim, Christopher MacLellan",
-      "conference": "In preparation for ACM CHI 2026",
-      "links": [
-        { "label": "Code", "url": "https://github.com/jieyuzhou42/VAL_GUI" }
-      ] 
     }
   ]
