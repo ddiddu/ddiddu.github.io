@@ -1,30 +1,34 @@
 [
   {
     "date": "Jul 2025",
+    "description": "Receiving a full-time job offer as a Research Scientist at <a href='https://dilab.gatech.edu/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>GT DILab</a> in <strong>Atlanta, GA</strong>."
+  },
+  {
+    "date": "Jul 2025",
     "description": "Visiting Columbia University and Microsoft Research in <strong>New York, NY</strong>."
   },
   {
     "date": "Jun 2025",
-    "description": "<a href='https://chrismaclellan.com/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>Christopher J. MacLellan</a> joined as a co-advisor on my ongoing master’s research project aimed at CHI 2026."
+    "description": "<a href='https://chrismaclellan.com/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>Christopher J. MacLellan</a> joins as a co-advisor on my ongoing master’s research project, which is aimed at CHI 2026."
   },
   {        
     "date": "Apr 2025",
-    "description": "Successfully exhibited the <a href='https://www.thegoatfarm.info/events/sound-clouds' target='_blank' class='text-[var(--primary-blue)] hover:underline'>SoundClouds</a> project with 200 participants at Goat Farm, <strong>Atlanta, GA</strong>."
+    "description": "Exhibiting the <a href='https://www.thegoatfarm.info/events/sound-clouds' target='_blank' class='text-[var(--primary-blue)] hover:underline'>SoundClouds</a> project with 200 participants at Goat Farm in <strong>Atlanta, GA</strong>."
   },
   {
     "date": "Jan 2025",
-    "description": "Started as a Graduate Research Assistant at <a href='https://dilab.gatech.edu/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>GT DILab</a> with a full tuition scholarship in <strong>Atlanta, GA</strong>."
+    "description": "Starting as a Graduate Research Assistant at <a href='https://dilab.gatech.edu/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>GT DILab</a> with a full tuition scholarship in <strong>Atlanta, GA</strong>."
   },
   {
     "date": "Aug 2024",
-    "description": "Began a Data Science Internship at <a href='https://www.tesla.com/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>Tesla</a> in <strong>Fremont, CA</strong>."
+    "description": "Beginning a Data Science Internship at <a href='https://www.tesla.com/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>Tesla</a> in <strong>Fremont, CA</strong>."
   },    
   {
     "date": "Nov 2024",
-    "description": "Received a full-time job offer as a Multimodal AI Researcher at <a href='https://www.lgcns.com/en/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>LG CNS</a> in <strong>Seoul, Korea</strong>."
+    "description": "Receiving a full-time job offer as a Multimodal AI Researcher at <a href='https://www.lgcns.com/en/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>LG CNS</a> in <strong>Seoul, Korea</strong>."
   },
   {
     "date": "Jul 2024",
-    "description": "Presented a workshop paper at <a href='https://learningatscale.acm.org/las2024/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>ACM L@S 2024</a> in <strong>Atlanta, GA</strong>."
+    "description": "Presenting a workshop paper at <a href='https://learningatscale.acm.org/las2024/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>ACM L@S 2024</a> in <strong>Atlanta, GA</strong>."
   }
 ]
