@@ -1,0 +1,1268 @@
+[
+  {
+    "case_id": 1,
+    "error_type": "hallucination",
+    "user_name": "Travis Taylor",
+    "user_id": 969189,
+    "original_data": {
+      "name": "Travis Taylor",
+      "id": 969189,
+      "primary_location": "Atlanta",
+      "hobbies": [
+        "Running",
+        "writing",
+        "hiking",
+        "photography"
+      ],
+      "courses": [
+        "CS 7637: Knowledge-Based Artificial Intelligence",
+        "CS 6601: Artificial Intelligence"
+      ],
+      "specialization": [
+        "data science"
+      ],
+      "previous_locations": [
+        "Chicago"
+      ],
+      "education": [
+        "University of Illinois - Mathematics"
+      ],
+      "posts": [
+        "Hi! I'm Travis, currently based in Atlanta, GA. I previously lived in Chicago and studied math at the University of Illinois. I like hiking and writing, plus I've gotten into running and photography recently. I'm in the OMSCS program taking AI courses and working in data science. #connectme"
+      ]
+    },
+    "corrupted_data": {
+      "name": "Travis Taylor",
+      "id": 969189,
+      "primary_location": "New York",
+      "hobbies": [
+        "Running",
+        "writing",
+        "hiking",
+        "photography"
+      ],
+      "courses": [
+        "CS 7637: Knowledge-Based Artificial Intelligence",
+        "CS 6601: Artificial Intelligence"
+      ],
+      "specialization": [
+        "data science"
+      ],
+      "previous_locations": [
+        "Chicago"
+      ],
+      "education": [
+        "University of Illinois - Mathematics"
+      ],
+      "posts": [
+        "Hi! I'm Travis, currently based in Atlanta, GA. I previously lived in Chicago and studied math at the University of Illinois. I like hiking and writing, plus I've gotten into running and photography recently. I'm in the OMSCS program taking AI courses and working in data science. #connectme"
+      ]
+    },
+    "user_feedback": "I never mentioned living in New York.",
+    "ground_truth_intent": "Delete",
+    "ground_truth_entity": "New York",
+    "description": "System included content not supported by input",
+    "post": "Hi! I'm Travis, currently based in Atlanta, GA. I previously lived in Chicago and studied math at the University of Illinois. I like hiking and writing, plus I've gotten into running and photography recently. I'm in the OMSCS program taking AI courses and working in data science. #connectme"
+  },
+  {
+    "case_id": 2,
+    "error_type": "hallucination",
+    "user_name": "Manuel Preston De Miranda",
+    "user_id": 969031,
+    "original_data": {
+      "name": "Manuel Preston De Miranda",
+      "id": 969031,
+      "primary_location": "Boston",
+      "hobbies": [
+        "reading",
+        "chess",
+        "cooking"
+      ],
+      "courses": [
+        "CS 6300: Software Development Process",
+        "CS 6400: Database Systems"
+      ],
+      "specialization": [
+        "software engineering"
+      ],
+      "previous_locations": [
+        "New York"
+      ],
+      "education": [
+        "MIT - Computer Science"
+      ],
+      "posts": [
+        "Manuel here from Boston! I moved from NYC last year. I love reading, playing chess, and cooking. Currently in OMSCS focusing on software engineering. Taking SDP and Database Systems this semester. #connectme"
+      ]
+    },
+    "corrupted_data": {
+      "name": "Manuel Preston De Miranda",
+      "id": 969031,
+      "primary_location": "Boston",
+      "hobbies": [
+        "reading",
+        "chess",
+        "cooking",
+        "dancing",
+        "swimming"
+      ],
+      "courses": [
+        "CS 6300: Software Development Process",
+        "CS 6400: Database Systems"
+      ],
+      "specialization": [
+        "software engineering"
+      ],
+      "previous_locations": [
+        "New York"
+      ],
+      "education": [
+        "MIT - Computer Science"
+      ],
+      "posts": [
+        "Manuel here from Boston! I moved from NYC last year. I love reading, playing chess, and cooking. Currently in OMSCS focusing on software engineering. Taking SDP and Database Systems this semester. #connectme"
+      ]
+    },
+    "user_feedback": "I don't like dancing or swimming.",
+    "ground_truth_intent": "Delete",
+    "ground_truth_entity": "dancing, swimming",
+    "description": "System included content not supported by input",
+    "post": "Manuel here from Boston! I moved from NYC last year. I love reading, playing chess, and cooking. Currently in OMSCS focusing on software engineering. Taking SDP and Database Systems this semester. #connectme"
+  },
+  {
+    "case_id": 3,
+    "error_type": "hallucination",
+    "user_name": "Sarah Chen",
+    "user_id": 969200,
+    "original_data": {
+      "name": "Sarah Chen",
+      "id": 969200,
+      "primary_location": "Seattle",
+      "hobbies": [
+        "machine learning",
+        "tennis",
+        "traveling"
+      ],
+      "courses": [
+        "CS 7641: Machine Learning",
+        "CS 6476: Computer Vision"
+      ],
+      "specialization": [
+        "artificial intelligence"
+      ],
+      "previous_locations": [
+        "San Francisco"
+      ],
+      "education": [
+        "Stanford - Electrical Engineering"
+      ],
+      "posts": [
+        "Sarah from Seattle! Previously in SF working at a tech startup. Now pursuing OMSCS with focus on AI/ML. Love tennis and traveling when not coding. Currently taking ML and Computer Vision. #connectme"
+      ]
+    },
+    "corrupted_data": {
+      "name": "Sarah Chen",
+      "id": 969200,
+      "primary_location": "Seattle",
+      "hobbies": [
+        "machine learning",
+        "tennis",
+        "traveling"
+      ],
+      "courses": [
+        "CS 7641: Machine Learning",
+        "CS 6476: Computer Vision",
+        "CS 6300: Software Development Process"
+      ],
+      "specialization": [
+        "artificial intelligence"
+      ],
+      "previous_locations": [
+        "San Francisco"
+      ],
+      "education": [
+        "Stanford - Electrical Engineering"
+      ],
+      "posts": [
+        "Sarah from Seattle! Previously in SF working at a tech startup. Now pursuing OMSCS with focus on AI/ML. Love tennis and traveling when not coding. Currently taking ML and Computer Vision. #connectme"
+      ]
+    },
+    "user_feedback": "I never took that course.",
+    "ground_truth_intent": "Delete",
+    "ground_truth_entity": "CS 6300: Software Development Process",
+    "description": "System included content not supported by input",
+    "post": "Sarah from Seattle! Previously in SF working at a tech startup. Now pursuing OMSCS with focus on AI/ML. Love tennis and traveling when not coding. Currently taking ML and Computer Vision. #connectme"
+  },
+  {
+    "case_id": 4,
+    "error_type": "hallucination",
+    "user_name": "David Rodriguez",
+    "user_id": 969250,
+    "original_data": {
+      "name": "David Rodriguez",
+      "id": 969250,
+      "primary_location": "Austin",
+      "hobbies": [
+        "cybersecurity",
+        "guitar",
+        "rock climbing"
+      ],
+      "courses": [
+        "CS 6035: Introduction to Information Security",
+        "CS 6262: Network Security"
+      ],
+      "specialization": [
+        "cybersecurity"
+      ],
+      "previous_locations": [
+        "Dallas"
+      ],
+      "education": [
+        "UT Austin - Computer Science"
+      ],
+      "posts": [
+        "David here from Austin! Moved from Dallas for work. Passionate about cybersecurity and love playing guitar. Rock climbing on weekends. In OMSCS specializing in security. Taking InfoSec and Network Security. #connectme"
+      ]
+    },
+    "corrupted_data": {
+      "name": "David Rodriguez",
+      "id": 969250,
+      "primary_location": "Austin",
+      "hobbies": [
+        "cybersecurity",
+        "guitar",
+        "rock climbing"
+      ],
+      "courses": [
+        "CS 6035: Introduction to Information Security",
+        "CS 6262: Network Security"
+      ],
+      "specialization": [
+        "cybersecurity",
+        "machine learning"
+      ],
+      "previous_locations": [
+        "Dallas"
+      ],
+      "education": [
+        "UT Austin - Computer Science"
+      ],
+      "posts": [
+        "David here from Austin! Moved from Dallas for work. Passionate about cybersecurity and love playing guitar. Rock climbing on weekends. In OMSCS specializing in security. Taking InfoSec and Network Security. #connectme"
+      ]
+    },
+    "user_feedback": "I'm not specializing in machine learning.",
+    "ground_truth_intent": "Delete",
+    "ground_truth_entity": "machine learning",
+    "description": "System included content not supported by input",
+    "post": "David here from Austin! Moved from Dallas for work. Passionate about cybersecurity and love playing guitar. Rock climbing on weekends. In OMSCS specializing in security. Taking InfoSec and Network Security. #connectme"
+  },
+  {
+    "case_id": 5,
+    "error_type": "hallucination",
+    "user_name": "Emily Johnson",
+    "user_id": 969300,
+    "original_data": {
+      "name": "Emily Johnson",
+      "id": 969300,
+      "primary_location": "Denver",
+      "hobbies": [
+        "data visualization",
+        "skiing",
+        "photography"
+      ],
+      "courses": [
+        "CS 6242: Data and Visual Analytics",
+        "CS 7646: Machine Learning for Trading"
+      ],
+      "specialization": [
+        "analytics"
+      ],
+      "previous_locations": [
+        "Minneapolis"
+      ],
+      "education": [
+        "University of Minnesota - Statistics"
+      ],
+      "posts": [
+        "Emily from Denver! Love the mountains here after moving from Minneapolis. Background in statistics, now diving into data visualization and analytics. Skiing enthusiast and amateur photographer. #connectme"
+      ]
+    },
+    "corrupted_data": {
+      "name": "Emily Johnson",
+      "id": 969300,
+      "primary_location": "Denver",
+      "hobbies": [
+        "data visualization",
+        "skiing",
+        "photography"
+      ],
+      "courses": [
+        "CS 6242: Data and Visual Analytics",
+        "CS 7646: Machine Learning for Trading"
+      ],
+      "specialization": [
+        "analytics"
+      ],
+      "previous_locations": [
+        "Minneapolis"
+      ],
+      "education": [
+        "University of Minnesota - Statistics",
+        "Georgia Tech - Computer Science"
+      ],
+      "posts": [
+        "Emily from Denver! Love the mountains here after moving from Minneapolis. Background in statistics, now diving into data visualization and analytics. Skiing enthusiast and amateur photographer. #connectme"
+      ]
+    },
+    "user_feedback": "I didn't study computer science at Georgia Tech.",
+    "ground_truth_intent": "Delete",
+    "ground_truth_entity": "Georgia Tech - Computer Science",
+    "description": "System included content not supported by input",
+    "post": "Emily from Denver! Love the mountains here after moving from Minneapolis. Background in statistics, now diving into data visualization and analytics. Skiing enthusiast and amateur photographer. #connectme"
+  },
+  {
+    "case_id": 6,
+    "error_type": "omission",
+    "user_name": "Travis Taylor",
+    "user_id": 969189,
+    "original_data": {
+      "name": "Travis Taylor",
+      "id": 969189,
+      "primary_location": "Atlanta",
+      "hobbies": [
+        "Running",
+        "writing",
+        "hiking",
+        "photography"
+      ],
+      "courses": [
+        "CS 7637: Knowledge-Based Artificial Intelligence",
+        "CS 6601: Artificial Intelligence"
+      ],
+      "specialization": [
+        "data science"
+      ],
+      "previous_locations": [
+        "Chicago"
+      ],
+      "education": [
+        "University of Illinois - Mathematics"
+      ],
+      "posts": [
+        "Hi! I'm Travis, currently based in Atlanta, GA. I previously lived in Chicago and studied math at the University of Illinois. I like hiking and writing, plus I've gotten into running and photography recently. I'm in the OMSCS program taking AI courses and working in data science. #connectme"
+      ]
+    },
+    "corrupted_data": {
+      "name": "Travis Taylor",
+      "id": 969189,
+      "primary_location": "Atlanta",
+      "hobbies": [
+        "Running",
+        "writing",
+        "hiking"
+      ],
+      "courses": [
+        "CS 7637: Knowledge-Based Artificial Intelligence",
+        "CS 6601: Artificial Intelligence"
+      ],
+      "specialization": [
+        "data science"
+      ],
+      "previous_locations": [
+        "Chicago"
+      ],
+      "education": [
+        "University of Illinois - Mathematics"
+      ],
+      "posts": [
+        "Hi! I'm Travis, currently based in Atlanta, GA. I previously lived in Chicago and studied math at the University of Illinois. I like hiking and writing, plus I've gotten into running and photography recently. I'm in the OMSCS program taking AI courses and working in data science. #connectme"
+      ]
+    },
+    "user_feedback": "You missed that I like photography.",
+    "ground_truth_intent": "Add",
+    "ground_truth_entity": "photography",
+    "description": "System left out relevant info from post",
+    "post": "Hi! I'm Travis, currently based in Atlanta, GA. I previously lived in Chicago and studied math at the University of Illinois. I like hiking and writing, plus I've gotten into running and photography recently. I'm in the OMSCS program taking AI courses and working in data science. #connectme"
+  },
+  {
+    "case_id": 7,
+    "error_type": "omission",
+    "user_name": "Manuel Preston De Miranda",
+    "user_id": 969031,
+    "original_data": {
+      "name": "Manuel Preston De Miranda",
+      "id": 969031,
+      "primary_location": "Boston",
+      "hobbies": [
+        "reading",
+        "chess",
+        "cooking"
+      ],
+      "courses": [
+        "CS 6300: Software Development Process",
+        "CS 6400: Database Systems"
+      ],
+      "specialization": [
+        "software engineering"
+      ],
+      "previous_locations": [
+        "New York"
+      ],
+      "education": [
+        "MIT - Computer Science"
+      ],
+      "posts": [
+        "Manuel here from Boston! I moved from NYC last year. I love reading, playing chess, and cooking. Currently in OMSCS focusing on software engineering. Taking SDP and Database Systems this semester. #connectme"
+      ]
+    },
+    "corrupted_data": {
+      "name": "Manuel Preston De Miranda",
+      "id": 969031,
+      "primary_location": "Boston",
+      "hobbies": [
+        "reading",
+        "chess",
+        "cooking"
+      ],
+      "courses": [
+        "CS 6300: Software Development Process"
+      ],
+      "specialization": [
+        "software engineering"
+      ],
+      "previous_locations": [
+        "New York"
+      ],
+      "education": [
+        "MIT - Computer Science"
+      ],
+      "posts": [
+        "Manuel here from Boston! I moved from NYC last year. I love reading, playing chess, and cooking. Currently in OMSCS focusing on software engineering. Taking SDP and Database Systems this semester. #connectme"
+      ]
+    },
+    "user_feedback": "I also mentioned taking Database Systems.",
+    "ground_truth_intent": "Add",
+    "ground_truth_entity": "CS 6400: Database Systems",
+    "description": "System left out relevant info from post",
+    "post": "Manuel here from Boston! I moved from NYC last year. I love reading, playing chess, and cooking. Currently in OMSCS focusing on software engineering. Taking SDP and Database Systems this semester. #connectme"
+  },
+  {
+    "case_id": 8,
+    "error_type": "omission",
+    "user_name": "Sarah Chen",
+    "user_id": 969200,
+    "original_data": {
+      "name": "Sarah Chen",
+      "id": 969200,
+      "primary_location": "Seattle",
+      "hobbies": [
+        "machine learning",
+        "tennis",
+        "traveling"
+      ],
+      "courses": [
+        "CS 7641: Machine Learning",
+        "CS 6476: Computer Vision"
+      ],
+      "specialization": [
+        "artificial intelligence"
+      ],
+      "previous_locations": [
+        "San Francisco"
+      ],
+      "education": [
+        "Stanford - Electrical Engineering"
+      ],
+      "posts": [
+        "Sarah from Seattle! Previously in SF working at a tech startup. Now pursuing OMSCS with focus on AI/ML. Love tennis and traveling when not coding. Currently taking ML and Computer Vision. #connectme"
+      ]
+    },
+    "corrupted_data": {
+      "name": "Sarah Chen",
+      "id": 969200,
+      "primary_location": "Seattle",
+      "hobbies": [
+        "machine learning",
+        "tennis",
+        "traveling"
+      ],
+      "courses": [
+        "CS 7641: Machine Learning",
+        "CS 6476: Computer Vision"
+      ],
+      "specialization": [
+        "artificial intelligence"
+      ],
+      "previous_locations": [],
+      "education": [
+        "Stanford - Electrical Engineering"
+      ],
+      "posts": [
+        "Sarah from Seattle! Previously in SF working at a tech startup. Now pursuing OMSCS with focus on AI/ML. Love tennis and traveling when not coding. Currently taking ML and Computer Vision. #connectme"
+      ]
+    },
+    "user_feedback": "You didn't mention I previously lived in SF.",
+    "ground_truth_intent": "Add",
+    "ground_truth_entity": "San Francisco",
+    "description": "System left out relevant info from post",
+    "post": "Sarah from Seattle! Previously in SF working at a tech startup. Now pursuing OMSCS with focus on AI/ML. Love tennis and traveling when not coding. Currently taking ML and Computer Vision. #connectme"
+  },
+  {
+    "case_id": 9,
+    "error_type": "omission",
+    "user_name": "David Rodriguez",
+    "user_id": 969250,
+    "original_data": {
+      "name": "David Rodriguez",
+      "id": 969250,
+      "primary_location": "Austin",
+      "hobbies": [
+        "cybersecurity",
+        "guitar",
+        "rock climbing"
+      ],
+      "courses": [
+        "CS 6035: Introduction to Information Security",
+        "CS 6262: Network Security"
+      ],
+      "specialization": [
+        "cybersecurity"
+      ],
+      "previous_locations": [
+        "Dallas"
+      ],
+      "education": [
+        "UT Austin - Computer Science"
+      ],
+      "posts": [
+        "David here from Austin! Moved from Dallas for work. Passionate about cybersecurity and love playing guitar. Rock climbing on weekends. In OMSCS specializing in security. Taking InfoSec and Network Security. #connectme"
+      ]
+    },
+    "corrupted_data": {
+      "name": "David Rodriguez",
+      "id": 969250,
+      "primary_location": "Austin",
+      "hobbies": [
+        "cybersecurity",
+        "rock climbing"
+      ],
+      "courses": [
+        "CS 6035: Introduction to Information Security",
+        "CS 6262: Network Security"
+      ],
+      "specialization": [
+        "cybersecurity"
+      ],
+      "previous_locations": [
+        "Dallas"
+      ],
+      "education": [
+        "UT Austin - Computer Science"
+      ],
+      "posts": [
+        "David here from Austin! Moved from Dallas for work. Passionate about cybersecurity and love playing guitar. Rock climbing on weekends. In OMSCS specializing in security. Taking InfoSec and Network Security. #connectme"
+      ]
+    },
+    "user_feedback": "I also mentioned I play guitar.",
+    "ground_truth_intent": "Add",
+    "ground_truth_entity": "guitar",
+    "description": "System left out relevant info from post",
+    "post": "David here from Austin! Moved from Dallas for work. Passionate about cybersecurity and love playing guitar. Rock climbing on weekends. In OMSCS specializing in security. Taking InfoSec and Network Security. #connectme"
+  },
+  {
+    "case_id": 10,
+    "error_type": "omission",
+    "user_name": "Emily Johnson",
+    "user_id": 969300,
+    "original_data": {
+      "name": "Emily Johnson",
+      "id": 969300,
+      "primary_location": "Denver",
+      "hobbies": [
+        "data visualization",
+        "skiing",
+        "photography"
+      ],
+      "courses": [
+        "CS 6242: Data and Visual Analytics",
+        "CS 7646: Machine Learning for Trading"
+      ],
+      "specialization": [
+        "analytics"
+      ],
+      "previous_locations": [
+        "Minneapolis"
+      ],
+      "education": [
+        "University of Minnesota - Statistics"
+      ],
+      "posts": [
+        "Emily from Denver! Love the mountains here after moving from Minneapolis. Background in statistics, now diving into data visualization and analytics. Skiing enthusiast and amateur photographer. #connectme"
+      ]
+    },
+    "corrupted_data": {
+      "name": "Emily Johnson",
+      "id": 969300,
+      "primary_location": "Denver",
+      "hobbies": [
+        "data visualization",
+        "skiing",
+        "photography"
+      ],
+      "courses": [
+        "CS 6242: Data and Visual Analytics",
+        "CS 7646: Machine Learning for Trading"
+      ],
+      "specialization": [],
+      "previous_locations": [
+        "Minneapolis"
+      ],
+      "education": [
+        "University of Minnesota - Statistics"
+      ],
+      "posts": [
+        "Emily from Denver! Love the mountains here after moving from Minneapolis. Background in statistics, now diving into data visualization and analytics. Skiing enthusiast and amateur photographer. #connectme"
+      ]
+    },
+    "user_feedback": "You missed that I specialize in analytics.",
+    "ground_truth_intent": "Add",
+    "ground_truth_entity": "analytics",
+    "description": "System left out relevant info from post",
+    "post": "Emily from Denver! Love the mountains here after moving from Minneapolis. Background in statistics, now diving into data visualization and analytics. Skiing enthusiast and amateur photographer. #connectme"
+  },
+  {
+    "case_id": 11,
+    "error_type": "misinterpretation",
+    "user_name": "Travis Taylor",
+    "user_id": 969189,
+    "original_data": {
+      "name": "Travis Taylor",
+      "id": 969189,
+      "primary_location": "Atlanta",
+      "hobbies": [
+        "Running",
+        "writing",
+        "hiking",
+        "photography"
+      ],
+      "courses": [
+        "CS 7637: Knowledge-Based Artificial Intelligence",
+        "CS 6601: Artificial Intelligence"
+      ],
+      "specialization": [
+        "data science"
+      ],
+      "previous_locations": [
+        "Chicago"
+      ],
+      "education": [
+        "University of Illinois - Mathematics"
+      ],
+      "posts": [
+        "Hi! I'm Travis, currently based in Atlanta, GA. I previously lived in Chicago and studied math at the University of Illinois. I like hiking and writing, plus I've gotten into running and photography recently. I'm in the OMSCS program taking AI courses and working in data science. #connectme"
+      ]
+    },
+    "corrupted_data": {
+      "name": "Travis Taylor",
+      "id": 969189,
+      "primary_location": "Chicago",
+      "hobbies": [
+        "Running",
+        "writing",
+        "hiking",
+        "photography"
+      ],
+      "courses": [
+        "CS 7637: Knowledge-Based Artificial Intelligence",
+        "CS 6601: Artificial Intelligence"
+      ],
+      "specialization": [
+        "data science"
+      ],
+      "previous_locations": [
+        "Chicago"
+      ],
+      "education": [
+        "University of Illinois - Mathematics"
+      ],
+      "posts": [
+        "Hi! I'm Travis, currently based in Atlanta, GA. I previously lived in Chicago and studied math at the University of Illinois. I like hiking and writing, plus I've gotten into running and photography recently. I'm in the OMSCS program taking AI courses and working in data science. #connectme"
+      ]
+    },
+    "user_feedback": "No, I live in Atlanta. Chicago is where I used to live.",
+    "ground_truth_intent": "Modify",
+    "ground_truth_entity": "Chicago",
+    "description": "System misunderstood the meaning or context",
+    "post": "Hi! I'm Travis, currently based in Atlanta, GA. I previously lived in Chicago and studied math at the University of Illinois. I like hiking and writing, plus I've gotten into running and photography recently. I'm in the OMSCS program taking AI courses and working in data science. #connectme"
+  },
+  {
+    "case_id": 12,
+    "error_type": "misinterpretation",
+    "user_name": "Manuel Preston De Miranda",
+    "user_id": 969031,
+    "original_data": {
+      "name": "Manuel Preston De Miranda",
+      "id": 969031,
+      "primary_location": "Boston",
+      "hobbies": [
+        "reading",
+        "chess",
+        "cooking"
+      ],
+      "courses": [
+        "CS 6300: Software Development Process",
+        "CS 6400: Database Systems"
+      ],
+      "specialization": [
+        "software engineering"
+      ],
+      "previous_locations": [
+        "New York"
+      ],
+      "education": [
+        "MIT - Computer Science"
+      ],
+      "posts": [
+        "Manuel here from Boston! I moved from NYC last year. I love reading, playing chess, and cooking. Currently in OMSCS focusing on software engineering. Taking SDP and Database Systems this semester. #connectme"
+      ]
+    },
+    "corrupted_data": {
+      "name": "Manuel Preston De Miranda",
+      "id": 969031,
+      "primary_location": "Boston",
+      "hobbies": [
+        "writing",
+        "chess",
+        "cooking"
+      ],
+      "courses": [
+        "CS 6300: Software Development Process",
+        "CS 6400: Database Systems"
+      ],
+      "specialization": [
+        "software engineering"
+      ],
+      "previous_locations": [
+        "New York"
+      ],
+      "education": [
+        "MIT - Computer Science"
+      ],
+      "posts": [
+        "Manuel here from Boston! I moved from NYC last year. I love reading, playing chess, and cooking. Currently in OMSCS focusing on software engineering. Taking SDP and Database Systems this semester. #connectme"
+      ]
+    },
+    "user_feedback": "I said reading, not writing.",
+    "ground_truth_intent": "Modify",
+    "ground_truth_entity": "reading",
+    "description": "System misunderstood the meaning or context",
+    "post": "Manuel here from Boston! I moved from NYC last year. I love reading, playing chess, and cooking. Currently in OMSCS focusing on software engineering. Taking SDP and Database Systems this semester. #connectme"
+  },
+  {
+    "case_id": 13,
+    "error_type": "misinterpretation",
+    "user_name": "Sarah Chen",
+    "user_id": 969200,
+    "original_data": {
+      "name": "Sarah Chen",
+      "id": 969200,
+      "primary_location": "Seattle",
+      "hobbies": [
+        "machine learning",
+        "tennis",
+        "traveling"
+      ],
+      "courses": [
+        "CS 7641: Machine Learning",
+        "CS 6476: Computer Vision"
+      ],
+      "specialization": [
+        "artificial intelligence"
+      ],
+      "previous_locations": [
+        "San Francisco"
+      ],
+      "education": [
+        "Stanford - Electrical Engineering"
+      ],
+      "posts": [
+        "Sarah from Seattle! Previously in SF working at a tech startup. Now pursuing OMSCS with focus on AI/ML. Love tennis and traveling when not coding. Currently taking ML and Computer Vision. #connectme"
+      ]
+    },
+    "corrupted_data": {
+      "name": "Sarah Chen",
+      "id": 969200,
+      "primary_location": "Seattle",
+      "hobbies": [
+        "machine learning",
+        "tennis",
+        "traveling"
+      ],
+      "courses": [
+        "CS 7641: Machine Learning",
+        "CS 6476: Computer Vision"
+      ],
+      "specialization": [
+        "computer science"
+      ],
+      "previous_locations": [
+        "San Francisco"
+      ],
+      "education": [
+        "Stanford - Electrical Engineering"
+      ],
+      "posts": [
+        "Sarah from Seattle! Previously in SF working at a tech startup. Now pursuing OMSCS with focus on AI/ML. Love tennis and traveling when not coding. Currently taking ML and Computer Vision. #connectme"
+      ]
+    },
+    "user_feedback": "I specialize in AI, not general computer science.",
+    "ground_truth_intent": "Modify",
+    "ground_truth_entity": "artificial intelligence",
+    "description": "System misunderstood the meaning or context",
+    "post": "Sarah from Seattle! Previously in SF working at a tech startup. Now pursuing OMSCS with focus on AI/ML. Love tennis and traveling when not coding. Currently taking ML and Computer Vision. #connectme"
+  },
+  {
+    "case_id": 14,
+    "error_type": "misinterpretation",
+    "user_name": "David Rodriguez",
+    "user_id": 969250,
+    "original_data": {
+      "name": "David Rodriguez",
+      "id": 969250,
+      "primary_location": "Austin",
+      "hobbies": [
+        "cybersecurity",
+        "guitar",
+        "rock climbing"
+      ],
+      "courses": [
+        "CS 6035: Introduction to Information Security",
+        "CS 6262: Network Security"
+      ],
+      "specialization": [
+        "cybersecurity"
+      ],
+      "previous_locations": [
+        "Dallas"
+      ],
+      "education": [
+        "UT Austin - Computer Science"
+      ],
+      "posts": [
+        "David here from Austin! Moved from Dallas for work. Passionate about cybersecurity and love playing guitar. Rock climbing on weekends. In OMSCS specializing in security. Taking InfoSec and Network Security. #connectme"
+      ]
+    },
+    "corrupted_data": {
+      "name": "David Rodriguez",
+      "id": 969250,
+      "primary_location": "Austin",
+      "hobbies": [
+        "cybersecurity",
+        "guitar",
+        "rock climbing"
+      ],
+      "courses": [
+        "CS 6035: Introduction to Information Security",
+        "CS 6262: Network Security"
+      ],
+      "specialization": [
+        "cybersecurity"
+      ],
+      "previous_locations": [
+        "Dallas"
+      ],
+      "education": [
+        "UT Austin - Electrical Engineering"
+      ],
+      "posts": [
+        "David here from Austin! Moved from Dallas for work. Passionate about cybersecurity and love playing guitar. Rock climbing on weekends. In OMSCS specializing in security. Taking InfoSec and Network Security. #connectme"
+      ]
+    },
+    "user_feedback": "I studied computer science, not electrical engineering.",
+    "ground_truth_intent": "Modify",
+    "ground_truth_entity": "UT Austin - Computer Science",
+    "description": "System misunderstood the meaning or context",
+    "post": "David here from Austin! Moved from Dallas for work. Passionate about cybersecurity and love playing guitar. Rock climbing on weekends. In OMSCS specializing in security. Taking InfoSec and Network Security. #connectme"
+  },
+  {
+    "case_id": 15,
+    "error_type": "misinterpretation",
+    "user_name": "Emily Johnson",
+    "user_id": 969300,
+    "original_data": {
+      "name": "Emily Johnson",
+      "id": 969300,
+      "primary_location": "Denver",
+      "hobbies": [
+        "data visualization",
+        "skiing",
+        "photography"
+      ],
+      "courses": [
+        "CS 6242: Data and Visual Analytics",
+        "CS 7646: Machine Learning for Trading"
+      ],
+      "specialization": [
+        "analytics"
+      ],
+      "previous_locations": [
+        "Minneapolis"
+      ],
+      "education": [
+        "University of Minnesota - Statistics"
+      ],
+      "posts": [
+        "Emily from Denver! Love the mountains here after moving from Minneapolis. Background in statistics, now diving into data visualization and analytics. Skiing enthusiast and amateur photographer. #connectme"
+      ]
+    },
+    "corrupted_data": {
+      "name": "Emily Johnson",
+      "id": 969300,
+      "primary_location": "Denver",
+      "hobbies": [
+        "data visualization",
+        "skiing",
+        "photography"
+      ],
+      "courses": [
+        "CS 6242: Data and Visual Analytics",
+        "CS 7641: Machine Learning"
+      ],
+      "specialization": [
+        "analytics"
+      ],
+      "previous_locations": [
+        "Minneapolis"
+      ],
+      "education": [
+        "University of Minnesota - Statistics"
+      ],
+      "posts": [
+        "Emily from Denver! Love the mountains here after moving from Minneapolis. Background in statistics, now diving into data visualization and analytics. Skiing enthusiast and amateur photographer. #connectme"
+      ]
+    },
+    "user_feedback": "It's Machine Learning for Trading, not just Machine Learning.",
+    "ground_truth_intent": "Modify",
+    "ground_truth_entity": "CS 7646: Machine Learning for Trading",
+    "description": "System misunderstood the meaning or context",
+    "post": "Emily from Denver! Love the mountains here after moving from Minneapolis. Background in statistics, now diving into data visualization and analytics. Skiing enthusiast and amateur photographer. #connectme"
+  },
+  {
+    "case_id": 16,
+    "error_type": "user-initiated-update",
+    "user_name": "Travis Taylor",
+    "user_id": 969189,
+    "original_data": {
+      "name": "Travis Taylor",
+      "id": 969189,
+      "primary_location": "Atlanta",
+      "hobbies": [
+        "Running",
+        "writing",
+        "hiking",
+        "photography"
+      ],
+      "courses": [
+        "CS 7637: Knowledge-Based Artificial Intelligence",
+        "CS 6601: Artificial Intelligence"
+      ],
+      "specialization": [
+        "data science"
+      ],
+      "previous_locations": [
+        "Chicago"
+      ],
+      "education": [
+        "University of Illinois - Mathematics"
+      ],
+      "posts": [
+        "Hi! I'm Travis, currently based in Atlanta, GA. I previously lived in Chicago and studied math at the University of Illinois. I like hiking and writing, plus I've gotten into running and photography recently. I'm in the OMSCS program taking AI courses and working in data science. #connectme"
+      ]
+    },
+    "corrupted_data": {
+      "name": "Travis Taylor",
+      "id": 969189,
+      "primary_location": "Atlanta",
+      "hobbies": [
+        "Running",
+        "writing",
+        "hiking",
+        "photography"
+      ],
+      "courses": [
+        "CS 7637: Knowledge-Based Artificial Intelligence",
+        "CS 6601: Artificial Intelligence"
+      ],
+      "specialization": [
+        "data science"
+      ],
+      "previous_locations": [
+        "Chicago"
+      ],
+      "education": [
+        "University of Illinois - Mathematics"
+      ],
+      "posts": [
+        "Hi! I'm Travis, currently based in Atlanta, GA. I previously lived in Chicago and studied math at the University of Illinois. I like hiking and writing, plus I've gotten into running and photography recently. I'm in the OMSCS program taking AI courses and working in data science. #connectme"
+      ]
+    },
+    "user_feedback": "I moved to Seattle last month.",
+    "ground_truth_intent": "Modify",
+    "ground_truth_entity": "Seattle",
+    "description": "User wants to update info due to life changes or corrections",
+    "post": "Hi! I'm Travis, currently based in Atlanta, GA. I previously lived in Chicago and studied math at the University of Illinois. I like hiking and writing, plus I've gotten into running and photography recently. I'm in the OMSCS program taking AI courses and working in data science. #connectme"
+  },
+  {
+    "case_id": 17,
+    "error_type": "user-initiated-update",
+    "user_name": "Manuel Preston De Miranda",
+    "user_id": 969031,
+    "original_data": {
+      "name": "Manuel Preston De Miranda",
+      "id": 969031,
+      "primary_location": "Boston",
+      "hobbies": [
+        "reading",
+        "chess",
+        "cooking"
+      ],
+      "courses": [
+        "CS 6300: Software Development Process",
+        "CS 6400: Database Systems"
+      ],
+      "specialization": [
+        "software engineering"
+      ],
+      "previous_locations": [
+        "New York"
+      ],
+      "education": [
+        "MIT - Computer Science"
+      ],
+      "posts": [
+        "Manuel here from Boston! I moved from NYC last year. I love reading, playing chess, and cooking. Currently in OMSCS focusing on software engineering. Taking SDP and Database Systems this semester. #connectme"
+      ]
+    },
+    "corrupted_data": {
+      "name": "Manuel Preston De Miranda",
+      "id": 969031,
+      "primary_location": "Boston",
+      "hobbies": [
+        "reading",
+        "chess",
+        "cooking"
+      ],
+      "courses": [
+        "CS 6300: Software Development Process",
+        "CS 6400: Database Systems"
+      ],
+      "specialization": [
+        "software engineering"
+      ],
+      "previous_locations": [
+        "New York"
+      ],
+      "education": [
+        "MIT - Computer Science"
+      ],
+      "posts": [
+        "Manuel here from Boston! I moved from NYC last year. I love reading, playing chess, and cooking. Currently in OMSCS focusing on software engineering. Taking SDP and Database Systems this semester. #connectme"
+      ]
+    },
+    "user_feedback": "I want to add that I like hiking now.",
+    "ground_truth_intent": "Add",
+    "ground_truth_entity": "hiking",
+    "description": "User wants to update info due to life changes or corrections",
+    "post": "Manuel here from Boston! I moved from NYC last year. I love reading, playing chess, and cooking. Currently in OMSCS focusing on software engineering. Taking SDP and Database Systems this semester. #connectme"
+  },
+  {
+    "case_id": 18,
+    "error_type": "user-initiated-update",
+    "user_name": "Sarah Chen",
+    "user_id": 969200,
+    "original_data": {
+      "name": "Sarah Chen",
+      "id": 969200,
+      "primary_location": "Seattle",
+      "hobbies": [
+        "machine learning",
+        "tennis",
+        "traveling"
+      ],
+      "courses": [
+        "CS 7641: Machine Learning",
+        "CS 6476: Computer Vision"
+      ],
+      "specialization": [
+        "artificial intelligence"
+      ],
+      "previous_locations": [
+        "San Francisco"
+      ],
+      "education": [
+        "Stanford - Electrical Engineering"
+      ],
+      "posts": [
+        "Sarah from Seattle! Previously in SF working at a tech startup. Now pursuing OMSCS with focus on AI/ML. Love tennis and traveling when not coding. Currently taking ML and Computer Vision. #connectme"
+      ]
+    },
+    "corrupted_data": {
+      "name": "Sarah Chen",
+      "id": 969200,
+      "primary_location": "Seattle",
+      "hobbies": [
+        "machine learning",
+        "tennis",
+        "traveling"
+      ],
+      "courses": [
+        "CS 7641: Machine Learning",
+        "CS 6476: Computer Vision"
+      ],
+      "specialization": [
+        "artificial intelligence"
+      ],
+      "previous_locations": [
+        "San Francisco"
+      ],
+      "education": [
+        "Stanford - Electrical Engineering"
+      ],
+      "posts": [
+        "Sarah from Seattle! Previously in SF working at a tech startup. Now pursuing OMSCS with focus on AI/ML. Love tennis and traveling when not coding. Currently taking ML and Computer Vision. #connectme"
+      ]
+    },
+    "user_feedback": "I'm now taking Database Systems this semester.",
+    "ground_truth_intent": "Add",
+    "ground_truth_entity": "CS 6400: Database Systems",
+    "description": "User wants to update info due to life changes or corrections",
+    "post": "Sarah from Seattle! Previously in SF working at a tech startup. Now pursuing OMSCS with focus on AI/ML. Love tennis and traveling when not coding. Currently taking ML and Computer Vision. #connectme"
+  },
+  {
+    "case_id": 19,
+    "error_type": "user-initiated-update",
+    "user_name": "David Rodriguez",
+    "user_id": 969250,
+    "original_data": {
+      "name": "David Rodriguez",
+      "id": 969250,
+      "primary_location": "Austin",
+      "hobbies": [
+        "cybersecurity",
+        "guitar",
+        "rock climbing"
+      ],
+      "courses": [
+        "CS 6035: Introduction to Information Security",
+        "CS 6262: Network Security"
+      ],
+      "specialization": [
+        "cybersecurity"
+      ],
+      "previous_locations": [
+        "Dallas"
+      ],
+      "education": [
+        "UT Austin - Computer Science"
+      ],
+      "posts": [
+        "David here from Austin! Moved from Dallas for work. Passionate about cybersecurity and love playing guitar. Rock climbing on weekends. In OMSCS specializing in security. Taking InfoSec and Network Security. #connectme"
+      ]
+    },
+    "corrupted_data": {
+      "name": "David Rodriguez",
+      "id": 969250,
+      "primary_location": "Austin",
+      "hobbies": [
+        "cybersecurity",
+        "guitar",
+        "rock climbing"
+      ],
+      "courses": [
+        "CS 6035: Introduction to Information Security",
+        "CS 6262: Network Security"
+      ],
+      "specialization": [
+        "cybersecurity"
+      ],
+      "previous_locations": [
+        "Dallas"
+      ],
+      "education": [
+        "UT Austin - Computer Science"
+      ],
+      "posts": [
+        "David here from Austin! Moved from Dallas for work. Passionate about cybersecurity and love playing guitar. Rock climbing on weekends. In OMSCS specializing in security. Taking InfoSec and Network Security. #connectme"
+      ]
+    },
+    "user_feedback": "I'm also getting into machine learning now.",
+    "ground_truth_intent": "Add",
+    "ground_truth_entity": "machine learning",
+    "description": "User wants to update info due to life changes or corrections",
+    "post": "David here from Austin! Moved from Dallas for work. Passionate about cybersecurity and love playing guitar. Rock climbing on weekends. In OMSCS specializing in security. Taking InfoSec and Network Security. #connectme"
+  },
+  {
+    "case_id": 20,
+    "error_type": "user-initiated-update",
+    "user_name": "Emily Johnson",
+    "user_id": 969300,
+    "original_data": {
+      "name": "Emily Johnson",
+      "id": 969300,
+      "primary_location": "Denver",
+      "hobbies": [
+        "data visualization",
+        "skiing",
+        "photography"
+      ],
+      "courses": [
+        "CS 6242: Data and Visual Analytics",
+        "CS 7646: Machine Learning for Trading"
+      ],
+      "specialization": [
+        "analytics"
+      ],
+      "previous_locations": [
+        "Minneapolis"
+      ],
+      "education": [
+        "University of Minnesota - Statistics"
+      ],
+      "posts": [
+        "Emily from Denver! Love the mountains here after moving from Minneapolis. Background in statistics, now diving into data visualization and analytics. Skiing enthusiast and amateur photographer. #connectme"
+      ]
+    },
+    "corrupted_data": {
+      "name": "Emily Johnson",
+      "id": 969300,
+      "primary_location": "Denver",
+      "hobbies": [
+        "data visualization",
+        "skiing",
+        "photography"
+      ],
+      "courses": [
+        "CS 6242: Data and Visual Analytics",
+        "CS 7646: Machine Learning for Trading"
+      ],
+      "specialization": [
+        "analytics"
+      ],
+      "previous_locations": [
+        "Minneapolis"
+      ],
+      "education": [
+        "University of Minnesota - Statistics"
+      ],
+      "posts": [
+        "Emily from Denver! Love the mountains here after moving from Minneapolis. Background in statistics, now diving into data visualization and analytics. Skiing enthusiast and amateur photographer. #connectme"
+      ]
+    },
+    "user_feedback": "I stopped skiing but started snowboarding.",
+    "ground_truth_intent": "Modify",
+    "ground_truth_entity": "snowboarding",
+    "description": "User wants to update info due to life changes or corrections",
+    "post": "Emily from Denver! Love the mountains here after moving from Minneapolis. Background in statistics, now diving into data visualization and analytics. Skiing enthusiast and amateur photographer. #connectme"
+  }
+]

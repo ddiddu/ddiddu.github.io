@@ -1,0 +1,407 @@
+{
+  "total_cases": 20,
+  "by_error_type": {
+    "hallucination": {
+      "localization_scores": [
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "revision_scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "explanation_scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "total_scores": [
+        1.0,
+        1.0,
+        1.0,
+        0.6666666666666666,
+        0.6666666666666666
+      ]
+    },
+    "omission": {
+      "localization_scores": [
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "revision_scores": [
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "explanation_scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "total_scores": [
+        1.0,
+        0.3333333333333333,
+        1.0,
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    "misinterpretation": {
+      "localization_scores": [
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "revision_scores": [
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "explanation_scores": [
+        0.75,
+        0.0,
+        1.0,
+        0.75,
+        0.75
+      ],
+      "total_scores": [
+        0.25,
+        0.6666666666666666,
+        1.0,
+        0.9166666666666666,
+        0.9166666666666666
+      ]
+    },
+    "user-initiated-update": {
+      "localization_scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "revision_scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "explanation_scores": [
+        0.0,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "total_scores": [
+        0.6666666666666666,
+        0.9166666666666666,
+        0.9166666666666666,
+        0.9166666666666666,
+        0.9166666666666666
+      ]
+    }
+  },
+  "detailed_results": [
+    {
+      "test_case": 1,
+      "user_feedback": "I don't live in New York.",
+      "ground_truth_error_type": "hallucination",
+      "ground_truth_intent": "Delete",
+      "ground_truth_entity": "New York",
+      "predicted_error_type": "Hallucination",
+      "predicted_intent": "Delete",
+      "predicted_entity": "new york",
+      "localization_score": 1.0,
+      "revision_score": 1.0,
+      "explanation_score": 1.0,
+      "revision_message": "I am analyzing your feedback and it seems like I incorrectly included 'New York' in your profile when it wasn't actually mentioned in your intro post. I am backtracking through my modules to see where I made this extraction mistake. I made the mistake when processing your intro post. I extracted 'New York' as information about you, but reviewing the original text shows it was never mentioned. I just removed 'New York' from your profile in my knowledge base!"
+    },
+    {
+      "test_case": 2,
+      "user_feedback": "I never said dancing or swimming.",
+      "ground_truth_error_type": "hallucination",
+      "ground_truth_intent": "Delete",
+      "ground_truth_entity": "dancing, swimming",
+      "predicted_error_type": "Hallucination",
+      "predicted_intent": "Delete",
+      "predicted_entity": "dancing",
+      "localization_score": 1.0,
+      "revision_score": 1.0,
+      "explanation_score": 1.0,
+      "revision_message": "I am analyzing your feedback and it seems like I incorrectly included 'dancing, swimming' in your profile when it wasn't actually mentioned in your intro post. I am backtracking through my modules to see where I made this extraction mistake. I made the mistake when processing your intro post. I extracted 'dancing, swimming' as information about you, but reviewing the original text shows it was never mentioned. I just removed 'dancing, swimming' from your profile in my knowledge base!"
+    },
+    {
+      "test_case": 3,
+      "user_feedback": "I didn't take that class.",
+      "ground_truth_error_type": "hallucination",
+      "ground_truth_intent": "Delete",
+      "ground_truth_entity": "CS 6300: Software Development Process",
+      "predicted_error_type": "Hallucination",
+      "predicted_intent": "Delete",
+      "predicted_entity": "stanford - electrical engineering",
+      "localization_score": 1.0,
+      "revision_score": 1.0,
+      "explanation_score": 1.0,
+      "revision_message": "I am analyzing your feedback and it seems like I incorrectly included 'CS 6300: Software Development Process' in your profile when it wasn't actually mentioned in your intro post. I am backtracking through my modules to see where I made this extraction mistake. I made the mistake when processing your intro post. I extracted 'CS 6300: Software Development Process' as information about you, but reviewing the original text shows it was never mentioned. I just removed 'CS 6300: Software Development Process' from your profile in my knowledge base!"
+    },
+    {
+      "test_case": 4,
+      "user_feedback": "Not doing ML.",
+      "ground_truth_error_type": "hallucination",
+      "ground_truth_intent": "Delete",
+      "ground_truth_entity": "machine learning",
+      "predicted_error_type": "Misinterpretation",
+      "predicted_intent": "Delete",
+      "predicted_entity": "machine learning",
+      "localization_score": 0.0,
+      "revision_score": 1.0,
+      "explanation_score": 1.0,
+      "revision_message": "I am analyzing your feedback and it seems like I misinterpreted the context of 'machine learning' in your intro post. I am backtracking through my modules to see where I misunderstood the meaning. I made the mistake when interpreting your intro post. I extracted 'machine learning' but misunderstood its contextual meaning or relevance. I just corrected the interpretation of 'machine learning' in my knowledge base!"
+    },
+    {
+      "test_case": 5,
+      "user_feedback": "Didn't study CS at GT.",
+      "ground_truth_error_type": "hallucination",
+      "ground_truth_intent": "Delete",
+      "ground_truth_entity": "Georgia Tech - Computer Science",
+      "predicted_error_type": "Misinterpretation",
+      "predicted_intent": "Delete",
+      "predicted_entity": "georgia tech - computer science",
+      "localization_score": 0.0,
+      "revision_score": 1.0,
+      "explanation_score": 1.0,
+      "revision_message": "I am analyzing your feedback and it seems like I misinterpreted the context of 'Georgia Tech - Computer Science' in your intro post. I am backtracking through my modules to see where I misunderstood the meaning. I made the mistake when interpreting your intro post. I extracted 'Georgia Tech - Computer Science' but misunderstood its contextual meaning or relevance. I just corrected the interpretation of 'Georgia Tech - Computer Science' in my knowledge base!"
+    },
+    {
+      "test_case": 6,
+      "user_feedback": "You missed photography.",
+      "ground_truth_error_type": "omission",
+      "ground_truth_intent": "Add",
+      "ground_truth_entity": "photography",
+      "predicted_error_type": "Omission",
+      "predicted_intent": "Add",
+      "predicted_entity": "photography",
+      "localization_score": 1.0,
+      "revision_score": 1.0,
+      "explanation_score": 1.0,
+      "revision_message": "I am analyzing your feedback and it seems like I missed extracting 'photography' from your intro post even though it was mentioned. I am backtracking through my modules to see where I failed to capture this information. I made the mistake when processing your intro post. I failed to extract 'photography' even though it was clearly mentioned in your introduction. I just added 'photography' to your profile in my knowledge base!"
+    },
+    {
+      "test_case": 7,
+      "user_feedback": "Also took DB Systems.",
+      "ground_truth_error_type": "omission",
+      "ground_truth_intent": "Add",
+      "ground_truth_entity": "CS 6400: Database Systems",
+      "predicted_error_type": "Misinterpretation",
+      "predicted_intent": "Modify",
+      "predicted_entity": "Database Systems",
+      "localization_score": 0.0,
+      "revision_score": 0.0,
+      "explanation_score": 1.0,
+      "revision_message": "I am analyzing your feedback and it seems like I misinterpreted the context of 'CS 6400: Database Systems' in your intro post. I am backtracking through my modules to see where I misunderstood the meaning. I made the mistake when interpreting your intro post. I extracted 'CS 6400: Database Systems' but misunderstood its contextual meaning or relevance. I just corrected the interpretation of 'CS 6400: Database Systems' in my knowledge base!"
+    },
+    {
+      "test_case": 8,
+      "user_feedback": "You forgot SF.",
+      "ground_truth_error_type": "omission",
+      "ground_truth_intent": "Add",
+      "ground_truth_entity": "San Francisco",
+      "predicted_error_type": "Omission",
+      "predicted_intent": "Add",
+      "predicted_entity": "SF",
+      "localization_score": 1.0,
+      "revision_score": 1.0,
+      "explanation_score": 1.0,
+      "revision_message": "I am analyzing your feedback and it seems like I missed extracting 'San Francisco' from your intro post even though it was mentioned. I am backtracking through my modules to see where I failed to capture this information. I made the mistake when processing your intro post. I failed to extract 'San Francisco' even though it was clearly mentioned in your introduction. I just added 'San Francisco' to your profile in my knowledge base!"
+    },
+    {
+      "test_case": 9,
+      "user_feedback": "Also play guitar.",
+      "ground_truth_error_type": "omission",
+      "ground_truth_intent": "Add",
+      "ground_truth_entity": "guitar",
+      "predicted_error_type": "User-Initiated Update",
+      "predicted_intent": "Add",
+      "predicted_entity": "guitar",
+      "localization_score": 0.0,
+      "revision_score": 1.0,
+      "explanation_score": 1.0,
+      "revision_message": "I am analyzing your feedback and it seems like you want to update your information about 'guitar'. I am processing this as new information that represents a change in your circumstances. This appears to be a life update where you want to modify your profile information about 'guitar'. I just updated 'guitar' in your profile in my knowledge base!"
+    },
+    {
+      "test_case": 10,
+      "user_feedback": "You left out analytics.",
+      "ground_truth_error_type": "omission",
+      "ground_truth_intent": "Add",
+      "ground_truth_entity": "analytics",
+      "predicted_error_type": "Omission",
+      "predicted_intent": "Add",
+      "predicted_entity": "analytics",
+      "localization_score": 1.0,
+      "revision_score": 1.0,
+      "explanation_score": 1.0,
+      "revision_message": "I am analyzing your feedback and it seems like I missed extracting 'analytics' from your intro post even though it was mentioned. I am backtracking through my modules to see where I failed to capture this information. I made the mistake when processing your intro post. I failed to extract 'analytics' even though it was clearly mentioned in your introduction. I just added 'analytics' to your profile in my knowledge base!"
+    },
+    {
+      "test_case": 11,
+      "user_feedback": "I'm in Atlanta, not Chicago.",
+      "ground_truth_error_type": "misinterpretation",
+      "ground_truth_intent": "Modify",
+      "ground_truth_entity": "Chicago",
+      "predicted_error_type": "Hallucination",
+      "predicted_intent": "Delete",
+      "predicted_entity": "chicago",
+      "localization_score": 0.0,
+      "revision_score": 0.0,
+      "explanation_score": 0.75,
+      "revision_message": "I am analyzing your feedback and it seems like I incorrectly included 'Chicago' in your profile when it wasn't actually mentioned in your intro post. I am backtracking through my modules to see where I made this extraction mistake. I made the mistake when processing your intro post. I extracted 'Chicago' as information about you, but reviewing the original text shows it was never mentioned. I just removed 'Chicago' from your profile in my knowledge base!"
+    },
+    {
+      "test_case": 12,
+      "user_feedback": "Said reading, not writing.",
+      "ground_truth_error_type": "misinterpretation",
+      "ground_truth_intent": "Modify",
+      "ground_truth_entity": "reading",
+      "predicted_error_type": "Misinterpretation",
+      "predicted_intent": "Modify",
+      "predicted_entity": "reading",
+      "localization_score": 1.0,
+      "revision_score": 1.0,
+      "explanation_score": 0.0,
+      "revision_message": "I am analyzing your feedback and it seems like I misinterpreted the context of 'reading' in your intro post. I am backtracking through my modules to see where I misunderstood the meaning. I made the mistake when interpreting your intro post. I extracted 'reading' but misunderstood its contextual meaning or relevance. I just corrected the interpretation of 'reading' in my knowledge base!"
+    },
+    {
+      "test_case": 13,
+      "user_feedback": "It's AI, not CS.",
+      "ground_truth_error_type": "misinterpretation",
+      "ground_truth_intent": "Modify",
+      "ground_truth_entity": "artificial intelligence",
+      "predicted_error_type": "Misinterpretation",
+      "predicted_intent": "Modify",
+      "predicted_entity": "computer science",
+      "localization_score": 1.0,
+      "revision_score": 1.0,
+      "explanation_score": 1.0,
+      "revision_message": "I am analyzing your feedback and it seems like I misinterpreted the context of 'artificial intelligence' in your intro post. I am backtracking through my modules to see where I misunderstood the meaning. I made the mistake when interpreting your intro post. I extracted 'artificial intelligence' but misunderstood its contextual meaning or relevance. I just corrected the interpretation of 'artificial intelligence' in my knowledge base!"
+    },
+    {
+      "test_case": 14,
+      "user_feedback": "Studied CS, not EE.",
+      "ground_truth_error_type": "misinterpretation",
+      "ground_truth_intent": "Modify",
+      "ground_truth_entity": "UT Austin - Computer Science",
+      "predicted_error_type": "Misinterpretation",
+      "predicted_intent": "Modify",
+      "predicted_entity": "ut austin - electrical engineering",
+      "localization_score": 1.0,
+      "revision_score": 1.0,
+      "explanation_score": 0.75,
+      "revision_message": "I am analyzing your feedback and it seems like I misinterpreted the context of 'UT Austin - Computer Science' in your intro post. I am backtracking through my modules to see where I misunderstood the meaning. I made the mistake when interpreting your intro post. I extracted 'UT Austin - Computer Science' but misunderstood its contextual meaning or relevance. I just corrected the interpretation of 'UT Austin - Computer Science' in my knowledge base!"
+    },
+    {
+      "test_case": 15,
+      "user_feedback": "It's ML for Trading.",
+      "ground_truth_error_type": "misinterpretation",
+      "ground_truth_intent": "Modify",
+      "ground_truth_entity": "CS 7646: Machine Learning for Trading",
+      "predicted_error_type": "Misinterpretation",
+      "predicted_intent": "Modify",
+      "predicted_entity": "cs 7641: machine learning",
+      "localization_score": 1.0,
+      "revision_score": 1.0,
+      "explanation_score": 0.75,
+      "revision_message": "I am analyzing your feedback and it seems like I misinterpreted the context of 'CS 7646: Machine Learning for Trading' in your intro post. I am backtracking through my modules to see where I misunderstood the meaning. I made the mistake when interpreting your intro post. I extracted 'CS 7646: Machine Learning for Trading' but misunderstood its contextual meaning or relevance. I just corrected the interpretation of 'CS 7646: Machine Learning for Trading' in my knowledge base!"
+    },
+    {
+      "test_case": 16,
+      "user_feedback": "I moved to Seattle.",
+      "ground_truth_error_type": "user-initiated-update",
+      "ground_truth_intent": "Modify",
+      "ground_truth_entity": "Seattle",
+      "predicted_error_type": "User-Initiated Update",
+      "predicted_intent": "Modify",
+      "predicted_entity": "Seattle",
+      "localization_score": 1.0,
+      "revision_score": 1.0,
+      "explanation_score": 0.0,
+      "revision_message": "I am analyzing your feedback and it seems like you want to update your information about 'Seattle'. I am processing this as new information that represents a change in your circumstances. This appears to be a life update where you want to modify your profile information about 'Seattle'. I just updated 'Seattle' in your profile in my knowledge base!"
+    },
+    {
+      "test_case": 17,
+      "user_feedback": "Add hiking.",
+      "ground_truth_error_type": "user-initiated-update",
+      "ground_truth_intent": "Add",
+      "ground_truth_entity": "hiking",
+      "predicted_error_type": "User-Initiated Update",
+      "predicted_intent": "Add",
+      "predicted_entity": "hiking",
+      "localization_score": 1.0,
+      "revision_score": 1.0,
+      "explanation_score": 0.75,
+      "revision_message": "I am analyzing your feedback and it seems like you want to update your information about 'hiking'. I am processing this as new information that represents a change in your circumstances. This appears to be a life update where you want to modify your profile information about 'hiking'. I just updated 'hiking' in your profile in my knowledge base!"
+    },
+    {
+      "test_case": 18,
+      "user_feedback": "Now taking DB Systems.",
+      "ground_truth_error_type": "user-initiated-update",
+      "ground_truth_intent": "Add",
+      "ground_truth_entity": "CS 6400: Database Systems",
+      "predicted_error_type": "User-Initiated Update",
+      "predicted_intent": "Add",
+      "predicted_entity": "DB Systems",
+      "localization_score": 1.0,
+      "revision_score": 1.0,
+      "explanation_score": 0.75,
+      "revision_message": "I am analyzing your feedback and it seems like you want to update your information about 'CS 6400: Database Systems'. I am processing this as new information that represents a change in your circumstances. This appears to be a life update where you want to modify your profile information about 'CS 6400: Database Systems'. I just updated 'CS 6400: Database Systems' in your profile in my knowledge base!"
+    },
+    {
+      "test_case": 19,
+      "user_feedback": "Also ML now.",
+      "ground_truth_error_type": "user-initiated-update",
+      "ground_truth_intent": "Add",
+      "ground_truth_entity": "machine learning",
+      "predicted_error_type": "User-Initiated Update",
+      "predicted_intent": "Add",
+      "predicted_entity": "machine learning",
+      "localization_score": 1.0,
+      "revision_score": 1.0,
+      "explanation_score": 0.75,
+      "revision_message": "I am analyzing your feedback and it seems like you want to update your information about 'machine learning'. I am processing this as new information that represents a change in your circumstances. This appears to be a life update where you want to modify your profile information about 'machine learning'. I just updated 'machine learning' in your profile in my knowledge base!"
+    },
+    {
+      "test_case": 20,
+      "user_feedback": "Switched from skiing to snowboarding.",
+      "ground_truth_error_type": "user-initiated-update",
+      "ground_truth_intent": "Modify",
+      "ground_truth_entity": "snowboarding",
+      "predicted_error_type": "User-Initiated Update",
+      "predicted_intent": "Modify",
+      "predicted_entity": "skiing",
+      "localization_score": 1.0,
+      "revision_score": 1.0,
+      "explanation_score": 0.75,
+      "revision_message": "I am analyzing your feedback and it seems like you want to update your information about 'snowboarding'. I am processing this as new information that represents a change in your circumstances. This appears to be a life update where you want to modify your profile information about 'snowboarding'. I just updated 'snowboarding' in your profile in my knowledge base!"
+    }
+  ]
+}
