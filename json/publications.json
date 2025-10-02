@@ -1,11 +1,18 @@
 [
     {
-      "title": "One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations",
-      "description": "Yoonjoo Lee, Kihoon Son, Tae Soo Kim, Jisu Kim, John Joon Young Chung, Eytan Adar, Juho Kim",
-      "conference": "ACM FAccT 2024",
+      "title": "From Doer to Strategic Partner: Uncovering New Roles for AI Feedback in Slide Creation",
+      "description": "Jisu Kim*, Debbie Hsu*, Vijay Farmah, Christopher J. MacLellan, Richmond Wong",
+      "conference": "In preparation for submission to ACM Conference on Intelligent User Interfaces 2026",
+      "image": "https://jisulog.kim/img/contextq.png",
       "links": [
-        { "label": "Paper", "url": "https://arxiv.org/pdf/2405.05581" }
+        { "label": "Talk", "url": "https://www.youtube.com/watch?v=QkNbeazvdoE&t=1054s" },
+        { "label": "Code", "url": "https://github.com/ddiddu/ContextQ" }
       ]
+    },
+    {
+      "title": "Sound Clouds-Exploring ambient intelligence in public spaces to elicit deep human experience of awe, wonder, and beauty",
+      "description": "Chengzhi Zhang, Dashiel Carrera*, Daksh Kapoor*, Jasmine Kaur*, Jisu Kim*, Brian Magerko",
+      "conference": "NeurIPS 2025 Creative AI Track"
     },
     {
       "title": "Engaging Learnersourcing with an AI Social Agent in Online Learning",
@@ -18,28 +25,11 @@
       ]
     },
     {
-      "title": "Sound Clouds-Exploring ambient intelligence in public spaces to elicit deep human experience of awe, wonder, and beauty",
-      "description": "Chengzhi Zhang, Dashiel Carrera*, Daksh Kapoor*, Jasmine Kaur*, Jisu Kim*, Brian Magerko",
-      "conference": "NeurIPS 2025 Creative AI Track"
-    },
-    {
-      "title": "Computing in the Sound Clouds: Inflatable Interfaces for Ambient Awe",
-      "description": "Jasmine Kaur, Angelina Thais Alvarenga Medina, Daksh Kapoor, Chengzhi Zhang, Jisu Kim, Hyunkyung Shin, Dashiel Carrera, Brian Magerko",
-      "conference": "Submitted to TEI 2026 Pictorial"
-    },
-    {
-      "title": "A Metacognitive Architecture for Self-Revision in AI Social Agents",
-      "description": "Jisu Kim, Mahimul Islam, Ashok Goel",
-      "conference": "Submitted to IAAI 2026"
-    },
-    {
-      "title": "AI-Assisted Active and Passive Audience Reflection During Slide Creation",
-      "description": "Jisu Kim*, Debbie Hsu*, Vijay Farmah, Christopher J. MacLellan, Richmond Wong",
-      "conference": "Aiming for ACM CHI 2026, directional revision from initial submission to ACM CHI 2025 LBW",
-      "image": "https://jisulog.kim/img/contextq.png",
+      "title": "One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations",
+      "description": "Yoonjoo Lee, Kihoon Son, Tae Soo Kim, Jisu Kim, John Joon Young Chung, Eytan Adar, Juho Kim",
+      "conference": "ACM FAccT 2024",
       "links": [
-        { "label": "Talk", "url": "https://www.youtube.com/watch?v=QkNbeazvdoE&t=1054s" },
-        { "label": "Code", "url": "https://github.com/ddiddu/ContextQ" }
+        { "label": "Paper", "url": "https://arxiv.org/pdf/2405.05581" }
       ]
     }
   ]
