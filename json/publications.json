@@ -10,6 +10,14 @@
       ]
     },
     {
+      "title": "One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations",
+      "description": "Yoonjoo Lee, Kihoon Son, Tae Soo Kim, Jisu Kim, John Joon Young Chung, Eytan Adar, Juho Kim",
+      "conference": "ACM FAccT 2024",
+      "links": [
+        { "label": "Paper", "url": "https://arxiv.org/pdf/2405.05581" }
+      ]
+    },
+    {
       "title": "Sound Clouds-Exploring ambient intelligence in public spaces to elicit deep human experience of awe, wonder, and beauty",
       "description": "Chengzhi Zhang, Dashiel Carrera*, Daksh Kapoor*, Jasmine Kaur*, Jisu Kim*, Brian Magerko",
       "conference": "NeurIPS 2025 Creative AI Track"
@@ -22,14 +30,6 @@
       "links": [
         { "label": "Paper", "url": "https://drive.google.com/file/d/1KJ-FinxA9A83b8qvTFStIRLaETCgHt6J/view?usp=sharing" },
         { "label": "Slides", "url": "https://jisulog.kim/pdf/workshop1.pdf" }
-      ]
-    },
-    {
-      "title": "One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations",
-      "description": "Yoonjoo Lee, Kihoon Son, Tae Soo Kim, Jisu Kim, John Joon Young Chung, Eytan Adar, Juho Kim",
-      "conference": "ACM FAccT 2024",
-      "links": [
-        { "label": "Paper", "url": "https://arxiv.org/pdf/2405.05581" }
       ]
     }
   ]
