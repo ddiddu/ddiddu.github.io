@@ -1,13 +1,18 @@
 [
     {
-      "title": "From Doer to Strategic Partner: Uncovering New Roles for AI Feedback in Slide Creation",
+      "title": "``If the AI Tool Were an A**hole'': Strategically Leveraging Critical Feedback and Prompting Reflection for Professional Creative Workflows",
       "description": "Jisu Kim*, Debbie Hsu*, Vijay Farmah, Christopher J. MacLellan, Richmond Wong",
-      "conference": "In preparation for submission to ACM Conference on Intelligent User Interfaces 2026",
+      "conference": "Submitted to ACM Conference on Intelligent User Interfaces 2026",
       "image": "https://jisulog.kim/img/contextq.png",
       "links": [
-        { "label": "Talk", "url": "https://www.youtube.com/watch?v=QkNbeazvdoE&t=1054s" },
+        { "label": "Talk", "url": "https://www.youtube.com/watch?v=QkNbeazvdoE&t=1054s"},
         { "label": "Code", "url": "https://github.com/ddiddu/ContextQ" }
       ]
+    },
+    {
+      "title": "A Metacognitive Architecture for Self-Revision in AI Social Agents",
+      "description": "Jisu Kim, Mahimul Islam, Ashok Goel",
+      "conference": "AAAI 2026 Innovative Applications of AI"
     },
     {
       "title": "One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations",
@@ -21,15 +26,5 @@
       "title": "Sound Clouds-Exploring ambient intelligence in public spaces to elicit deep human experience of awe, wonder, and beauty",
       "description": "Chengzhi Zhang, Dashiel Carrera*, Daksh Kapoor*, Jasmine Kaur*, Jisu Kim*, Brian Magerko",
       "conference": "NeurIPS 2025 Creative AI Track"
-    },
-    {
-      "title": "Engaging Learnersourcing with an AI Social Agent in Online Learning",
-      "description": "Jisu Kim, Ashok Goel",
-      "conference": "ACM L@S 2024 Workshop on Learnersourcing: Student-generated Content @ Scale",
-      "image": "https://jisulog.kim/img/sami-response.png",
-      "links": [
-        { "label": "Paper", "url": "https://drive.google.com/file/d/1KJ-FinxA9A83b8qvTFStIRLaETCgHt6J/view?usp=sharing" },
-        { "label": "Slides", "url": "https://jisulog.kim/pdf/workshop1.pdf" }
-      ]
     }
   ]
