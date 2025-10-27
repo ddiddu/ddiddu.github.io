@@ -99,7 +99,7 @@
         <!-- About Section -->
         <div id="about" class="px-4 sm:px-10 lg:px-40 flex flex-1 justify-center py-5 mt-[48px]" style="scroll-margin-top: 48px;">
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="flex p-4 @container flex-col md:flex-row items-center md:items-start gap-2">
+            <div class="flex p-4 @container flex-col md:flex-row items-center md:items-start gap-5">
             <!-- Left Column: Profile Image + Contact Section -->
             <div class="flex flex-col items-center">
               <!-- Profile Image -->
@@ -118,7 +118,7 @@
             
             <!-- Right Column: Profile Info -->  
             <div class="flex flex-col items-center md:items-start">
-            <p class="text-[#121417] text-base font-normal leading-normal pb-3 pt-1 px-4 text-align: left">
+            <p class="text-[#121417] text-base font-normal leading-normal pb-3 pt-1 text-align: left">
                 Hi there! I’m a researcher at Georgia Institute of Technology. I am actively exploring full-time research or industry opportunities and will apply to PhD programs starting Fall 2026. 
                 <br><br>
                 I recently completed my master’s at
@@ -148,11 +148,6 @@
             </p>
             </div>
             </div>
-
-            <!-- Contact Section -->
-            <!-- <p id="contact-section" class="text-[#677583] text-sm font-normal leading-normal flex justify-center items-center pb-8 pt-3 px-2"> -->
-              <!-- Dynamic content will be rendered here -->
-            <!-- </p> -->
 
             <!-- Splitter -->
             <!-- <hr class="border-t border-gray-300 w-1/6 mx-auto my-8"> -->
@@ -228,21 +223,5 @@
 
     <!-- Link to external JavaScript file -->
     <script src="https://jisulog.kim/scripts.js"></script>
-    <script>
-      // JavaScript for tab functionality
-      const tabs = document.querySelectorAll('.tabs a');
-
-      tabs.forEach((tab) => {
-        tab.addEventListener('click', (e) => {
-          e.preventDefault();
-
-          // Remove active class from all tabs
-          tabs.forEach((t) => t.classList.remove('active'));
-
-          // Add active class to clicked tab
-          tab.classList.add('active');
-        });
-      });
-    </script>
     </body>
 </html>
