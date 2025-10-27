@@ -82,7 +82,7 @@
             
             <!-- Right Column: Profile Info -->  
             <div class="flex flex-col items-center md:items-start">
-            <p class="text-[#121417] text-base font-normal leading-normal pb-3 pt-1 px-4 text-justify">
+            <p class="text-[#121417] text-base font-normal leading-normal pb-3 pt-1 px-4 text-align: left">
                 Hi there! I’m a researcher at Georgia Institute of Technology. I am actively exploring full-time research or industry opportunities and will apply to PhD programs starting Fall 2026. 
                 <br><br>
                 I recently completed my master’s at
@@ -128,7 +128,7 @@
             <!-- </div> -->
 
             <!-- Splitter -->
-            <hr class="border-t border-gray-300 w-1/6 mx-auto my-8">
+            <!-- <hr class="border-t border-gray-300 w-1/6 mx-auto my-8"> -->
 
             <!-- Publications Section -->
             <div id="publications" style="scroll-margin-top: 48px;">
@@ -136,8 +136,40 @@
                     <h2 class="text-[#121417] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
                     Publications
                     </h2>
+
+                    <!-- Tabs Navigation -->
+                    <div class="flex border-b border-gray-300">
+                      <button class="tab-button active" data-tab="recent-best-tab">Recent and Best</button>
+                      <button class="tab-button" data-tab="all-publications-tab">All Publications</button>
+                      <button class="tab-button" data-tab="talks-tab">Talks</button>
+                    </div>
+
                     <div id="publications-list" class="p-4">
                     <!-- Dynamic content will be rendered here -->
+                    </div>
+
+                    <!-- Recent and Best Tab Content -->
+                    <div id="recent-best-tab" class="tab-content active">
+                      <div class="p-4">
+                        <!-- Dynamic content for Recent and Best will be rendered here -->
+                        <p>Here are the recent and best publications...</p>
+                      </div>
+                    </div>
+
+                    <!-- All Publications Tab Content -->
+                    <div id="all-publications-tab" class="tab-content hidden">
+                      <div class="p-4">
+                        <!-- Dynamic content for All Publications will be rendered here -->
+                        <p>Here is the list of all publications...</p>
+                      </div>
+                    </div>
+
+                    <!-- Talks Tab Content -->
+                    <div id="talks-tab" class="tab-content hidden">
+                      <div class="p-4">
+                        <!-- Dynamic content for Talks will be rendered here -->
+                        <p>Here are the talks...</p>
+                      </div>
                     </div>
                 </div>
             </div>
