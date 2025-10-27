@@ -1,0 +1,47 @@
+:root {
+    --primary-blue: rgb(38, 86, 201); /* Google blue color */
+    --primary-font: "Roboto", sans-serif;
+}
+
+/* 선택된 텍스트 스타일 */
+::selection {
+    background-color: var(--primary-blue); 
+    color: white; /* 선택된 텍스트의 글자색 */
+}
+
+/* Tab container styles */
+.tabs {
+    display: flex;
+    gap: 20px; /* Add spacing between tabs */
+    margin: 0 15px; /* Remove margin */
+    padding: 0; /* Remove padding */
+    border-bottom: none; /* Remove gray line */
+}
+
+.tabs a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #121417;
+    text-decoration: none;
+    padding: 5px 0; /* Reduce padding to bring closer to underline */
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.tabs a:hover {
+    color: var(--primary-blue);
+}
+
+.tabs a.active {
+    color: var(--primary-blue);
+}
+
+.tabs a.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0; /* Align underline closer to text */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-blue);
+}

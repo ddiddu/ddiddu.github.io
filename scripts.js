@@ -177,18 +177,3 @@ document.addEventListener("DOMContentLoaded", () => {
       talkList.classList.add("hidden");
   });
 });
-
-// JavaScript for tab functionality
-const tabs = document.querySelectorAll('.tabs a');
-
-tabs.forEach((tab) => {
-  tab.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    // Remove active class from all tabs
-    tabs.forEach((t) => t.classList.remove('active'));
-
-    // Add active class to clicked tab
-    tab.classList.add('active');
-  });
-});

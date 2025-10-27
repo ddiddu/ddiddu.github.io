@@ -24,55 +24,9 @@
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
     />
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="https://cdn.jsdelivr.net/npm/bibtex-parse-js/dist/bibtexParse.min.js"></script>
-    <style>
-        :root {
-            --primary-blue: rgb(38, 86, 201); /* Google blue color */
-            --primary-font: "Roboto", sans-serif;
-        }
-        /* 선택된 텍스트 스타일 */
-        ::selection {
-          background-color: var(--primary-blue); 
-          color: white; /* 선택된 텍스트의 글자색 */
-        }
-        /* Tab container styles */
-        .tabs {
-          display: flex;
-          gap: 20px; /* Add spacing between tabs */
-          margin: 0 15px ; /* Remove margin */
-          padding: 0; /* Remove padding */
-          border-bottom: none; /* Remove gray line */
-        }
-
-        .tabs a {
-          font-size: 16px;
-          font-weight: bold;
-          color: #121417;
-          text-decoration: none;
-          padding: 5px 0; /* Reduce padding to bring closer to underline */
-          position: relative;
-          transition: color 0.3s ease;
-        }
-
-        .tabs a:hover {
-          color: var(--primary-blue);
-        }
-
-        .tabs a.active {
-          color: var(--primary-blue);
-        }
-
-        .tabs a.active::after {
-          content: "";
-          position: absolute;
-          bottom: 0; /* Align underline closer to text */
-          left: 0;
-          width: 100%;
-          height: 2px;
-          background-color: var(--primary-blue);
-        }
-    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jisu Kim | MS @ GT Interactive Computing | I am a graduating master's student at GT Interactive Computing and a research assistant at GT Design Intelligence Lab. I am advised by Ashok Goel and Richmond Wong, and was previously advised by Juho Kim during my undergraduate studies at KAIST School of Computing. My research interests are in responsible AI and human-AI interaction.">
   </head>
@@ -223,5 +177,21 @@
 
     <!-- Link to external JavaScript file -->
     <script src="https://jisulog.kim/scripts.js"></script>
+    <script>
+      // JavaScript for tab functionality
+      const tabs = document.querySelectorAll('.tabs a');
+
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', (e) => {
+          e.preventDefault();
+
+          // Remove active class from all tabs
+          tabs.forEach((t) => t.classList.remove('active'));
+
+          // Add active class to clicked tab
+          tab.classList.add('active');
+        });
+      });
+    </script>
     </body>
 </html>
