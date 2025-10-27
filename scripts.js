@@ -75,7 +75,10 @@ async function fetchContent(section) {
               .map(
                 (link) => `
                   <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[var(--primary-blue)] text-white text-sm font-medium leading-normal w-fit hover:bg-white hover:text-[var(--primary-blue)] hover:outline hover:outline-[var(--primary-blue)] transition-all duration-200"
+                    class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200"
+                    style="--hover-color: var(--primary-blue);"
+                    onmouseover="this.style.backgroundColor=this.style.getPropertyValue('--hover-color'); this.style.color='white';"
+                    onmouseout="this.style.backgroundColor=''; this.style.color='';"
                     onclick="window.location.href='${link.url}'"
                   >
                     <span class="truncate">${link.label}</span>
@@ -87,7 +90,7 @@ async function fetchContent(section) {
 
         // Conditionally render the image container
         const imageContainer = item.image
-          ? `<div class="w-full md:min-w-[300px] md:w-[300px] aspect-video bg-center bg-no-repeat bg-cover rounded-xl order-1 md:order-2"
+          ? `<div class="w-full md:min-w-[300px] md:w-[300px] aspect-video bg-center bg-no-repeat bg-cover order-1 md:order-2"
                 style="background-image: url('${item.image}');">
               </div>`
           : '';
@@ -100,7 +103,7 @@ async function fetchContent(section) {
               <div class="flex flex-col gap-1 max-w-[95%]">
                 <p class="text-[#121417] text-base font-bold leading-tight">${item.title}</p>
                 <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
-                <p class="text-[#677583] text-sm font-normal leading-normal">${item.conference || ''}</p>
+                <p class="text-[#677583] text-sm font-normal leading-normal"><em>${item.conference || ''}</em></p>
               </div>
               <div class="flex gap-2">
                 ${buttons}
