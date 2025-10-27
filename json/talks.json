@@ -9,9 +9,10 @@
       ]
     },
     {
-      "title": "Must-Try Restaurants in Daejeon That Only Locals Know Abou",
+      "title": "Must-Try Restaurants in Daejeon That Only Locals Know About",
       "description": "Jisu Kim, Austin Givens",
       "conference": "KAIST 2023",
+      "image": "https://jisulog.kim/img/restaurants.jpg",
       "links": [
         { "label": "Video", "url": "https://m.youtube.com/watch?fbclid=PAZnRzaANshl9leHRuA2FlbQIxMQABp52J1-Rnj9uh1674HE97GGJPjOZxWbQs-EIGKMIqyR2s3_HZluAYN5nLMewW_aem_DY1vkF1bVC8LgBEt9GOROA&v=btZOScj22jE&feature=youtu.be"}
       ]
@@ -20,7 +21,7 @@
         "title": "Offline vs Online Campus Life #1 Humans of CS",
         "description": "Jisu Kim, Juwon Kim",
         "conference": "KAIST School of Computing 2022",
-        "image": "https://jisulog.kim/img/forecst.png",
+        "image": "https://jisulog.kim/img/campus.jpg",
         "links": [
           { "label": "Video", "url": "https://youtu.be/hlFR7f_wOFE?si=sFVwBXWYbp6Bj_pl" }
         ]
