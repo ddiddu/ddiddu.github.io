@@ -54,74 +54,69 @@ async function fetchContacts() {
 
 async function fetchContent(section) {
     try {
-        // Fetch the refs.bib file
-        const response = await fetch('https://jisulog.kim/refs.bib'); // Adjust the path if necessary
-        const bibContent = await response.text(); // Read the file as plain text
+      const response = await fetch(`https://jisulog.kim/json/${section}.json`); // Dynamically fetch JSON based on section
+      const content = await response.json();
 
-        // Parse the .bib content (using a library or manual parsing)
-        const entries = parseBibtex(bibContent);
-        console.log(parseBibtex(bibContent));
+      const contentList = document.getElementById(`${section}-list`);
+      contentList.innerHTML = ''; // Clear existing content
 
-        // Filter entries based on the section (e.g., 'publications' or 'projects')
-        const content = entries.filter((entry) => {
-            // Example: Filter by a specific field or condition
-            return section === 'publications'; // Adjust filtering logic as needed
-        });
+      content.forEach((item) => {
+        // Replace "Jisu Kim" with an underlined version (if applicable)
+        const updatedDescription = item.description
+          ? item.description.replace(
+              /Jisu Kim/g,
+              '<span style="text-decoration: underline;">Jisu Kim</span>'
+            )
+          : '';
 
-        const contentList = document.getElementById(`${section}-list`);
-        if (!contentList) {
-            console.error(`Element with ID ${section}-list not found.`);
-            return;
-        }
-        contentList.innerHTML = ''; // Clear existing content
-
-        content.forEach((item) => {
-            const updatedDescription = item.note
-                ? item.note.replace(
-                      /Jisu Kim/g,
-                      '<span style="text-decoration: underline;">Jisu Kim</span>'
-                  )
-                : '';
-
-            const buttons = item.doi
-                ? `
+        // Generate buttons for each link (if links exist)
+        const buttons = item.links
+          ? item.links
+              .map(
+                (link) => `
                   <button
                     class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[var(--primary-blue)] text-white text-sm font-medium leading-normal w-fit hover:bg-white hover:text-[var(--primary-blue)] hover:outline hover:outline-[var(--primary-blue)] transition-all duration-200"
-                    onclick="window.location.href='https://doi.org/${item.doi}'"
+                    onclick="window.location.href='${link.url}'"
                   >
-                    <span class="truncate">DOI</span>
+                    <span class="truncate">${link.label}</span>
                   </button>
                 `
-                : '';
+              )
+              .join('')
+          : '';
 
-            const contentItem = `
-                <div class="flex flex-col md:flex-row justify-between gap-4 rounded-xl mb-6">
-                    <div class="flex flex-col gap-4 flex-[2_2_0px] order-2 md:order-1">
-                        <div class="flex flex-col gap-1 max-w-[95%]">
-                            <p class="text-[#121417] text-base font-bold leading-tight">${item.title}</p>
-                            <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
-                            <p class="text-[#677583] text-sm font-normal leading-normal">${item.booktitle || ''}</p>
-                        </div>
-                        <div class="flex gap-2">
-                            ${buttons}
-                        </div>
-                    </div>
-                </div>
-            `;
+        // Conditionally render the image container
+        const imageContainer = item.image
+          ? `<div class="w-full md:min-w-[300px] md:w-[300px] aspect-video bg-center bg-no-repeat bg-cover rounded-xl order-1 md:order-2"
+                style="background-image: url('${item.image}');">
+              </div>`
+          : '';
 
-            contentList.innerHTML += contentItem;
-        });
+        const contentItem = `
+          <div class="flex flex-col md:flex-row justify-between gap-4 rounded-xl mb-6">
+
+            <!-- Left (Text and Buttons on desktop) -->
+            <div class="flex flex-col gap-4 flex-[2_2_0px] order-2 md:order-1">
+              <div class="flex flex-col gap-1 max-w-[95%]">
+                <p class="text-[#121417] text-base font-bold leading-tight">${item.title}</p>
+                <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
+                <p class="text-[#677583] text-sm font-normal leading-normal">${item.conference || ''}</p>
+              </div>
+              <div class="flex gap-2">
+                ${buttons}
+              </div>
+            </div>
+
+            <!-- Right (Image on desktop) -->
+            ${imageContainer}
+          </div>
+        `;
+
+        contentList.innerHTML += contentItem;
+      });
     } catch (error) {
-        console.error(`Error fetching ${section}:`, error);
+      console.error(`Error fetching ${section}:`, error);
     }
-}
-
-// Helper function to parse .bib content
-function parseBibtex(bibContent) {
-    console.log('BibtexParser:');
-    console.log(typeof BibtexParser); // Should log "function"
-    const parser = new BibtexParser();
-    return parser.toJSON(bibContent);
 }
 
 // Call the function to fetch and render news
