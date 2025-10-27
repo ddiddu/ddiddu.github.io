@@ -132,22 +132,22 @@ fetchContent('publications');
 fetchContent('projects');
 
 document.addEventListener("DOMContentLoaded", () => {
-  const tabButtons = document.querySelectorAll(".tab-button");
-  const tabContents = document.querySelectorAll(".tab-content");
+  const publicationsList = document.getElementById("publications-list");
+  const projectsList = document.getElementById("projects-list");
+  const showPublications = document.getElementById("show-publications");
+  const showProjects = document.getElementById("show-projects");
 
-  tabButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      console.log(`Tab clicked: ${button.getAttribute("data-tab")}`); // 디버깅용 로그
+  // Show Publications and hide Projects
+  showPublications.addEventListener("click", (e) => {
+      e.preventDefault();
+      publicationsList.classList.remove("hidden");
+      projectsList.classList.add("hidden");
+  });
 
-      // Remove active class from all buttons and contents
-      tabButtons.forEach((btn) => btn.classList.remove("active"));
-      tabContents.forEach((content) => content.classList.remove("active"));
-
-      // Add active class to the clicked button and corresponding content
-      button.classList.add("active");
-      const tabId = button.getAttribute("data-tab");
-      console.log(`Activating tab: ${tabId}`); // 디버깅용 로그
-      document.getElementById(tabId).classList.add("active");
-    });
+  // Show Projects and hide Publications
+  showProjects.addEventListener("click", (e) => {
+      e.preventDefault();
+      projectsList.classList.remove("hidden");
+      publicationsList.classList.add("hidden");
   });
 });

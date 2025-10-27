@@ -128,48 +128,26 @@
             <!-- </div> -->
 
             <!-- Splitter -->
-            <!-- <hr class="border-t border-gray-300 w-1/6 mx-auto my-8"> -->
+            <hr class="border-t border-gray-300 w-1/6 mx-auto my-8">
 
-            <!-- Publications Section -->
-            <div id="publications" style="scroll-margin-top: 48px;">
+            <!-- Publications and Projects Section -->
+            <div id="publications-projects" style="scroll-margin-top: 48px;">
                 <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
                     <h2 class="text-[#121417] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
-                    Publications
+                        <a href="#" id="show-publications" class="text-[var(--primary-blue)] hover:underline">Publications</a> |
+                        <a href="#" id="show-projects" class="text-[var(--primary-blue)] hover:underline">Projects</a>
                     </h2>
 
-                    <!-- Tabs Navigation -->
-                    <div class="flex border-b border-gray-300">
-                      <button class="tab-button active" data-tab="recent-best-tab">Recent and Best</button>
-                      <button class="tab-button" data-tab="all-publications-tab">All Publications</button>
-                      <button class="tab-button" data-tab="talks-tab">Talks</button>
-                    </div>
-
+                    <!-- Publications Section -->
                     <div id="publications-list" class="p-4">
-                    <!-- Dynamic content will be rendered here -->
+                        <h3 class="text-lg font-bold">Publications</h3>
+                        <p>Dynamic content for publications will be rendered here.</p>
                     </div>
 
-                    <!-- Recent and Best Tab Content -->
-                    <div id="recent-best-tab" class="tab-content active">
-                      <div class="p-4">
-                        <!-- Dynamic content for Recent and Best will be rendered here -->
-                        <p>Here are the recent and best publications...</p>
-                      </div>
-                    </div>
-
-                    <!-- All Publications Tab Content -->
-                    <div id="all-publications-tab" class="tab-content hidden">
-                      <div class="p-4">
-                        <!-- Dynamic content for All Publications will be rendered here -->
-                        <p>Here is the list of all publications...</p>
-                      </div>
-                    </div>
-
-                    <!-- Talks Tab Content -->
-                    <div id="talks-tab" class="tab-content hidden">
-                      <div class="p-4">
-                        <!-- Dynamic content for Talks will be rendered here -->
-                        <p>Here are the talks...</p>
-                      </div>
+                    <!-- Projects Section -->
+                    <div id="projects-list" class="p-4 hidden">
+                        <h3 class="text-lg font-bold">Projects</h3>
+                        <p>Dynamic content for projects will be rendered here.</p>
                     </div>
                 </div>
             </div>
