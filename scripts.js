@@ -131,41 +131,49 @@ fetchContacts();
 fetchContent('publications');
 fetchContent('projects');
 fetchContent('talks');
+fetchContent('recent');
 
 document.addEventListener("DOMContentLoaded", () => {
   const publicationsList = document.getElementById("publications-list");
-  const projectsList = document.getElementById("projects-list");
+  // const projectsList = document.getElementById("projects-list");
   const talkList = document.getElementById("talks-list");
+  const recentList = document.getElementById("recent-list");
   const showPublications = document.getElementById("show-publications");
-  const showProjects = document.getElementById("show-projects");
+  // const showProjects = document.getElementById("show-projects");
   const showTalks = document.getElementById("show-talks");
+  const showRecent = document.getElementById("show-recent");
 
   // Show Publications and hide Projects
   showPublications.addEventListener("click", (e) => {
       e.preventDefault();
       publicationsList.classList.remove("hidden");
-      projectsList.classList.add("hidden");
+      // projectsList.classList.add("hidden");
+      talkList.classList.add("hidden");
+      recentList.classList.add("hidden");
   });
 
   // Show Projects and hide Publications
-  showProjects.addEventListener("click", (e) => {
-      e.preventDefault();
-      projectsList.classList.remove("hidden");
-      publicationsList.classList.add("hidden");
-  });
-
-  // Show Projects and hide Publications
-  showProjects.addEventListener("click", (e) => {
-    e.preventDefault();
-    projectsList.classList.remove("hidden");
-    publicationsList.classList.add("hidden");
-});
+  // showProjects.addEventListener("click", (e) => {
+  //     e.preventDefault();
+  //     projectsList.classList.remove("hidden");
+  //     publicationsList.classList.add("hidden");
+  // });
 
   // Show Talks and hide Publications and Projects
   showTalks.addEventListener("click", (e) => {
       e.preventDefault();
       talkList.classList.remove("hidden");
       publicationsList.classList.add("hidden");
-      projectsList.classList.add("hidden");
+      // projectsList.classList.add("hidden");
+      recentList.classList.add("hidden");
+  });
+
+  // Show Recent and hide Publications and Projects
+  showRecent.addEventListener("click", (e) => {
+      e.preventDefault();
+      recentList.classList.remove("hidden");
+      publicationsList.classList.add("hidden");
+      // projectsList.classList.add("hidden");
+      talkList.classList.add("hidden");
   });
 });

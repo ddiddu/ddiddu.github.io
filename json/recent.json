@@ -1,0 +1,26 @@
+[
+    {
+      "title": "“If the AI Tool Were an A**hole”: Strategically Leveraging Critical Feedback and Prompting Reflection for Professional Creative Workflows",
+      "description": "Jisu Kim*, Debbie Hsu*, Vijay Farmah, Christopher J. MacLellan, Richmond Wong",
+      "conference": "Submitted to ACM IUI 2026",
+      "image": "https://jisulog.kim/img/contextq.png",
+      "links": [
+        { "label": "Code", "url": "https://github.com/ddiddu/ContextQ" }
+      ]
+    },
+    {
+      "title": "A Metacognitive Architecture for Self-Revision in AI Social Agents",
+      "description": "Jisu Kim, Mahimul Islam, Ashok Goel",
+      "conference": "AAAI 2026 Innovative Applications of AI",
+      "image": "https://jisulog.kim/img/Picture1.png"
+    },
+    {
+      "title": "One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations",
+      "description": "Yoonjoo Lee, Kihoon Son, Tae Soo Kim, Jisu Kim, John Joon Young Chung, Eytan Adar, Juho Kim",
+      "conference": "ACM FAccT 2024",
+      "links": [
+        { "label": "PDF", "url": "https://arxiv.org/pdf/2405.05581" }
+      ],
+      "image": "https://jisulog.kim/img/one-vs-many.png"
+    }
+  ]
