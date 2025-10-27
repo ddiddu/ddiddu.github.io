@@ -61,20 +61,17 @@
         <!-- About Section -->
         <div id="about" class="px-4 sm:px-10 lg:px-40 flex flex-1 justify-center py-5 mt-[48px]" style="scroll-margin-top: 48px;">
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="flex p-4 @container">
-              <div class="flex w-full flex-col gap-4 items-center">
-                <div class="flex gap-4 flex-col items-center">
-                    <div
-                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32"
-                    style='background-image: url("img/profile.jpeg"); background-size: 240%; background-position: -97px -100px;'
-                  ></div>
-                  <div class="flex flex-col items-center justify-center justify-center">
-                    <p class="text-[#121417] text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">Jisu Kim</p>
-                    <p class="text-[#677583] text-base font-normal leading-normal text-center">MS @ GT Interactive Computing</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="flex p-4 @container flex-col md:flex-row items-center md:items-start gap-6">
+              <!-- Profile Image -->
+              <div
+                class="bg-center bg-no-repeat bg-cover"
+                style='background-image: url("img/profile.jpeg"); background-size: auto; width: auto; height: auto; max-width: 100%; max-height: 100%;'
+              ></div>
+            
+              <div class="flex flex-col items-center md:items-start">
+                <p class="text-[#121417] text-[22px] font-bold leading-tight tracking-[-0.015em] text-center md:text-left px-4">Jisu Kim</p>
+                <p class="text-[#677583] text-base font-normal leading-normal text-center md:text-left px-4">MS @ GT Interactive Computing</p>
+
             <p class="text-[#121417] text-base font-normal leading-normal pb-3 pt-1 px-4 text-justify">
                 Hi there! I’m a researcher at Georgia Institute of Technology. I am actively exploring full-time research or industry opportunities and will apply to PhD programs starting Fall 2026. 
                 <br><br>
@@ -103,6 +100,8 @@
                 <br><br>
                 <em>I like narrativity, uncertainty, and serendipity.</em>
             </p>
+            </div>
+            </div>
 
             <!-- Contact Section -->
             <p id="contact-section" class="text-[#677583] text-sm font-normal leading-normal flex justify-center items-center pb-8 pt-3 px-2">
