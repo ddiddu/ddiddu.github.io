@@ -36,6 +36,42 @@
           background-color: var(--primary-blue); 
           color: white; /* 선택된 텍스트의 글자색 */
         }
+        /* Tab container styles */
+        .tabs {
+          display: flex;
+          gap: 20px; /* Add spacing between tabs */
+          margin: 0 15px ; /* Remove margin */
+          padding: 0; /* Remove padding */
+          border-bottom: none; /* Remove gray line */
+        }
+
+        .tabs a {
+          font-size: 16px;
+          font-weight: bold;
+          color: #121417;
+          text-decoration: none;
+          padding: 5px 0; /* Reduce padding to bring closer to underline */
+          position: relative;
+          transition: color 0.3s ease;
+        }
+
+        .tabs a:hover {
+          color: var(--primary-blue);
+        }
+
+        .tabs a.active {
+          color: var(--primary-blue);
+        }
+
+        .tabs a.active::after {
+          content: "";
+          position: absolute;
+          bottom: 0; /* Align underline closer to text */
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: var(--primary-blue);
+        }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jisu Kim | MS @ GT Interactive Computing | I am a graduating master's student at GT Interactive Computing and a research assistant at GT Design Intelligence Lab. I am advised by Ashok Goel and Richmond Wong, and was previously advised by Juho Kim during my undergraduate studies at KAIST School of Computing. My research interests are in responsible AI and human-AI interaction.">
@@ -132,12 +168,12 @@
 
             <!-- Publications and Projects Section -->
             <div id="publications-projects" style="scroll-margin-top: 48px;">
-                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-                    <h2 class="text-[#121417] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
-                      <a href="#" id="show-recent" class="text-[var(--primary-blue)] hover:underline">Best and Recent</a>
-                        <a href="#" id="show-publications" class="text-[var(--primary-blue)] hover:underline">All Publications</a>
-                        <!-- <a href="#" id="show-projects" class="text-[var(--primary-blue)] hover:underline">Projects</a> -->
-                        <a href="#" id="show-talks" class="text-[var(--primary-blue)] hover:underline">Talks</a>
+                <div class="layout-content-container flex flex-col max-w-[940px] flex-1">
+                    <h2 class="tabs">
+                      <a href="#" id="show-recent" class="active">Best and Recent</a>
+                      <a href="#" id="show-publications">All Publications</a>
+                      <!-- <a href="#" id="show-projects">Projects</a> -->
+                      <a href="#" id="show-talks">Talks</a>
                     </h2>
 
                     <!-- Recent Section -->
@@ -192,5 +228,21 @@
 
     <!-- Link to external JavaScript file -->
     <script src="https://jisulog.kim/scripts.js"></script>
+    <script>
+      // JavaScript for tab functionality
+      const tabs = document.querySelectorAll('.tabs a');
+
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', (e) => {
+          e.preventDefault();
+
+          // Remove active class from all tabs
+          tabs.forEach((t) => t.classList.remove('active'));
+
+          // Add active class to clicked tab
+          tab.classList.add('active');
+        });
+      });
+    </script>
     </body>
 </html>
