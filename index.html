@@ -61,17 +61,27 @@
         <!-- About Section -->
         <div id="about" class="px-4 sm:px-10 lg:px-40 flex flex-1 justify-center py-5 mt-[48px]" style="scroll-margin-top: 48px;">
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="flex p-4 @container flex-col md:flex-row items-center md:items-start gap-6">
+            <div class="flex p-4 @container flex-col md:flex-row items-center md:items-start gap-0">
+            <!-- Left Column: Profile Image + Contact Section -->
+            <div class="flex flex-col items-center">
               <!-- Profile Image -->
               <div
                 class="bg-center bg-no-repeat bg-cover"
-                style='background-image: url("img/profile.jpg"); width: 1500px; height: 400px;'
+                style='background-image: url("img/profile.jpg"); width: 350px; height: 350px;'
               ></div>
-            
-              <div class="flex flex-col items-center md:items-start">
-                <p class="text-[#121417] text-[22px] font-bold leading-tight tracking-[-0.015em] text-center md:text-left px-4">Jisu Kim</p>
-                <p class="text-[#677583] text-base font-normal leading-normal text-center md:text-left px-4">MS @ GT Interactive Computing</p>
 
+              <p class="text-[#121417] text-[22px] font-bold leading-tight tracking-[-0.015em] text-center md:text-left px-4">Jisu Kim</p>
+              <p class="text-[#677583] text-sm font-normal leading-normal text-center mt-0 pb-1">
+                MS @ GT Interactive Computing <br> Incoming PhD student
+              </p>
+              <!-- Contact Section -->
+              <p id="contact-section" class="text-[#677583] text-sm font-normal leading-normal text-center">
+                Contact me at: <a href="mailto:jisu@example.com" class="text-[var(--primary-blue)] hover:underline">jisu@example.com</a>
+              </p>
+            </div>
+            
+            <!-- Right Column: Profile Info -->  
+            <div class="flex flex-col items-center md:items-start">
             <p class="text-[#121417] text-base font-normal leading-normal pb-3 pt-1 px-4 text-justify">
                 Hi there! I’m a researcher at Georgia Institute of Technology. I am actively exploring full-time research or industry opportunities and will apply to PhD programs starting Fall 2026. 
                 <br><br>
