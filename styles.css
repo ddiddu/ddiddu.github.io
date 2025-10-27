@@ -13,7 +13,7 @@
 .tabs {
     display: flex;
     gap: 20px; /* Add spacing between tabs */
-    margin: 0 15px; /* Remove margin */
+    margin: 10px 0px 0px 15px; /* 순서대로 **위(top), 오른쪽(right), 아래(bottom), 왼쪽(left)** */
     padding: 0; /* Remove padding */
     border-bottom: none; /* Remove gray line */
 }
