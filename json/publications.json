@@ -1,29 +1,47 @@
 [
-    {
-      "title": "``If the AI Tool Were an A**hole'': Strategically Leveraging Critical Feedback and Prompting Reflection for Professional Creative Workflows",
-      "description": "Jisu Kim*, Debbie Hsu*, Vijay Farmah, Christopher J. MacLellan, Richmond Wong",
-      "conference": "Submitted to ACM Conference on Intelligent User Interfaces 2026",
-      "image": "https://jisulog.kim/img/contextq.png",
-      "links": [
-        { "label": "Code", "url": "https://github.com/ddiddu/ContextQ" }
-      ]
-    },
-    {
-      "title": "A Metacognitive Architecture for Self-Revision in AI Social Agents",
-      "description": "Jisu Kim, Mahimul Islam, Ashok Goel",
-      "conference": "AAAI 2026 Innovative Applications of AI"
-    },
-    {
-      "title": "One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations",
-      "description": "Yoonjoo Lee, Kihoon Son, Tae Soo Kim, Jisu Kim, John Joon Young Chung, Eytan Adar, Juho Kim",
-      "conference": "ACM FAccT 2024",
-      "links": [
-        { "label": "Paper", "url": "https://arxiv.org/pdf/2405.05581" }
-      ]
-    },
-    {
-      "title": "Sound Clouds-Exploring ambient intelligence in public spaces to elicit deep human experience of awe, wonder, and beauty",
-      "description": "Chengzhi Zhang, Dashiel Carrera*, Daksh Kapoor*, Jasmine Kaur*, Jisu Kim*, Brian Magerko",
-      "conference": "NeurIPS 2025 Creative AI Track"
-    }
-  ]
+  {
+    "title": "“If the AI Tool Were an A**hole”: Strategically Leveraging Critical Feedback and Prompting Reflection for Professional Creative Workflows",
+    "description": "Jisu Kim*, Debbie Hsu*, Vijay Farmah, Christopher J. MacLellan, Richmond Wong",
+    "conference": "Submitted to ACM Conference on Intelligent User Interfaces (IUI) 2026",
+    "image": "https://jisulog.kim/img/contextq.png",
+    "links": [
+      { "label": "Code", "url": "https://github.com/ddiddu/ContextQ" }
+    ]
+  },
+  {
+    "title": "A Metacognitive Architecture for Self-Revision in AI Social Agents",
+    "description": "Jisu Kim, Mahimul Islam, Ashok Goel",
+    "conference": "AAAI 2026 Innovative Applications of AI"
+  },
+  {
+    "title": "“Jaw Dropping” Sound Clouds: Exploring the Role of Awe in Ambient Computational Systems through Installation Art",
+    "description": "Dashiel Carrera, Jasmine Kaur, Daksh Kapoor, Chengzhi Zhang, Jisu Kim, Brian Magerko",
+    "conference": "Submitted to ACM Conference on Human Factors in Computing Systems (CHI) 2026",
+    "image": "https://jisulog.kim/img/soundclouds.jpg"
+  },
+  {
+    "title": "Sound Clouds: Exploring Ambient Intelligence in Public Spaces to Elicit Deep Human Experience of Awe, Wonder, and Beauty",
+    "description": "Chengzhi Zhang, Dashiel Carrera*, Daksh Kapoor*, Jasmine Kaur*, Jisu Kim*, Brian Magerko",
+    "conference": "NeurIPS 2025 Creative AI Track",
+    "image": "https://jisulog.kim/img/soundclouds.jpg"
+  },
+  {
+    "title": "Engaging Learnersourcing with an AI Social Agent in Online Learning",
+    "description": "Jisu Kim, Ashok Goel",
+    "conference": "ACM Learning at Scale (L@S) 2024 Workshop on Learnersourcing: Student-generated Content @ Scale",
+    "image": "https://jisulog.kim/img/sami-response.jpg",
+    "links": [
+      { "label": "PDF", "url": "https://drive.google.com/drive/u/0/folders/1-4a52V_Z0_0GU8DNVFoA_WOeiANCJd8t" }
+    ]
+  },
+  {
+    "title": "One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations",
+    "description": "Yoonjoo Lee, Kihoon Son, Tae Soo Kim, Jisu Kim, John Joon Young Chung, Eytan Adar, Juho Kim",
+    "conference": "ACM Conference on Fairness, Accountability, and Transparency (FAccT) 2024",
+    "links": [
+      { "label": "PDF", "url": "https://arxiv.org/pdf/2405.05581" },
+      { "label": "DOI", "url": "https://doi.org/10.1145/3630106.3662681" }
+    ],
+    "image": "https://jisulog.kim/img/facct.jpg"
+  }
+]
