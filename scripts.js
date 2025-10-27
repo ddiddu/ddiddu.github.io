@@ -71,46 +71,42 @@ async function fetchContent(section) {
 
         // Generate buttons for each link (if links exist)
         const buttons = item.links
-          ? item.links
-              .map(
-                (link) => `
-                  <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[var(--primary-blue)] text-white text-sm font-medium leading-normal w-fit hover:bg-white hover:text-[var(--primary-blue)] hover:outline hover:outline-[var(--primary-blue)] transition-all duration-200"
-                    onclick="window.location.href='${link.url}'"
-                  >
-                    <span class="truncate">${link.label}</span>
-                  </button>
-                `
-              )
-              .join('')
-          : '';
+        .map(
+          (link) => `
+            <button
+              class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200"
+              style="--hover-color: var(--primary-blue);"
+              onmouseover="this.style.backgroundColor=this.style.getPropertyValue('--hover-color'); this.style.color='white';"
+              onmouseout="this.style.backgroundColor=''; this.style.color='';"
+              onclick="window.location.href='${link.url}'"
+            >
+              <span class="truncate">${link.label}</span>
+            </button>
+          `
+        )
+        .join('');
 
-        // Conditionally render the image container
-        const imageContainer = item.image
-          ? `<div class="w-full md:min-w-[300px] md:w-[300px] aspect-video bg-center bg-no-repeat bg-cover rounded-xl order-1 md:order-2"
-                style="background-image: url('${item.image}');">
-              </div>`
-          : '';
+      const imageContainer = item.image
+        ? `<div class="w-full md:min-w-[300px] md:w-[300px] aspect-video bg-center bg-no-repeat bg-cover order-1 md:order-2"
+              style="background-image: url('${item.image}');">
+            </div>`
+        : '';
 
-        const contentItem = `
-          <div class="flex flex-col md:flex-row justify-between gap-4 rounded-xl mb-6">
-
-            <!-- Left (Text and Buttons on desktop) -->
-            <div class="flex flex-col gap-4 flex-[2_2_0px] order-2 md:order-1">
-              <div class="flex flex-col gap-1 max-w-[95%]">
-                <p class="text-[#121417] text-base font-bold leading-tight">${item.title}</p>
-                <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
-                <p class="text-[#677583] text-sm font-normal leading-normal">${item.conference || ''}</p>
-              </div>
-              <div class="flex gap-2">
-                ${buttons}
-              </div>
+      const contentItem = `
+        <div class="flex flex-col md:flex-row justify-between gap-4 mb-6">
+          <div class="flex flex-col gap-2 flex-[2_2_0px] order-2 md:order-1"> <!-- Reduced gap from 4 to 3 -->
+            <div class="flex flex-col gap-1 max-w-[95%]">
+              <p class="text-[#121417] text-base font-bold leading-tight">${item.title}</p>
+              <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
+              <p class="text-[#677583] text-sm font-normal leading-normal"><em>${item.conference || ''}</em></p>
             </div>
-
-            <!-- Right (Image on desktop) -->
-            ${imageContainer}
+            <div class="flex gap-2">
+              ${buttons}
+            </div>
           </div>
-        `;
+          ${imageContainer}
+        </div>
+      `;
 
         contentList.innerHTML += contentItem;
       });
