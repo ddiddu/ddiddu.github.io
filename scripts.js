@@ -118,6 +118,8 @@ async function fetchContent(section) {
 
 // Helper function to parse .bib content
 function parseBibtex(bibContent) {
+    console.log('BibtexParser:');
+    console.log(typeof BibtexParser); // Should log "function"
     const parser = new BibtexParser();
     return parser.toJSON(bibContent);
 }
