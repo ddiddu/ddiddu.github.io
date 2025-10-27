@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDMKL18ZZS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-FDMKL18ZZS');
+    </script>
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+    <title>Jisu Kim</title>
+    <link rel="icon" type="image/png" href="img/star.png" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bibtex-parse-js/dist/bibtexParse.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jisu Kim | MS @ GT Interactive Computing | I am a graduating master's student at GT Interactive Computing and a research assistant at GT Design Intelligence Lab. I am advised by Ashok Goel and Richmond Wong, and was previously advised by Juho Kim during my undergraduate studies at KAIST School of Computing. My research interests are in responsible AI and human-AI interaction.">
+  </head>
+
+  <body style="font-family: var(--primary-font);">
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        
+        <!-- Header -->
+        <header class="flex items-center justify-center whitespace-nowrap border-b border-solid border-b-[#f1f2f4] px-10 py-3 bg-white fixed top-0 left-0 w-full z-50">
+          <div class="flex items-center justify-between w-full max-w-[940px]">
+            <!-- Left: Jisu Kim -->
+            <h2 class="text-[#121417] text-lg font-bold leading-tight tracking-[-0.015em]">
+              <a href="index.html" class="hover:text-[var(--primary-blue)]">Jisu Kim</a>
+            </h2>
+            <!-- Right: Links -->
+            <div class="flex gap-8" style="margin-right: 30px;">
+              <a class="text-[#121417] text-sm font-medium leading-normal hover:text-[var(--primary-blue)]" href="publications.html">Publications</a>
+              <a class="text-[#121417] text-sm font-medium leading-normal hover:text-[var(--primary-blue)]" href="https://jisulog.kim/pdf/CV.pdf">CV</a>
+            </div>
+          </div>
+        </header>
+ 
+        <!-- Publications Section -->
+        <div id="about" class="px-4 sm:px-10 lg:px-40 flex flex-1 justify-center py-5 mt-[48px]" style="scroll-margin-top: 48px;">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div id="publications" style="scroll-margin-top: 48px;">
+              <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                  <h2 class="text-[#121417] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+                  Publications
+                  </h2>
+                  <div id="publications-list" class="p-4">
+                  <!-- Dynamic content will be rendered here -->
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="bg-[var(--primary-blue)] text-white text-center text-sm font-normal py-2 px-4">
+            Copyright © 2025 <a href="https://github.com/ddiddu/ddiddu.github.io" target="_blank" style="text-decoration: underline;">Jisu Kim</a>. The website was designed by <a href="https://github.com/ddiddu/ddiddu.github.io" target="_blank" style="text-decoration: underline;">Jisu Kim</a> and built with JavaScript.
+        </footer>
+      </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="https://jisulog.kim/scripts.js"></script>
+    </body>
+</html>
