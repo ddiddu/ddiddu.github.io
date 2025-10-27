@@ -60,6 +60,7 @@ async function fetchContent(section) {
 
         // Parse the .bib content (using a library or manual parsing)
         const entries = parseBibtex(bibContent);
+        console.log(parseBibtex(bibContent));
 
         // Filter entries based on the section (e.g., 'publications' or 'projects')
         const content = entries.filter((entry) => {
@@ -117,8 +118,8 @@ async function fetchContent(section) {
 
 // Helper function to parse .bib content
 function parseBibtex(bibContent) {
-    const bibtexParse = require('bibtex-parse-js'); // Use a library for parsing
-    return bibtexParse.toJSON(bibContent);
+    const parser = new BibtexParser();
+    return parser.toJSON(bibContent);
 }
 
 // Call the function to fetch and render news
