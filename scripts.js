@@ -135,8 +135,10 @@ fetchContent('talks');
 document.addEventListener("DOMContentLoaded", () => {
   const publicationsList = document.getElementById("publications-list");
   const projectsList = document.getElementById("projects-list");
+  const talkList = document.getElementById("talks-list");
   const showPublications = document.getElementById("show-publications");
   const showProjects = document.getElementById("show-projects");
+  const showTalks = document.getElementById("show-talks");
 
   // Show Publications and hide Projects
   showPublications.addEventListener("click", (e) => {
@@ -150,5 +152,20 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       projectsList.classList.remove("hidden");
       publicationsList.classList.add("hidden");
+  });
+
+  // Show Projects and hide Publications
+  showProjects.addEventListener("click", (e) => {
+    e.preventDefault();
+    projectsList.classList.remove("hidden");
+    publicationsList.classList.add("hidden");
+});
+
+  // Show Talks and hide Publications and Projects
+  showTalks.addEventListener("click", (e) => {
+      e.preventDefault();
+      talkList.classList.remove("hidden");
+      publicationsList.classList.add("hidden");
+      projectsList.classList.add("hidden");
   });
 });
