@@ -137,6 +137,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   tabButtons.forEach((button) => {
     button.addEventListener("click", () => {
+      console.log(`Tab clicked: ${button.getAttribute("data-tab")}`); // 디버깅용 로그
+
       // Remove active class from all buttons and contents
       tabButtons.forEach((btn) => btn.classList.remove("active"));
       tabContents.forEach((content) => content.classList.remove("active"));
@@ -144,6 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Add active class to the clicked button and corresponding content
       button.classList.add("active");
       const tabId = button.getAttribute("data-tab");
+      console.log(`Activating tab: ${tabId}`); // 디버깅용 로그
       document.getElementById(tabId).classList.add("active");
     });
   });
