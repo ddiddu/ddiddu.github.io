@@ -130,6 +130,7 @@ fetchContacts();
 // Call the function for both sections
 fetchContent('publications');
 fetchContent('projects');
+fetchContent('talks');
 
 document.addEventListener("DOMContentLoaded", () => {
   const publicationsList = document.getElementById("publications-list");

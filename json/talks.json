@@ -1,0 +1,28 @@
+[
+    {
+      "title": "Contextual Questioner: Generate Contextual Questions with AI in Google Slides",
+      "description": "Jisu Kim, Debbie Hsu",
+      "conference": "Georgia Tech Master's Project Final Presentation 2025",
+      "image": "https://jisulog.kim/img/contextq.jpg",
+      "links": [
+        { "label": "Video", "url": "https://www.youtube.com/watch?v=QkNbeazvdoE&t=1054s" }
+      ]
+    },
+    {
+      "title": "Must-Try Restaurants in Daejeon That Only Locals Know Abou",
+      "description": "Jisu Kim, Austin Givens",
+      "conference": "KAIST 2023",
+      "links": [
+        { "label": "Video", "url": "https://m.youtube.com/watch?fbclid=PAZnRzaANshl9leHRuA2FlbQIxMQABp52J1-Rnj9uh1674HE97GGJPjOZxWbQs-EIGKMIqyR2s3_HZluAYN5nLMewW_aem_DY1vkF1bVC8LgBEt9GOROA&v=btZOScj22jE&feature=youtu.be"}
+      ]
+    },
+    {
+        "title": "Offline vs Online Campus Life #1 Humans of CS",
+        "description": "Jisu Kim, Juwon Kim",
+        "conference": "KAIST School of Computing 2022",
+        "image": "https://jisulog.kim/img/forecst.png",
+        "links": [
+          { "label": "Video", "url": "https://youtu.be/hlFR7f_wOFE?si=sFVwBXWYbp6Bj_pl" }
+        ]
+    }
+  ]
