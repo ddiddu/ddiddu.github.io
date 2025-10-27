@@ -5,7 +5,6 @@
       "conference": "Submitted to ACM Conference on Intelligent User Interfaces 2026",
       "image": "https://jisulog.kim/img/contextq.png",
       "links": [
-        { "label": "Talk", "url": "https://www.youtube.com/watch?v=QkNbeazvdoE&t=1054s"},
         { "label": "Code", "url": "https://github.com/ddiddu/ContextQ" }
       ]
     },
