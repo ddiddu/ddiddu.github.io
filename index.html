@@ -120,20 +120,20 @@
             <div id="publications-projects" style="scroll-margin-top: 48px;">
                 <div class="layout-content-container flex flex-col max-w-[940px] flex-1">
                     <h2 class="tabs">
-                      <!-- Removed the 'Best and Recent' tab link -->
+                      <a href="#" id="show-recent" class="active">Best and Recent</a>
                       <a href="#" id="show-publications">All Publications</a>
                       <!-- <a href="#" id="show-projects">Projects</a> -->
                       <a href="#" id="show-talks">Talks</a>
                     </h2>
 
                     <!-- Recent Section -->
-                    <!-- <div id="recent-list" class="p-4">
+                    <div id="recent-list" class="p-4">
                       <h3 class="text-lg font-bold">Best and Recent</h3>
                       <p>Dynamic content for publications will be rendered here.</p>
-                    </div> -->
+                    </div>
 
                     <!-- Publications Section -->
-                    <div id="publications-list" class="p-4">
+                    <div id="publications-list" class="p-4 hidden">
                         <h3 class="text-lg font-bold">All Publications</h3>
                         <p>Dynamic content for publications will be rendered here.</p>
                     </div>
@@ -180,7 +180,7 @@
     <script src="https://jisulog.kim/scripts.js"></script>
     <script>
       // JavaScript for tab functionality
-      const tabs = document.querySelectorAll('.tabs a:not(#show-recent)');
+      const tabs = document.querySelectorAll('.tabs a');
 
       tabs.forEach((tab) => {
         tab.addEventListener('click', (e) => {
@@ -191,23 +191,8 @@
 
           // Add active class to clicked tab
           tab.classList.add('active');
-
-          // Hide all sections
-          document.querySelectorAll('#recent-list, #publications-list, #talks-list').forEach((section) => {
-            section.classList.add('hidden');
-          });
-
-          // Show the corresponding section
-          const targetId = tab.id === 'show-recent' ? 'recent-list' : 
-                           tab.id === 'show-publications' ? 'publications-list' : 
-                           'talks-list';
-          document.getElementById(targetId).classList.remove('hidden');
         });
       });
-
-      // Set initial state
-      document.getElementById('show-recent').classList.add('active');
-      document.getElementById('recent-list').classList.remove('hidden');
     </script>
     </body>
 </html>
