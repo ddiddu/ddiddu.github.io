@@ -9,10 +9,13 @@
       ]
     },
     {
-      "title": "A Metacognitive Architecture for Diagnosing and Correcting LLM Errors in AI Agents",
+      "title": "A Metacognitive Architecture for Correcting LLM Errors in AI Agents",
       "description": "Jisu Kim, Mahimul Islam, Ashok Goel",
       "conference": "AAAI 2026 Innovative Applications of AI",
-      "image": "https://jisulog.kim/img/Picture1.png"
+      "image": "https://jisulog.kim/img/Picture1.png",
+      "links": [
+        { "label": "PDF", "url": "https://jisulog.kim/pdf/IAAI_2026_Nov_19.pdf" }
+      ]
     },
     {
       "title": "Sound Clouds: Exploring Ambient Intelligence in Public Spaces to Elicit Deep Human Experience of Awe, Wonder, and Beauty",
