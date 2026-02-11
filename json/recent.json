@@ -1,8 +1,8 @@
 [
     {
-      "title": "“If the AI Tool Were an A**hole”: Strategically Leveraging Critical Feedback and Prompting Reflection for Professional Creative Workflows",
+      "title": "“If the AI Tool Were an A**hole”: Strategically Leveraging Critical Feedback and Reflection in Slide Deck Refinement",
       "description": "Jisu Kim*, Debbie Hsu*, Vijay Farmah, Christopher J. MacLellan, Richmond Wong",
-      "conference": "Submitted to ACM IUI 2026",
+      "conference": "Submitted to ACM DIS 2026",
       "image": "https://jisulog.kim/img/contextq.png",
       "links": [
         { "label": "Code", "url": "https://github.com/ddiddu/ContextQ" }
