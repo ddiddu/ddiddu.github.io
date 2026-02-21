@@ -5,7 +5,8 @@
       "conference": "A participatory music exhibition that generates real-time soundscapes through user interactions with inflatables. Developed an object detection model by fine-tuning YOLO, achieving 98.3% accuracy, in collaboration with music technologists and visual artists.",
       "image": "https://jisulog.kim/img/soundclouds.jpg",
       "links": [
-        { "label": "Website", "url": "https://www.thegoatfarm.info/events/sound-clouds" }
+        { "label": "Paper", "url": "https://arxiv.org/pdf/2510.15865"},
+        { "label": "Video", "url": "https://www.youtube.com/watch?v=uatWN6m2P5M" }
       ]
     },
     {
