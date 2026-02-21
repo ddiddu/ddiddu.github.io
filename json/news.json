@@ -8,6 +8,10 @@
     "description": "Starting as an AI Engineer at <a href='https://flextecs.com/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>Flextecs</a> in <strong>Atlanta, GA</strong>."
   },
   {
+    "date": "Oct 2025",
+    "description": "Serving as a Student Volunteer at <a href='http://cogsys.org/conference/2025/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>Advances in Cognitive Systems</a> in <strong>Atlanta, GA</strong>."
+  },
+  {
     "date": "Jan 2025",
     "description": "Starting as a Graduate Research Assistant at <a href='https://dilab.gatech.edu/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>Georgia Tech Design Intelligence Lab</a> with a full tuition scholarship in <strong>Atlanta, GA</strong>."
   },
