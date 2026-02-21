@@ -1,15 +1,11 @@
 [
   {
-    "date": "Jul 2025",
-    "description": "Received a full-time job offer as a Research Scientist at <a href='https://dilab.gatech.edu/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>GT DILab</a> in <strong>Atlanta, GA</strong>."
+  "date": "Apr 2026",
+  "description": "Presenting a full paper and a workshop paper at <a href='https://aaai.org/aaai-26/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>AAAI 2026</a> in <strong>Singapore</strong>."
   },
   {
-    "date": "Jul 2025",
-    "description": "Visiting Columbia University and Microsoft Research in <strong>New York, NY</strong>."
-  },
-  {
-    "date": "Jun 2025",
-    "description": "<a href='https://chrismaclellan.com/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>Christopher J. MacLellan</a> joins as a co-advisor on my ongoing master’s research project, which is aimed at CHI 2026."
+    "date": "Feb 2026",
+    "description": "Beginning as an AI Engineer at <a href='https://flextecs.com/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>Flextecs</a>."
   },
   {        
     "date": "Apr 2025",
@@ -23,10 +19,6 @@
     "date": "Aug 2024",
     "description": "Beginning a Data Science Internship at <a href='https://www.tesla.com/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>Tesla</a> in <strong>Fremont, CA</strong>."
   },    
-  {
-    "date": "Nov 2024",
-    "description": "Received a full-time job offer as a Multimodal AI Researcher at <a href='https://www.lgcns.com/en/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>LG CNS</a> in <strong>Seoul, Korea</strong>."
-  },
   {
     "date": "Jul 2024",
     "description": "Presenting a workshop paper at <a href='https://learningatscale.acm.org/las2024/' target='_blank' class='text-[var(--primary-blue)] hover:underline'>ACM L@S 2024</a> in <strong>Atlanta, GA</strong>."
