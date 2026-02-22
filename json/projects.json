@@ -6,7 +6,7 @@
       "image": "https://jisulog.kim/img/topDown.png",
       "links": [
         { "label": "Paper", "url": "https://arxiv.org/pdf/2510.15865"},
-        { "label": "Video", "url": "https://www.youtube.com/watch?v=uatWN6m2P5M" }
+        { "label": "Demo", "url": "https://www.youtube.com/watch?v=uatWN6m2P5M" }
       ]
     },
     {
@@ -15,14 +15,15 @@
       "conference": "A full-stack website built with React.js and Firebase during COVID-19 to host virtual hackathons for novice programmers.",
       "image": "https://jisulog.kim/img/forecst.png",
       "links": [
-        { "label": "Demo", "url": "https://www.youtube.com/watch?v=l5le0iE8PNc&t=24s&ab_channel=JeanneChoi" },
-        { "label": "Code", "url": "https://github.com/youngjae99/FORECST"}
+        { "label": "Code", "url": "https://github.com/youngjae99/FORECST"},
+        { "label": "Demo", "url": "https://www.youtube.com/watch?v=l5le0iE8PNc&t=24s&ab_channel=JeanneChoi" }
       ]
     },
     {
-      "title": "PINTOS: Operating Systems and Lab",
+      "title": "PINTOS, Operating Systems and Lab",
       "description": "Lead Developer, KAIST Operating Systems and Lab (A-)",
       "conference": "Implemented kernel threads, user program execution, file system, and virtual memory in a full operating system framework for the 80x86 architecture using C. Ran and tested the OS on the QEMU simulator.",
+      "image": "https://jisulog.kim/img/9_01_VirtualMemoryLarger.jpg",
       "links": [
         { "label": "Code", "url": "https://github.com/ddiddu/juntos"}
       ]
