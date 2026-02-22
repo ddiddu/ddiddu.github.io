@@ -72,18 +72,21 @@ async function fetchContent(section) {
         // Generate buttons for each link (if links exist)
         const buttons = item.links
           ? item.links
-              .map((link, linkIdx, arr) => {
-                // Blue style for 'All Publications' or last link
-                const isAllPublications = link.label === 'All Publications' || linkIdx === arr.length - 1;
-                const btnClass = isAllPublications
-                  ? 'inline-flex items-center rounded-full bg-[var(--primary-blue)] text-white border border-[var(--primary-blue)] text-sm font-semibold px-4 py-2 shadow hover:bg-white hover:text-[var(--primary-blue)] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 whitespace-nowrap'
-                  : 'flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200';
-                return `
-                  <a href="${link.url}" class="${btnClass}" style="min-width:unset; max-width:220px;">
-                    <span class="truncate">${link.label}</span>
-                    ${isAllPublications ? '<i class=\"fa fa-arrow-right ml-2 text-sm\"></i>' : ''}
-                  </a>
-                `;
+              .map((link) => {
+                if (link.label === 'All Publications') {
+                  return `
+                    <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[var(--primary-blue)] text-[var(--primary-blue)] text-xs font-normal leading-normal w-fit transition-all duration-200 hover:bg-[var(--primary-blue)] hover:text-white" style="min-width:unset; max-width:220px;">
+                      <span class="truncate">${link.label}</span>
+                      <i class="fa fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                  `;
+                } else {
+                  return `
+                    <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200" style="min-width:unset; max-width:220px;">
+                      <span class="truncate">${link.label}</span>
+                    </a>
+                  `;
+                }
               })
               .join('')
           : '';
