@@ -3,6 +3,7 @@
     "title": "“If the AI Tool Were an A**hole”: Strategically Leveraging Critical Feedback and Reflection in Slide Deck Refinement",
     "description": "Jisu Kim*, Debbie Hsu*, Vijay Farmah, Christopher J. MacLellan, Richmond Wong",
     "conference": "Submitted to ACM DIS 2026",
+    "image": "https://jisulog.kim/img/contextq.png",
     "links": [
       { "label": "Code", "url": "https://github.com/ddiddu/ContextQ" }
     ]
@@ -11,6 +12,7 @@
     "title": "A Metacognitive Architecture for Correcting LLM Errors in AI Agents",
     "description": "Jisu Kim, Mahimul Islam, Ashok Goel",
     "conference": "AAAI 2026 Innovative Applications of AI",
+    "image": "https://jisulog.kim/img/Picture1.png",
     "links": [
       { "label": "PDF", "url": "https://proceedings.aaai.org/storage/aaai-production-files-processed/db9a0a59-201e-4460-9b64-3389238e9f1e.out.pdf" }
     ]
@@ -19,6 +21,7 @@
     "title": "A Metacognitive Architecture for ToM Revision in AI Agents",
     "description": "Jisu Kim, Mahimul Islam, Ashok Goel",
     "conference": "AAAI 2026 Theory of Mind for AI Workshop",
+    "image": "https://jisulog.kim/img/Picture1.png",
     "links": [
       { "label": "PDF", "url": "https://jisulog.kim/pdf/55_A_Metacognitive_Architectur.pdf" }
     ]
@@ -27,6 +30,7 @@
     "title": "Sound Clouds: Exploring Ambient Intelligence in Public Spaces to Elicit Deep Human Experience of Awe, Wonder, and Beauty",
     "description": "Chengzhi Zhang, Dashiel Carrera*, Daksh Kapoor*, Jasmine Kaur*, Jisu Kim*, Brian Magerko",
     "conference": "NeurIPS 2025 Creative AI Track",
+    "image": "https://jisulog.kim/img/topDown.png",
     "links": [
       { "label": "PDF", "url": "https://arxiv.org/pdf/2510.15865"},
       { "label": "Video", "url": "https://www.youtube.com/watch?v=uatWN6m2P5M" }
@@ -36,6 +40,7 @@
     "title": "Engaging Learnersourcing with an AI Social Agent in Online Learning",
     "description": "Jisu Kim, Ashok Goel",
     "conference": "ACM L@S 2024 Workshop on Learnersourcing: Student-generated Content @ Scale",
+    "image": "https://jisulog.kim/img/sami-response.png",
     "links": [
       { "label": "PDF", "url": "https://drive.google.com/file/d/1KJ-FinxA9A83b8qvTFStIRLaETCgHt6J/view" }
     ]
@@ -46,6 +51,7 @@
     "conference": "ACM FAccT 2024",
     "links": [
       { "label": "PDF", "url": "https://arxiv.org/pdf/2405.05581" }
-    ]
+    ],
+    "image": "https://jisulog.kim/img/one-vs-many.png"
   }
 ]

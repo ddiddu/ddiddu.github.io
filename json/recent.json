@@ -22,5 +22,10 @@
       "links": [
         { "label": "PDF", "url": "https://arxiv.org/pdf/2405.05581" }
       ]
+    },
+      {
+      "links": [
+        { "label": "All Publications", "url": "https://arxiv.org/pdf/2405.05581" }
+      ]
     }
   ]
