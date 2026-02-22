@@ -60,7 +60,7 @@ async function fetchContent(section) {
       const contentList = document.getElementById(`${section}-list`);
       contentList.innerHTML = ''; // Clear existing content
 
-      content.forEach((item) => {
+      content.forEach((item, idx) => {
         // Replace "Jisu Kim" with an underlined version (if applicable)
         const updatedDescription = item.description
           ? item.description.replace(
@@ -72,19 +72,19 @@ async function fetchContent(section) {
         // Generate buttons for each link (if links exist)
         const buttons = item.links
           ? item.links
-              .map(
-                (link) => `
-                  <button
-                    class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200"
-                    style="--hover-color: var(--primary-blue);"
-                    onmouseover="this.style.backgroundColor=this.style.getPropertyValue('--hover-color'); this.style.color='white';"
-                    onmouseout="this.style.backgroundColor=''; this.style.color='';"
-                    onclick="window.location.href='${link.url}'"
-                  >
+              .map((link, linkIdx, arr) => {
+                // Blue style for 'All Publications' or last link
+                const isAllPublications = link.label === 'All Publications' || linkIdx === arr.length - 1;
+                const btnClass = isAllPublications
+                  ? 'inline-flex items-center rounded-full bg-[var(--primary-blue)] text-white border border-[var(--primary-blue)] text-sm font-semibold px-4 py-2 shadow hover:bg-white hover:text-[var(--primary-blue)] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 whitespace-nowrap'
+                  : 'flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200';
+                return `
+                  <a href="${link.url}" class="${btnClass}" style="min-width:unset; max-width:220px;">
                     <span class="truncate">${link.label}</span>
-                  </button>
-                `
-              )
+                    ${isAllPublications ? '<i class=\"fa fa-arrow-right ml-2 text-sm\"></i>' : ''}
+                  </a>
+                `;
+              })
               .join('')
           : '';
 
@@ -95,13 +95,16 @@ async function fetchContent(section) {
               </div>`
           : '';
 
+        // Only render the title if it exists
+        const titleHtml = item.title ? `<p class="text-[#121417] text-base font-bold leading-tight">${item.title}</p>` : '';
+
         const contentItem = `
           <div class="flex flex-col md:flex-row justify-between gap-4 rounded-xl mb-6">
 
             <!-- Left (Text and Buttons on desktop) -->
             <div class="flex flex-col gap-4 flex-[2_2_0px] order-2 md:order-1">
               <div class="flex flex-col gap-1 max-w-[95%]">
-                <p class="text-[#121417] text-base font-bold leading-tight">${item.title}</p>
+                ${titleHtml}
                 <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
                 <p class="text-[#677583] text-sm font-normal leading-normal"><em>${item.conference || ''}</em></p>
               </div>
