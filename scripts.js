@@ -72,17 +72,19 @@ async function fetchContent(section) {
         // Generate buttons for each link (if links exist)
         const buttons = item.links
           ? item.links
-              .map((link) => {
+              .map((link, linkIdx, arr) => {
                 if (link.label === 'All Publications') {
+                  // Remove top margin if this is the only button and no title
+                  const noTitleAndOnlyButton = (!item.title && arr.length === 1);
                   return `
-                    <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[var(--primary-blue)] bg-[var(--primary-blue)] text-white text-xs font-normal leading-normal w-fit transition-all duration-200 hover:bg-white hover:text-[var(--primary-blue)]" style="min-width:unset; max-width:220px;">
+                    <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[var(--primary-blue)] bg-[var(--primary-blue)] text-white text-xs font-normal leading-normal w-fit transition-all duration-200 hover:bg-white hover:text-[var(--primary-blue)]${noTitleAndOnlyButton ? ' mt-0' : ' mt-2'}" style="min-width:unset; max-width:220px;">
                       <span class="truncate">${link.label}</span>
                       <i class="fa fa-arrow-right ml-2 text-sm"></i>
                     </a>
                   `;
                 } else {
                   return `
-                    <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white" style="min-width:unset; max-width:220px;">
+                    <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white mt-2" style="min-width:unset; max-width:220px;">
                       <span class="truncate">${link.label}</span>
                     </a>
                   `;
