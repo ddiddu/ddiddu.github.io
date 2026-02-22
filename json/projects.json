@@ -5,7 +5,7 @@
       "conference": "A participatory music exhibition that generates real-time soundscapes through user interactions with inflatables. Developed an object detection model by fine-tuning YOLO, achieving 98.3% accuracy, in collaboration with music technologists and visual artists.",
       "image": "https://jisulog.kim/img/topDown.png",
       "links": [
-        { "label": "Paper", "url": "https://arxiv.org/pdf/2510.15865"},
+        { "label": "NeurIPS 2025 Creative AI Track", "url": "https://arxiv.org/pdf/2510.15865"},
         { "label": "Demo", "url": "https://www.youtube.com/watch?v=uatWN6m2P5M" }
       ]
     },
