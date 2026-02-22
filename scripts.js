@@ -103,11 +103,15 @@ async function fetchContent(section) {
         // Only render the title if it exists
         const titleHtml = item.title ? `<p class="text-[#121417] text-base font-bold leading-tight">${item.title}</p>` : '';
 
+        // Remove gap-4 if only All Publications button and no title
+        const onlyAllPub = (!item.title && item.links && item.links.length === 1 && item.links[0].label === 'All Publications');
+        const outerDivClass = onlyAllPub ? 'flex flex-col md:flex-row justify-between rounded-xl mb-6' : 'flex flex-col md:flex-row justify-between gap-4 rounded-xl mb-6';
+        const leftDivClass = onlyAllPub ? 'flex flex-col flex-[2_2_0px] order-2 md:order-1' : 'flex flex-col gap-4 flex-[2_2_0px] order-2 md:order-1';
         const contentItem = `
-          <div class="flex flex-col md:flex-row justify-between gap-4 rounded-xl mb-6">
+          <div class="${outerDivClass}">
 
             <!-- Left (Text and Buttons on desktop) -->
-            <div class="flex flex-col gap-4 flex-[2_2_0px] order-2 md:order-1">
+            <div class="${leftDivClass}">
               <div class="flex flex-col gap-1 max-w-[95%]">
                 ${titleHtml}
                 <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
