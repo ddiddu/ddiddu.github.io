@@ -82,9 +82,12 @@ async function fetchContent(section) {
           return b.localeCompare(a);
         });
 
-        sortedYears.forEach(year => {
-          // Year subtitle (더 강조)
-          contentList.innerHTML += `<h3 class=\"text-2xl font-extrabold text-[var(--primary-blue)] mt-10 mb-6 border-b border-gray-200 pb-1\">${year}</h3>`;
+        sortedYears.forEach((year, i) => {
+          // Year subtitle: 회색(#677583), 구분선X, 첫 연도 위 여백 줄임
+          const yearClass = i === 0
+            ? 'text-xl font-bold text-[#677583] mt-4 mb-4'
+            : 'text-xl font-bold text-[#677583] mt-8 mb-4';
+          contentList.innerHTML += `<h3 class=\"${yearClass}\">${year}</h3>`;
           pubsByYear[year].forEach((item, idx) => {
             const updatedDescription = item.description
               ? item.description.replace(
