@@ -85,7 +85,7 @@ async function fetchContent(section) {
         sortedYears.forEach((year, i) => {
           // Year subtitle: 회색(#677583), 구분선X, 첫 연도 위 여백 줄임
           const yearClass = i === 0
-            ? 'text-xl font-bold text-[#677583] mt-4 mb-4'
+            ? 'text-xl font-bold text-[#677583] mt-1 mb-4'
             : 'text-xl font-bold text-[#677583] mt-8 mb-4';
           contentList.innerHTML += `<h3 class=\"${yearClass}\">${year}</h3>`;
           pubsByYear[year].forEach((item, idx) => {
