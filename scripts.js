@@ -61,25 +61,30 @@ async function fetchContent(section) {
       contentList.innerHTML = '';
 
       if (section === 'publications') {
-        // Extract year from conference string, group by year
+        // Extract year from conference/title/description, group by year
         const pubsByYear = {};
         content.forEach(item => {
           let year = '';
-          if (item.conference) {
-            const match = item.conference.match(/(20\d{2})/);
-            if (match) year = match[1];
-          }
+          // Try conference, title, description for year
+          const yearMatch = (item.conference && item.conference.match(/(20\d{2})/))
+            || (item.title && item.title.match(/(20\d{2})/))
+            || (item.description && item.description.match(/(20\d{2})/));
+          if (yearMatch) year = yearMatch[1];
           if (!year) year = 'Other';
           if (!pubsByYear[year]) pubsByYear[year] = [];
           pubsByYear[year].push(item);
         });
 
-        // Sort years descending
-        const sortedYears = Object.keys(pubsByYear).sort((a, b) => b.localeCompare(a));
+        // Sort years descending, 'Other' always last
+        const sortedYears = Object.keys(pubsByYear).sort((a, b) => {
+          if (a === 'Other') return 1;
+          if (b === 'Other') return -1;
+          return b.localeCompare(a);
+        });
 
         sortedYears.forEach(year => {
-          // Year subtitle
-          contentList.innerHTML += `<h3 class="text-lg font-bold mt-8 mb-4">${year}</h3>`;
+          // Year subtitle (더 강조)
+          contentList.innerHTML += `<h3 class=\"text-2xl font-extrabold text-[var(--primary-blue)] mt-10 mb-6 border-b border-gray-200 pb-1\">${year}</h3>`;
           pubsByYear[year].forEach((item, idx) => {
             const updatedDescription = item.description
               ? item.description.replace(
