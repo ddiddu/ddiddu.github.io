@@ -58,72 +58,132 @@ async function fetchContent(section) {
       const content = await response.json();
 
       const contentList = document.getElementById(`${section}-list`);
-      contentList.innerHTML = ''; // Clear existing content
+      contentList.innerHTML = '';
 
-      content.forEach((item, idx) => {
-        // Replace "Jisu Kim" with an underlined version (if applicable)
-        const updatedDescription = item.description
-          ? item.description.replace(
-              /Jisu Kim/g,
-              '<span style="text-decoration: underline;">Jisu Kim</span>'
-            )
-          : '';
+      if (section === 'publications') {
+        // Extract year from conference string, group by year
+        const pubsByYear = {};
+        content.forEach(item => {
+          let year = '';
+          if (item.conference) {
+            const match = item.conference.match(/(20\d{2})/);
+            if (match) year = match[1];
+          }
+          if (!year) year = 'Other';
+          if (!pubsByYear[year]) pubsByYear[year] = [];
+          pubsByYear[year].push(item);
+        });
 
-        // Generate buttons for each link (if links exist)
-        const buttons = item.links
-          ? item.links
-              .map((link, linkIdx, arr) => {
-                if (link.label === 'All Publications') {
-                  // Remove top margin if this is the only button and no title
-                  const noTitleAndOnlyButton = (!item.title && arr.length === 1);
-                  return `
-                    <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[var(--primary-blue)] bg-[var(--primary-blue)] text-white text-xs font-normal leading-normal w-fit transition-all duration-200 hover:bg-white hover:text-[var(--primary-blue)]${noTitleAndOnlyButton ? ' mt-0' : ' mt-2'}" style="min-width:unset; max-width:220px;">
-                      <span class="truncate">${link.label}</span>
-                    </a>
-                  `;
-                } else {
-                  return `
-                    <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white mt-2" style="min-width:unset; max-width:220px;">
-                      <span class="truncate">${link.label}</span>
-                    </a>
-                  `;
-                }
-              })
-              .join('')
-          : '';
+        // Sort years descending
+        const sortedYears = Object.keys(pubsByYear).sort((a, b) => b.localeCompare(a));
 
-        // Conditionally render the image container
-        const imageContainer = item.image
-          ? `<div class="w-full md:min-w-[300px] md:w-[300px] aspect-video bg-center bg-no-repeat bg-cover order-1 md:order-2"
-                style="background-image: url('${item.image}');">
-              </div>`
-          : '';
-
-        // Only render the title if it exists
-        const titleHtml = item.title ? `<p class="text-[#121417] text-base font-bold leading-tight">${item.title}</p>` : '';
-
-        const contentItem = `
-          <div class="flex flex-col md:flex-row justify-between gap-4 rounded-xl mb-6">
-
-            <!-- Left (Text and Buttons on desktop) -->
-            <div class="flex flex-col flex-[2_2_0px] order-2 md:order-1">
-              <div class="flex flex-col gap-1 max-w-[95%]">
-                ${titleHtml}
-                <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
-                <p class="text-[#677583] text-sm font-normal leading-normal"><em>${item.conference || ''}</em></p>
+        sortedYears.forEach(year => {
+          // Year subtitle
+          contentList.innerHTML += `<h3 class="text-lg font-bold mt-8 mb-4">${year}</h3>`;
+          pubsByYear[year].forEach((item, idx) => {
+            const updatedDescription = item.description
+              ? item.description.replace(
+                  /Jisu Kim/g,
+                  '<span style="text-decoration: underline;">Jisu Kim</span>'
+                )
+              : '';
+            const buttons = item.links
+              ? item.links
+                  .map((link, linkIdx, arr) => {
+                    if (link.label === 'All Publications') {
+                      const noTitleAndOnlyButton = (!item.title && arr.length === 1);
+                      return `
+                        <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[var(--primary-blue)] bg-[var(--primary-blue)] text-white text-xs font-normal leading-normal w-fit transition-all duration-200 hover:bg-white hover:text-[var(--primary-blue)]${noTitleAndOnlyButton ? ' mt-0' : ' mt-2'}" style="min-width:unset; max-width:220px;">
+                          <span class="truncate">${link.label}</span>
+                        </a>
+                      `;
+                    } else {
+                      return `
+                        <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white mt-2" style="min-width:unset; max-width:220px;">
+                          <span class="truncate">${link.label}</span>
+                        </a>
+                      `;
+                    }
+                  })
+                  .join('')
+              : '';
+            const imageContainer = item.image
+              ? `<div class="w-full md:min-w-[300px] md:w-[300px] aspect-video bg-center bg-no-repeat bg-cover order-1 md:order-2"
+                    style="background-image: url('${item.image}');">
+                  </div>`
+              : '';
+            const titleHtml = item.title ? `<p class="text-[#121417] text-base font-bold leading-tight">${item.title}</p>` : '';
+            const contentItem = `
+              <div class="flex flex-col md:flex-row justify-between gap-4 rounded-xl mb-6">
+                <div class="flex flex-col flex-[2_2_0px] order-2 md:order-1">
+                  <div class="flex flex-col gap-1 max-w-[95%]">
+                    ${titleHtml}
+                    <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
+                    <p class="text-[#677583] text-sm font-normal leading-normal"><em>${item.conference || ''}</em></p>
+                  </div>
+                  <div class="flex gap-2">
+                    ${buttons}
+                  </div>
+                </div>
+                ${imageContainer}
               </div>
-              <div class="flex gap-2">
-                ${buttons}
+            `;
+            contentList.innerHTML += contentItem;
+          });
+        });
+      } else {
+        // ...existing code...
+        content.forEach((item, idx) => {
+          const updatedDescription = item.description
+            ? item.description.replace(
+                /Jisu Kim/g,
+                '<span style="text-decoration: underline;">Jisu Kim</span>'
+              )
+            : '';
+          const buttons = item.links
+            ? item.links
+                .map((link, linkIdx, arr) => {
+                  if (link.label === 'All Publications') {
+                    const noTitleAndOnlyButton = (!item.title && arr.length === 1);
+                    return `
+                      <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[var(--primary-blue)] bg-[var(--primary-blue)] text-white text-xs font-normal leading-normal w-fit transition-all duration-200 hover:bg-white hover:text-[var(--primary-blue)]${noTitleAndOnlyButton ? ' mt-0' : ' mt-2'}" style="min-width:unset; max-width:220px;">
+                        <span class="truncate">${link.label}</span>
+                      </a>
+                    `;
+                  } else {
+                    return `
+                      <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white mt-2" style="min-width:unset; max-width:220px;">
+                        <span class="truncate">${link.label}</span>
+                      </a>
+                    `;
+                  }
+                })
+                .join('')
+            : '';
+          const imageContainer = item.image
+            ? `<div class="w-full md:min-w-[300px] md:w-[300px] aspect-video bg-center bg-no-repeat bg-cover order-1 md:order-2"
+                  style="background-image: url('${item.image}');">
+                </div>`
+            : '';
+          const titleHtml = item.title ? `<p class="text-[#121417] text-base font-bold leading-tight">${item.title}</p>` : '';
+          const contentItem = `
+            <div class="flex flex-col md:flex-row justify-between gap-4 rounded-xl mb-6">
+              <div class="flex flex-col flex-[2_2_0px] order-2 md:order-1">
+                <div class="flex flex-col gap-1 max-w-[95%]">
+                  ${titleHtml}
+                  <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
+                  <p class="text-[#677583] text-sm font-normal leading-normal"><em>${item.conference || ''}</em></p>
+                </div>
+                <div class="flex gap-2">
+                  ${buttons}
+                </div>
               </div>
+              ${imageContainer}
             </div>
-
-            <!-- Right (Image on desktop) -->
-            ${imageContainer}
-          </div>
-        `;
-
-        contentList.innerHTML += contentItem;
-      });
+          `;
+          contentList.innerHTML += contentItem;
+        });
+      }
     } catch (error) {
       console.error(`Error fetching ${section}:`, error);
     }
