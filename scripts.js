@@ -54,10 +54,12 @@ async function fetchContacts() {
 
 async function fetchContent(section) {
     try {
-      const response = await fetch(`https://jisulog.kim/json/${section}.json`); // Dynamically fetch JSON based on section
+  const sourceSection = section === 'recent' ? 'publications' : section;
+  const response = await fetch(`https://jisulog.kim/json/${sourceSection}.json`); // Dynamically fetch JSON based on section
       const content = await response.json();
 
       const contentList = document.getElementById(`${section}-list`);
+  if (!contentList) return;
       contentList.innerHTML = '';
 
       if (section === 'publications') {
@@ -263,7 +265,26 @@ async function fetchContent(section) {
         renderProjectItems(defaultSelected.length > 0 ? defaultSelected : content);
       } else {
         // ...existing code...
-        content.forEach((item, idx) => {
+        let itemsToRender = content;
+
+        if (section === 'recent') {
+          const recentActionsContainer = document.getElementById('recent-actions');
+
+          if (recentActionsContainer) {
+            recentActionsContainer.innerHTML = '';
+
+            recentActionsContainer.innerHTML = `
+              <a href="https://jisulog.kim/publications.html" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white mt-0" style="min-width:unset; max-width:220px;">
+                <span class="truncate">All Publications</span>
+              </a>
+            `;
+          }
+
+          const selectedItems = content.filter((item) => item.selected === true);
+          itemsToRender = selectedItems.length > 0 ? selectedItems : content;
+        }
+
+        itemsToRender.forEach((item, idx) => {
           const updatedDescription = item.description
             ? item.description.replace(
                 /Jisu Kim/g,
