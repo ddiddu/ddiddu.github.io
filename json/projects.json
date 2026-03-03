@@ -36,17 +36,6 @@
     ]
   },
   {
-    "title": "VAL: Interactive Task Planning Interface",
-    "description": "GT Teachable AI Lab",
-    "conference": "Developed React-based interactive GUI with real-time WebSocket communication for HTN planning agent.",
-    "tags": ["#human-in-the-loop", "#system-building", "#React"],
-    "categories": ["System Building", "Qualitative"],
-    "image": "https://jisulog.kim/img/pre.png",
-    "links": [
-      { "label": "Code", "url": "https://github.com/jieyuzhou42/VAL_GUI" }
-    ]
-  },
-  {
     "title": "AI-Augmented Financial Auditing",
     "description": "FlexTecs",
     "conference": "Developed and deployed AI systems augmenting auditor workflows. Integrated domain expert feedback through weekly collaborative sessions.",
@@ -95,6 +84,17 @@
     "links": [
       { "label": "NeurIPS 2025 Creative AI", "url": "https://arxiv.org/pdf/2510.15865" },
       { "label": "Demo", "url": "https://www.youtube.com/watch?v=uatWN6m2P5M" }
+    ]
+  },
+  {
+    "title": "VAL: Interactive Task Planning Interface",
+    "description": "GT Teachable AI Lab",
+    "conference": "Developed React-based interactive GUI with real-time WebSocket communication for HTN planning agent.",
+    "tags": ["#human-in-the-loop", "#system-building", "#React"],
+    "categories": ["System Building", "Qualitative"],
+    "image": "https://jisulog.kim/img/pre.png",
+    "links": [
+      { "label": "Code", "url": "https://github.com/jieyuzhou42/VAL_GUI" }
     ]
   },
   {
