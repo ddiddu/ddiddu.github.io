@@ -94,7 +94,6 @@
   },
   {
     "title": "VAL: Interactive Task Planning Interface",
-    "selected": true,
     "description": "GT Teachable AI Lab",
     "conference": "Developed React-based interactive GUI with real-time WebSocket communication for HTN planning agent.",
     "tags": ["#human-in-the-loop", "#system-building", "#React"],
