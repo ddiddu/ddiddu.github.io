@@ -97,21 +97,12 @@ async function fetchContent(section) {
               : '';
             const buttons = item.links
               ? item.links
-                  .map((link, linkIdx, arr) => {
-                    if (link.label === 'All Publications') {
-                      const noTitleAndOnlyButton = (!item.title && arr.length === 1);
-                      return `
-                        <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[var(--primary-blue)] bg-[var(--primary-blue)] text-white text-xs font-normal leading-normal w-fit transition-all duration-200 hover:bg-white hover:text-[var(--primary-blue)]${noTitleAndOnlyButton ? ' mt-0' : ' mt-2'}" style="min-width:unset; max-width:220px;">
-                          <span class="truncate">${link.label}</span>
-                        </a>
-                      `;
-                    } else {
-                      return `
-                        <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white mt-2" style="min-width:unset; max-width:220px;">
-                          <span class="truncate">${link.label}</span>
-                        </a>
-                      `;
-                    }
+                  .map((link) => {
+                    return `
+                      <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white mt-2" style="min-width:unset; max-width:220px;">
+                        <span class="truncate">${link.label}</span>
+                      </a>
+                    `;
                   })
                   .join('')
               : '';
@@ -154,21 +145,12 @@ async function fetchContent(section) {
               : '';
             const buttons = item.links
               ? item.links
-                  .map((link, linkIdx, arr) => {
-                    if (link.label === 'All Publications') {
-                      const noTitleAndOnlyButton = (!item.title && arr.length === 1);
-                      return `
-                        <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[var(--primary-blue)] bg-[var(--primary-blue)] text-white text-xs font-normal leading-normal w-fit transition-all duration-200 hover:bg-white hover:text-[var(--primary-blue)]${noTitleAndOnlyButton ? ' mt-0' : ' mt-2'}" style="min-width:unset; max-width:220px;">
-                          <span class="truncate">${link.label}</span>
-                        </a>
-                      `;
-                    } else {
-                      return `
-                        <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white mt-2" style="min-width:unset; max-width:220px;">
-                          <span class="truncate">${link.label}</span>
-                        </a>
-                      `;
-                    }
+                  .map((link) => {
+                    return `
+                      <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white mt-2" style="min-width:unset; max-width:220px;">
+                        <span class="truncate">${link.label}</span>
+                      </a>
+                    `;
                   })
                   .join('')
               : '';
@@ -288,21 +270,12 @@ async function fetchContent(section) {
             : '';
           const buttons = item.links
             ? item.links
-                .map((link, linkIdx, arr) => {
-                  if (link.label === 'All Publications') {
-                    const noTitleAndOnlyButton = (!item.title && arr.length === 1);
-                    return `
-                      <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[var(--primary-blue)] bg-[var(--primary-blue)] text-white text-xs font-normal leading-normal w-fit transition-all duration-200 hover:bg-white hover:text-[var(--primary-blue)]${noTitleAndOnlyButton ? ' mt-0' : ' mt-2'}" style="min-width:unset; max-width:220px;">
-                        <span class="truncate">${link.label}</span>
-                      </a>
-                    `;
-                  } else {
-                    return `
-                      <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white mt-2" style="min-width:unset; max-width:220px;">
-                        <span class="truncate">${link.label}</span>
-                      </a>
-                    `;
-                  }
+                .map((link) => {
+                  return `
+                    <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white mt-2" style="min-width:unset; max-width:220px;">
+                      <span class="truncate">${link.label}</span>
+                    </a>
+                  `;
                 })
                 .join('')
             : '';
