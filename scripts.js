@@ -98,8 +98,9 @@ async function fetchContent(section) {
             const buttons = item.links
               ? item.links
                   .map((link) => {
+                    const buttonTopMarginClass = link.label === 'All Publications' ? 'mt-0' : 'mt-2';
                     return `
-                      <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white mt-2" style="min-width:unset; max-width:220px;">
+                      <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white ${buttonTopMarginClass}" style="min-width:unset; max-width:220px;">
                         <span class="truncate">${link.label}</span>
                       </a>
                     `;
@@ -146,8 +147,9 @@ async function fetchContent(section) {
             const buttons = item.links
               ? item.links
                   .map((link) => {
+                    const buttonTopMarginClass = link.label === 'All Publications' ? 'mt-0' : 'mt-2';
                     return `
-                      <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white mt-2" style="min-width:unset; max-width:220px;">
+                      <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white ${buttonTopMarginClass}" style="min-width:unset; max-width:220px;">
                         <span class="truncate">${link.label}</span>
                       </a>
                     `;
@@ -271,8 +273,9 @@ async function fetchContent(section) {
           const buttons = item.links
             ? item.links
                 .map((link) => {
+                  const buttonTopMarginClass = link.label === 'All Publications' ? 'mt-0' : 'mt-2';
                   return `
-                    <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white mt-2" style="min-width:unset; max-width:220px;">
+                    <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white ${buttonTopMarginClass}" style="min-width:unset; max-width:220px;">
                       <span class="truncate">${link.label}</span>
                     </a>
                   `;
