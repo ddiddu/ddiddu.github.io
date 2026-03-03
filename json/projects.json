@@ -4,6 +4,7 @@
     "description": "GT Master's Project",
     "conference": "Led system design, implementation (Google Slides add-on), formative study (N=11), and technology probe study (N=13) with product managers using real-world slide decks.",
     "tags": ["#human-AI-interaction", "#technology-probe", "#system-building"],
+    "categories": ["System Building", "Qualitative"],
     "image": "https://jisulog.kim/img/contextq.png",
     "links": [
       { "label": "DIS 2026 (under review)", "url": "" },
@@ -15,6 +16,7 @@
     "description": "GT Design Intelligence Lab",
     "conference": "Led architecture design, implementation, and deployment in a live course (500+ users). Evaluated with structured user feedback.",
     "tags": ["#trustworthy-AI", "#LLM", "#real-world-deployment"],
+    "categories": ["System Building", "ML/AI"],
     "image": "https://jisulog.kim/img/Picture1.png",
     "links": [
       { "label": "AAAI 2026 IAAI", "url": "https://proceedings.aaai.org/storage/aaai-production-files-processed/db9a0a59-201e-4460-9b64-3389238e9f1e.out.pdf" },
@@ -27,6 +29,7 @@
     "description": "KAIST Interaction Lab",
     "conference": "Designed controlled experiment (N=252), led statistical analysis in Python and R, built full-stack experimental infrastructure.",
     "tags": ["#trust-calibration", "#overreliance", "#controlled-experiment", "#system-building"],
+    "categories": ["System Building", "Quantitative"],
     "image": "https://jisulog.kim/img/condition_wise.png",
     "links": [
       { "label": "FAccT 2024", "url": "https://arxiv.org/pdf/2405.05581" }
@@ -37,6 +40,7 @@
     "description": "GT Teachable AI Lab",
     "conference": "Developed React-based interactive GUI with real-time WebSocket communication for HTN planning agent.",
     "tags": ["#human-in-the-loop", "#system-building", "#React"],
+    "categories": ["System Building", "Qualitative"],
     "image": "https://jisulog.kim/img/pre.png",
     "links": [
       { "label": "Code", "url": "https://github.com/jieyuzhou42/VAL_GUI" }
@@ -47,6 +51,7 @@
     "description": "FlexTecs",
     "conference": "Developed and deployed AI systems augmenting auditor workflows. Integrated domain expert feedback through weekly collaborative sessions.",
     "tags": ["#AI-augmented-work", "#expert-AI-collaboration", "#ML"],
+    "categories": ["System Building", "ML/AI"],
     "links": []
   },
   {
@@ -54,6 +59,7 @@
     "description": "Tesla",
     "conference": "Built churn prediction model (XGBoost) with SHAP explanations on multi-terabyte datasets. Built lifecycle tracking pipeline reducing data inconsistencies by 93.9%.",
     "tags": ["#explainable-AI", "#SHAP", "#large-scale-data"],
+    "categories": ["ML/AI", "Quantitative"],
     "links": []
   },
   {
@@ -61,6 +67,7 @@
     "description": "Samsung SDS",
     "conference": "Developed and deployed real-time segmentation model (PyTorch), achieving 1.5× speed and 34% accuracy improvement.",
     "tags": ["#deep-learning", "#model-optimization", "#deployment"],
+    "categories": ["ML/AI"],
     "image": "https://jisulog.kim/img/sds.png",
     "links": [
       { "label": "PDF (Korean)", "url": "https://jisulog.kim/pdf/인턴십 결과보고서.pdf" },
@@ -72,6 +79,7 @@
     "description": "Samsung Research",
     "conference": "Analyzed KPI correlations on LTE eNB datasets using PCA to assess input-output predictability.",
     "tags": ["#data-analysis", "#PCA"],
+    "categories": ["Quantitative"],
     "image": "https://jisulog.kim/img/samsungresearch.png",
     "links": [
       { "label": "PDF (Korean)", "url": "https://jisulog.kim/pdf/1. 인턴십 결과보고서.pdf" }
@@ -82,6 +90,7 @@
     "description": "GT Special Problems",
     "conference": "Fine-tuned YOLO12n (98.3% accuracy), conducted data analysis and visualization (N=35).",
     "tags": ["#creative-computing", "#object-detection", "#data-analysis"],
+    "categories": ["ML/AI", "Quantitative"],
     "image": "https://jisulog.kim/img/topDown.png",
     "links": [
       { "label": "NeurIPS 2025 Creative AI", "url": "https://arxiv.org/pdf/2510.15865" },
@@ -93,6 +102,7 @@
     "description": "KAIST Social Computing",
     "conference": "Led development of full-stack website (React.js, Firebase) in a team of 4.",
     "tags": ["#full-stack", "#React", "#course-project"],
+    "categories": ["System Building"],
     "image": "https://jisulog.kim/img/forecst.png",
     "links": [
       { "label": "Code", "url": "https://github.com/youngjae99/FORECST" },
@@ -104,6 +114,7 @@
     "description": "KAIST OS Lab",
     "conference": "Implemented kernel threads, user programs, file system, and virtual memory in C on QEMU.",
     "tags": ["#operating-systems", "#C", "#course-project"],
+    "categories": ["System Building"],
     "links": [
       { "label": "Code", "url": "https://github.com/ddiddu/juntos" }
     ]
@@ -113,6 +124,7 @@
     "description": "KAIST Immersion Camp",
     "conference": "Built Android app in Java in a team of 3 for visualizing clothing sizes.",
     "tags": ["#Android", "#Java", "#course-project"],
+    "categories": ["System Building"],
     "image": "https://jisulog.kim/img/myfit.png",
     "links": [
       { "label": "Code", "url": "https://github.com/myfitocr/myfit" }
