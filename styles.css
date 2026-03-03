@@ -3,6 +3,11 @@
     --primary-font: "Roboto", sans-serif;
 }
 
+html {
+    scrollbar-gutter: stable;
+    overflow-y: scroll;
+}
+
 /* 선택된 텍스트 스타일 */
 ::selection {
     background-color: var(--primary-blue); 

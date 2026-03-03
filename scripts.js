@@ -122,14 +122,14 @@ async function fetchContent(section) {
               : '';
             const titleHtml = item.title ? `<p class="text-[#121417] text-base font-bold leading-tight">${item.title}</p>` : '';
             const contentItem = `
-              <div class="flex flex-col md:flex-row justify-between gap-4 rounded-xl mb-6">
-                <div class="flex flex-col flex-[2_2_0px] order-2 md:order-1">
+              <div class="flex w-full overflow-hidden flex-col md:flex-row justify-between gap-4 rounded-xl mb-6">
+                <div class="flex min-w-0 flex-col flex-[2_2_0px] order-2 md:order-1">
                   <div class="flex flex-col gap-1 max-w-[95%]">
                     ${titleHtml}
                     <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
                     <p class="text-[#677583] text-sm font-normal leading-normal"><em>${item.conference || ''}</em></p>
                   </div>
-                  <div class="flex gap-2">
+                  <div class="flex flex-wrap gap-2">
                     ${buttons}
                   </div>
                 </div>
@@ -313,14 +313,14 @@ async function fetchContent(section) {
             : '';
           const titleHtml = item.title ? `<p class="text-[#121417] text-base font-bold leading-tight">${item.title}</p>` : '';
           const contentItem = `
-            <div class="flex flex-col md:flex-row justify-between gap-4 rounded-xl mb-6">
-              <div class="flex flex-col flex-[2_2_0px] order-2 md:order-1">
+            <div class="flex w-full overflow-hidden flex-col md:flex-row justify-between gap-4 rounded-xl mb-6">
+              <div class="flex min-w-0 flex-col flex-[2_2_0px] order-2 md:order-1">
                 <div class="flex flex-col gap-1 max-w-[95%]">
                   ${titleHtml}
                   <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
                   <p class="text-[#677583] text-sm font-normal leading-normal"><em>${item.conference || ''}</em></p>
                 </div>
-                <div class="flex gap-2">
+                <div class="flex flex-wrap gap-2">
                   ${buttons}
                 </div>
               </div>
