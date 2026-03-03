@@ -13,7 +13,7 @@
     ]
   },
   {
-    "title": "Metacognitive Self-Revision for AI Agents",
+    "title": "Metacognitive Self-Revision for Trustworthy AI Agents",
     "selected": true,
     "description": "GT Design Intelligence Lab",
     "conference": "Led architecture design, implementation, and deployment in a live course (500+ users). Evaluated with structured user feedback.",
@@ -27,7 +27,7 @@
     ]
   },
   {
-    "title": "Trust Calibration Under LLM Inconsistency",
+    "title": "Human Trust Calibration Under LLM Inconsistency",
     "selected": true,
     "description": "KAIST Interaction Lab",
     "conference": "Designed controlled experiment (N=252), led statistical analysis in Python and R, built full-stack experimental infrastructure.",
