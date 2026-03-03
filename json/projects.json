@@ -118,16 +118,6 @@
     ]
   },
   {
-    "title": "PINTOS: Operating System Implementation",
-    "description": "KAIST OS Lab",
-    "conference": "Implemented kernel threads, user programs, file system, and virtual memory in C on QEMU.",
-    "tags": ["#operating-systems", "#C", "#course-project"],
-    "categories": ["System Building"],
-    "links": [
-      { "label": "Code", "url": "https://github.com/ddiddu/juntos" }
-    ]
-  },
-  {
     "title": "MYFIT: Clothing Size Recommendation App",
     "description": "KAIST Immersion Camp",
     "conference": "Built Android app in Java in a team of 3 for visualizing clothing sizes.",
@@ -137,5 +127,15 @@
     "links": [
       { "label": "Code", "url": "https://github.com/myfitocr/myfit" }
     ]
-  }
+  },
+  {
+    "title": "PINTOS: Operating System Implementation",
+    "description": "KAIST OS Lab",
+    "conference": "Implemented kernel threads, user programs, file system, and virtual memory in C on QEMU.",
+    "tags": ["#operating-systems", "#C", "#course-project"],
+    "categories": ["System Building"],
+    "links": [
+      { "label": "Code", "url": "https://github.com/ddiddu/juntos" }
+    ]
+  },
 ]
