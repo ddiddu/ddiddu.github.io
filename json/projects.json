@@ -3,6 +3,7 @@
     "title": "SierraSlides: AI Feedback for Professional Slide Revision",
     "description": "GT Master's Project",
     "conference": "Designed and implemented a Google Slides add-on that generates context-specific AI feedback varying in tone (critical to positive) and assistance level (direct suggestions vs. reflective questions). Conducted a formative study (N=11) and a technology probe study (N=13) with product managers using their real-world slide decks to examine how AI feedback shapes reflection and preserves agency in professional workflows.",
+    "image": "https://jisulog.kim/img/contextq.png",
     "links": [
       { "label": "Code", "url": "https://github.com/ddiddu/ContextQ" }
     ]
@@ -11,6 +12,7 @@
     "title": "Metacognitive Self-Revision for AI Agents",
     "description": "GT Design Intelligence Lab",
     "conference": "Implemented a two-level metacognitive self-revision architecture integrating symbolic knowledge and LLM reasoning to localize, revise, and explain errors in LLM-based AI agents. Deployed the architecture in a live course with 500+ users and evaluated whether transparent self-revision maintains user trust.",
+    "image": "https://jisulog.kim/img/Picture1.png",
     "links": [
       { "label": "AAAI 2026 IAAI", "url": "https://proceedings.aaai.org/storage/aaai-production-files-processed/db9a0a59-201e-4460-9b64-3389238e9f1e.out.pdf" },
       { "label": "AAAI 2026 Workshop", "url": "https://jisulog.kim/pdf/55_A_Metacognitive_Architectur.pdf"},
@@ -21,6 +23,7 @@
     "title": "Stupid Tutor: Trust Calibration Under LLM Inconsistency",
     "description": "KAIST Interaction Lab",
     "conference": "Designed and conducted a controlled online experiment (N=252) to examine how LLM inconsistency affects perceived AI capacity and user comprehension. Led statistical analysis in Python and R (regression modeling, hypothesis testing), finding that inconsistency can serve as a mechanism for calibrating trust and reducing overreliance.<br>• Built full-stack experimental infrastructure (Flask, SQLite, JavaScript, HTML) supporting random assignment, response logging, and data collection.",
+    "image": "https://jisulog.kim/img/condition_wise.png",
     "links": [
       { "label": "FAccT 2024", "url": "https://arxiv.org/pdf/2405.05581" }
     ]
@@ -29,6 +32,7 @@
     "title": "VAL: Interactive Task Planning Interface",
     "description": "GT Teachable AI Lab",
     "conference": "Developed a React-based interactive GUI for VAL, an HTN (Hierarchical Task Network) planning agent, enabling users to review, edit, and approve AI-generated task decompositions in real time via WebSocket communication.",
+    "image": "https://jisulog.kim/img/pre.png",
     "links": [
       { "label": "Code", "url": "https://github.com/jieyuzhou42/VAL_GUI" }
     ]
