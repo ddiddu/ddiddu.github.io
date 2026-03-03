@@ -226,10 +226,6 @@ async function fetchContent(section) {
               }
             },
             {
-              label: 'All',
-              getItems: () => content
-            },
-            {
               label: 'System Building',
               getItems: () => content.filter((item) => (item.categories || []).includes('System Building'))
             },
@@ -244,6 +240,10 @@ async function fetchContent(section) {
             {
               label: 'Qualitative',
               getItems: () => content.filter((item) => (item.categories || []).includes('Qualitative'))
+            },
+            {
+              label: 'All',
+              getItems: () => content
             }
           ];
 
