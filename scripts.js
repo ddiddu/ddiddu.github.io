@@ -139,6 +139,108 @@ async function fetchContent(section) {
             contentList.innerHTML += contentItem;
           });
         });
+      } else if (section === 'projects') {
+        const categoriesContainer = document.getElementById('projects-categories');
+
+        const renderProjectItems = (items) => {
+          contentList.innerHTML = '';
+
+          items.forEach((item) => {
+            const updatedDescription = item.description
+              ? item.description.replace(
+                  /Jisu Kim/g,
+                  '<span style="text-decoration: underline;">Jisu Kim</span>'
+                )
+              : '';
+            const buttons = item.links
+              ? item.links
+                  .map((link, linkIdx, arr) => {
+                    if (link.label === 'All Publications') {
+                      const noTitleAndOnlyButton = (!item.title && arr.length === 1);
+                      return `
+                        <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[var(--primary-blue)] bg-[var(--primary-blue)] text-white text-xs font-normal leading-normal w-fit transition-all duration-200 hover:bg-white hover:text-[var(--primary-blue)]${noTitleAndOnlyButton ? ' mt-0' : ' mt-2'}" style="min-width:unset; max-width:220px;">
+                          <span class="truncate">${link.label}</span>
+                        </a>
+                      `;
+                    } else {
+                      return `
+                        <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white mt-2" style="min-width:unset; max-width:220px;">
+                          <span class="truncate">${link.label}</span>
+                        </a>
+                      `;
+                    }
+                  })
+                  .join('')
+              : '';
+            const imageContainer = item.image
+              ? `<div class="w-full md:min-w-[300px] md:w-[300px] aspect-video bg-center bg-no-repeat bg-cover order-1 md:order-2"
+                    style="background-image: url('${item.image}');">
+                </div>`
+              : '';
+            const titleHtml = item.title ? `<p class="text-[#121417] text-base font-bold leading-tight">${item.title}</p>` : '';
+            const contentItem = `
+              <div class="flex flex-col md:flex-row justify-between gap-4 rounded-xl mb-6">
+                <div class="flex flex-col flex-[2_2_0px] order-2 md:order-1">
+                  <div class="flex flex-col gap-1 max-w-[95%]">
+                    ${titleHtml}
+                    <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
+                    <p class="text-[#677583] text-sm font-normal leading-normal"><em>${item.conference || ''}</em></p>
+                  </div>
+                  <div class="flex gap-2">
+                    ${buttons}
+                  </div>
+                </div>
+                ${imageContainer}
+              </div>
+            `;
+            contentList.innerHTML += contentItem;
+          });
+        };
+
+        const categories = Array.from(
+          new Set(content.flatMap((item) => item.categories || []))
+        ).sort((a, b) => a.localeCompare(b));
+
+        if (categoriesContainer) {
+          categoriesContainer.innerHTML = '';
+
+          const buildButton = (label, isActive = false) => {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.textContent = label;
+            button.className = isActive
+              ? 'px-3 py-1 rounded-full border text-sm border-[var(--primary-blue)] text-[var(--primary-blue)] bg-white'
+              : 'px-3 py-1 rounded-full border text-sm border-[#d9dde3] text-[#677583] bg-white hover:text-[var(--primary-blue)] hover:border-[var(--primary-blue)]';
+            return button;
+          };
+
+          const buttons = [buildButton('All', true), ...categories.map((category) => buildButton(category))];
+          buttons.forEach((button) => categoriesContainer.appendChild(button));
+
+          const setActive = (activeButton) => {
+            buttons.forEach((button) => {
+              if (button === activeButton) {
+                button.className = 'px-3 py-1 rounded-full border text-sm border-[var(--primary-blue)] text-[var(--primary-blue)] bg-white';
+              } else {
+                button.className = 'px-3 py-1 rounded-full border text-sm border-[#d9dde3] text-[#677583] bg-white hover:text-[var(--primary-blue)] hover:border-[var(--primary-blue)]';
+              }
+            });
+          };
+
+          buttons.forEach((button) => {
+            button.addEventListener('click', () => {
+              const category = button.textContent;
+              const filteredContent = category === 'All'
+                ? content
+                : content.filter((item) => (item.categories || []).includes(category));
+
+              setActive(button);
+              renderProjectItems(filteredContent);
+            });
+          });
+        }
+
+        renderProjectItems(content);
       } else {
         // ...existing code...
         content.forEach((item, idx) => {
