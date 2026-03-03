@@ -204,13 +204,16 @@ async function fetchContent(section) {
         if (categoriesContainer) {
           categoriesContainer.innerHTML = '';
 
+          const activeFilterClass = 'flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[var(--primary-blue)] bg-[var(--primary-blue)] text-white text-xs font-normal leading-normal w-fit transition-all duration-200 hover:bg-white hover:text-[var(--primary-blue)] mt-0';
+          const inactiveFilterClass = 'flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white mt-0';
+
           const buildButton = (label, isActive = false) => {
             const button = document.createElement('button');
             button.type = 'button';
             button.textContent = label;
-            button.className = isActive
-              ? 'flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 py-1 border border-[var(--primary-blue)] bg-[var(--primary-blue)] text-white text-xs font-normal leading-normal w-fit transition-all duration-200 hover:bg-white hover:text-[var(--primary-blue)]'
-              : 'flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 py-1 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white';
+            button.className = isActive ? activeFilterClass : inactiveFilterClass;
+            button.style.minWidth = 'unset';
+            button.style.maxWidth = '220px';
             return button;
           };
 
@@ -227,19 +230,19 @@ async function fetchContent(section) {
               getItems: () => content
             },
             {
-              label: 'System',
+              label: 'System Building',
               getItems: () => content.filter((item) => (item.categories || []).includes('System Building'))
             },
             {
-              label: 'ML',
+              label: 'ML/AI',
               getItems: () => content.filter((item) => (item.categories || []).includes('ML/AI'))
             },
             {
-              label: 'Quant',
+              label: 'Quantitative',
               getItems: () => content.filter((item) => (item.categories || []).includes('Quantitative'))
             },
             {
-              label: 'Qual',
+              label: 'Qualitative',
               getItems: () => content.filter((item) => (item.categories || []).includes('Qualitative'))
             }
           ];
@@ -254,9 +257,9 @@ async function fetchContent(section) {
           const setActive = (activeButton) => {
             buttons.forEach((button) => {
               if (button === activeButton) {
-                button.className = 'flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 py-1 border border-[var(--primary-blue)] bg-[var(--primary-blue)] text-white text-xs font-normal leading-normal w-fit transition-all duration-200 hover:bg-white hover:text-[var(--primary-blue)]';
+                button.className = activeFilterClass;
               } else {
-                button.className = 'flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 py-1 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white';
+                button.className = inactiveFilterClass;
               }
             });
           };

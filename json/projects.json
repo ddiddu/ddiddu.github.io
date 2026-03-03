@@ -51,6 +51,7 @@
     "title": "Explainable Churn Prediction for Service Teams",
     "selected": true,
     "description": "Tesla",
+    "image": "https://jisulog.kim/img/content.png",
     "conference": "Built churn prediction model (XGBoost) with SHAP explanations on multi-terabyte datasets. Built lifecycle tracking pipeline reducing data inconsistencies by 93.9%.",
     "tags": ["#explainable-AI", "#SHAP", "#large-scale-data"],
     "categories": ["ML/AI", "Quantitative"],
