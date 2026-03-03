@@ -1,40 +1,103 @@
 [
-    {
-      "title": "SoundClouds, Participatory Music Generation Exhibition",
-      "description": "Lead Developer, GT Special Problems (A)",
-      "conference": "A participatory music exhibition that generates real-time soundscapes through user interactions with inflatables. Developed an object detection model by fine-tuning YOLO, achieving 98.3% accuracy, in collaboration with music technologists and visual artists.",
-      "image": "https://jisulog.kim/img/topDown.png",
-      "links": [
-        { "label": "NeurIPS 2025 Creative AI Track", "url": "https://arxiv.org/pdf/2510.15865"},
-        { "label": "Demo", "url": "https://www.youtube.com/watch?v=uatWN6m2P5M" }
-      ]
-    },
-    {
-      "title": "FORECST, Online Hackathon Website",
-      "description": "Lead Developer, KAIST Introduction to Social Computing (A0)",
-      "conference": "A full-stack website built with React.js and Firebase during COVID-19 to host virtual hackathons for novice programmers.",
-      "image": "https://jisulog.kim/img/forecst.png",
-      "links": [
-        { "label": "Code", "url": "https://github.com/youngjae99/FORECST"},
-        { "label": "Demo", "url": "https://www.youtube.com/watch?v=l5le0iE8PNc&t=24s&ab_channel=JeanneChoi" }
-      ]
-    },
-    {
-      "title": "PINTOS, Operating Systems and Lab",
-      "description": "Lead Developer, KAIST Operating Systems and Lab (A-)",
-      "conference": "Implemented kernel threads, user program execution, file system, and virtual memory in a full operating system framework for the 80x86 architecture using C. Ran and tested the OS on the QEMU simulator.",
-      "image": "https://jisulog.kim/img/9_01_VirtualMemoryLarger.jpg",
-      "links": [
-        { "label": "Code", "url": "https://github.com/ddiddu/juntos"}
-      ]
-    },
-    {
-      "title": "MYFIT, Clothing Size Recommendation Android Application",
-      "description": "Lead Developer, KAIST Immersion Camp: Intenisve Programming and Startup (S)",
-      "conference": "An Android application developed in Java to enhance the online clothing shopping experience by providing visualizations of clothing sizes. It is currently in the process of preparing for a startup launch.",
-      "image": "https://jisulog.kim/img/myfit.png",
-      "links": [
-        { "label": "Code", "url": "https://github.com/myfitocr/myfit"}
-      ]
-    }
-  ]
+  {
+    "title": "SierraSlides: AI Feedback for Professional Slide Revision",
+    "description": "GT Master's Project",
+    "conference": "Designed and implemented a Google Slides add-on that generates context-specific AI feedback varying in tone (critical to positive) and assistance level (direct suggestions vs. reflective questions). Conducted a formative study (N=11) and a technology probe study (N=13) with product managers using their real-world slide decks to examine how AI feedback shapes reflection and preserves agency in professional workflows.",
+    "links": [
+      { "label": "Code", "url": "https://github.com/ddiddu/ContextQ" }
+    ]
+  },
+  {
+    "title": "Metacognitive Self-Revision for AI Agents",
+    "description": "GT Design Intelligence Lab",
+    "conference": "Implemented a two-level metacognitive self-revision architecture integrating symbolic knowledge and LLM reasoning to localize, revise, and explain errors in LLM-based AI agents. Deployed the architecture in a live course with 500+ users and evaluated whether transparent self-revision maintains user trust.",
+    "links": [
+      { "label": "AAAI 2026 IAAI", "url": "https://proceedings.aaai.org/storage/aaai-production-files-processed/db9a0a59-201e-4460-9b64-3389238e9f1e.out.pdf" },
+      { "label": "AAAI 2026 Workshop", "url": "https://jisulog.kim/pdf/55_A_Metacognitive_Architectur.pdf"},
+      { "label": "ACM L@S 2024 Workshop", "url": "https://drive.google.com/file/d/1KJ-FinxA9A83b8qvTFStIRLaETCgHt6J/view"}
+    ]
+  },
+  {
+    "title": "Stupid Tutor: Trust Calibration Under LLM Inconsistency",
+    "description": "KAIST Interaction Lab",
+    "conference": "Designed and conducted a controlled online experiment (N=252) to examine how LLM inconsistency affects perceived AI capacity and user comprehension. Led statistical analysis in Python and R (regression modeling, hypothesis testing), finding that inconsistency can serve as a mechanism for calibrating trust and reducing overreliance.<br>• Built full-stack experimental infrastructure (Flask, SQLite, JavaScript, HTML) supporting random assignment, response logging, and data collection.",
+    "links": [
+      { "label": "FAccT 2024", "url": "https://arxiv.org/pdf/2405.05581" }
+    ]
+  },
+  {
+    "title": "VAL: Interactive Task Planning Interface",
+    "description": "GT Teachable AI Lab",
+    "conference": "Developed a React-based interactive GUI for VAL, an HTN (Hierarchical Task Network) planning agent, enabling users to review, edit, and approve AI-generated task decompositions in real time via WebSocket communication.",
+    "links": [
+      { "label": "Code", "url": "https://github.com/jieyuzhou42/VAL_GUI" }
+    ]
+  },
+  {
+    "title": "AI-Augmented Financial Auditing",
+    "description": "FlexTecs",
+    "conference": "Developed and deployed AI systems to augment financial auditors' workflows, enabling them to surface more claims and prioritize high-risk cases without replacing auditor judgment. Integrated domain expert feedback through weekly sessions to translate domain expertise into model features and decision criteria.",
+    "links": []
+  },
+  {
+    "title": "Explainable Churn Prediction for Service Teams",
+    "description": "Tesla",
+    "conference": "Built a customer churn prediction model (XGBoost) on multi-terabyte datasets with SHAP-based explanations, enabling service team members to interpret model outputs and take targeted retention actions. Developed a SQL-based customer lifecycle tracking pipeline with dashboards, reducing upstream data inconsistencies by 93.9%.",
+    "links": []
+  },
+  {
+    "title": "Real-Time Background Segmentation",
+    "description": "Samsung SDS",
+    "conference": "Developed and deployed a real-time background segmentation model (PyTorch) for video conferencing, achieving 1.5× speed, 34% higher accuracy, and 14% fewer parameters than the baseline.",
+    "links": [
+      { "label": "PDF (Korean)", "url": "https://jisulog.kim/pdf/인턴십 결과보고서.pdf" },
+      { "label": "Slides (Korean)", "url": "https://jisulog.kim/pdf/[첨부1] 최종 발표 자료.pdf" },
+      { "label": "Blog (Korean)", "url": "https://medium.com/@ddiddu" }
+    ]
+  },
+  {
+    "title": "LTE Network KPI Analysis",
+    "description": "Samsung Research",
+    "conference": "Analyzed KPI correlations on LTE eNB datasets to assess predictability between input and output performance indicators.",
+    "links": [
+      { "label": "PDF (Korean)", "url": "https://jisulog.kim/pdf/1. 인턴십 결과보고서.pdf" }
+    ]
+  },
+  {
+    "title": "Sound Clouds: Participatory Music Generation",
+    "description": "GT Special Problems",
+    "conference": "Developed an object detection model by fine-tuning YOLO12n, achieving 98.3% accuracy in tracking inflatable movements. Conducted data analysis and visualization (N=35) using Python and Pandas.",
+    "image": "https://jisulog.kim/img/topDown.png",
+    "links": [
+      { "label": "NeurIPS 2025 Creative AI", "url": "https://arxiv.org/pdf/2510.15865" },
+      { "label": "Demo", "url": "https://www.youtube.com/watch?v=uatWN6m2P5M" }
+    ]
+  },
+  {
+    "title": "FORECST: Online Hackathon Platform",
+    "description": "KAIST Introduction to Social Computing",
+    "conference": "Built a full-stack hackathon website with React.js and Firebase in a team of 4, enabling virtual hackathons for novice programmers during COVID-19.",
+    "image": "https://jisulog.kim/img/forecst.png",
+    "links": [
+      { "label": "Code", "url": "https://github.com/youngjae99/FORECST" },
+      { "label": "Demo", "url": "https://www.youtube.com/watch?v=l5le0iE8PNc&t=24s" }
+    ]
+  },
+  {
+    "title": "PINTOS: Operating System Implementation",
+    "description": "KAIST Operating Systems and Lab",
+    "conference": "Implemented kernel threads, user program execution, file system, and virtual memory for the 80x86 architecture in C, tested on the QEMU simulator.",
+    "links": [
+      { "label": "Code", "url": "https://github.com/ddiddu/juntos" }
+    ]
+  },
+  {
+    "title": "MYFIT: Clothing Size Recommendation App",
+    "description": "KAIST Immersion Camp",
+    "conference": "Built an Android application in Java in a team of 3 to enhance online clothing shopping by visualizing clothing sizes on user body measurements.",
+    "image": "https://jisulog.kim/img/myfit.png",
+    "links": [
+      { "label": "Code", "url": "https://github.com/myfitocr/myfit" }
+    ]
+  }
+]
