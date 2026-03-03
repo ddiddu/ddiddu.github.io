@@ -58,6 +58,30 @@
     "links": []
   },
   {
+    "title": "Sound Clouds: Participatory Music Generation",
+    "description": "GT Special Problems",
+    "conference": "Fine-tuned YOLO12n (98.3% accuracy). Conducted data collection, analysis, and visualization (N=35, Python/Pandas) on user interaction patterns.",
+    "tags": ["#creative-computing", "#object-detection", "#data-analysis"],
+    "categories": ["ML/AI", "Quantitative"],
+    "image": "https://jisulog.kim/img/topDown.png",
+    "links": [
+      { "label": "NeurIPS 2025 Creative AI", "url": "https://arxiv.org/pdf/2510.15865" },
+      { "label": "C&C 2026 (under review)", "url": "" },
+      { "label": "Demo", "url": "https://www.youtube.com/watch?v=uatWN6m2P5M" }
+    ]
+  },
+  {
+    "title": "VAL: Interactive Task Planning Interface",
+    "description": "GT Teachable AI Lab",
+    "conference": "Developed React-based interactive GUI with real-time WebSocket communication for HTN planning agent.",
+    "tags": ["#human-in-the-loop", "#system-building", "#React"],
+    "categories": ["System Building", "Qualitative"],
+    "image": "https://jisulog.kim/img/pre.png",
+    "links": [
+      { "label": "Code", "url": "https://github.com/jieyuzhou42/VAL_GUI" }
+    ]
+  },
+  {
     "title": "Real-Time Background Segmentation",
     "description": "Samsung SDS",
     "conference": "Developed and deployed real-time segmentation model (PyTorch), achieving 1.5× speed and 34% accuracy improvement.",
@@ -82,32 +106,9 @@
     ]
   },
   {
-    "title": "Sound Clouds: Participatory Music Generation",
-    "description": "GT Special Problems",
-    "conference": "Fine-tuned YOLO12n (98.3% accuracy), conducted data analysis and visualization (N=35).",
-    "tags": ["#creative-computing", "#object-detection", "#data-analysis"],
-    "categories": ["ML/AI", "Quantitative"],
-    "image": "https://jisulog.kim/img/topDown.png",
-    "links": [
-      { "label": "NeurIPS 2025 Creative AI", "url": "https://arxiv.org/pdf/2510.15865" },
-      { "label": "Demo", "url": "https://www.youtube.com/watch?v=uatWN6m2P5M" }
-    ]
-  },
-  {
-    "title": "VAL: Interactive Task Planning Interface",
-    "description": "GT Teachable AI Lab",
-    "conference": "Developed React-based interactive GUI with real-time WebSocket communication for HTN planning agent.",
-    "tags": ["#human-in-the-loop", "#system-building", "#React"],
-    "categories": ["System Building", "Qualitative"],
-    "image": "https://jisulog.kim/img/pre.png",
-    "links": [
-      { "label": "Code", "url": "https://github.com/jieyuzhou42/VAL_GUI" }
-    ]
-  },
-  {
     "title": "FORECST: Online Hackathon Platform",
     "description": "KAIST Social Computing",
-    "conference": "Led development of full-stack website (React.js, Firebase) in a team of 4.",
+    "conference": "Led full-stack development (React.js, Firebase) of an online platform hosting virtual hackathons, managing user registration, submission, and real-time interaction.",
     "tags": ["#full-stack", "#React", "#course-project"],
     "categories": ["System Building"],
     "image": "https://jisulog.kim/img/forecst.png",
