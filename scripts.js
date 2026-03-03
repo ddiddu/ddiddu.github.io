@@ -209,30 +209,62 @@ async function fetchContent(section) {
             button.type = 'button';
             button.textContent = label;
             button.className = isActive
-              ? 'px-3 py-1 rounded-full border text-sm border-[var(--primary-blue)] text-[var(--primary-blue)] bg-white'
-              : 'px-3 py-1 rounded-full border text-sm border-[#d9dde3] text-[#677583] bg-white hover:text-[var(--primary-blue)] hover:border-[var(--primary-blue)]';
+              ? 'flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 py-1 border border-[var(--primary-blue)] bg-[var(--primary-blue)] text-white text-xs font-normal leading-normal w-fit transition-all duration-200 hover:bg-white hover:text-[var(--primary-blue)]'
+              : 'flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 py-1 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white';
             return button;
           };
 
-          const buttons = [buildButton('All', true), ...categories.map((category) => buildButton(category))];
+          const filterDefs = [
+            {
+              label: 'Selected',
+              getItems: () => {
+                const selectedItems = content.filter((item) => item.selected === true);
+                return selectedItems.length > 0 ? selectedItems : content;
+              }
+            },
+            {
+              label: 'All',
+              getItems: () => content
+            },
+            {
+              label: 'System',
+              getItems: () => content.filter((item) => (item.categories || []).includes('System Building'))
+            },
+            {
+              label: 'ML',
+              getItems: () => content.filter((item) => (item.categories || []).includes('ML/AI'))
+            },
+            {
+              label: 'Quant',
+              getItems: () => content.filter((item) => (item.categories || []).includes('Quantitative'))
+            },
+            {
+              label: 'Qual',
+              getItems: () => content.filter((item) => (item.categories || []).includes('Qualitative'))
+            }
+          ];
+
+          const buttons = filterDefs.map((filter, index) => {
+            const button = buildButton(filter.label, index === 0);
+            button.dataset.filterLabel = filter.label;
+            return button;
+          });
           buttons.forEach((button) => categoriesContainer.appendChild(button));
 
           const setActive = (activeButton) => {
             buttons.forEach((button) => {
               if (button === activeButton) {
-                button.className = 'px-3 py-1 rounded-full border text-sm border-[var(--primary-blue)] text-[var(--primary-blue)] bg-white';
+                button.className = 'flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 py-1 border border-[var(--primary-blue)] bg-[var(--primary-blue)] text-white text-xs font-normal leading-normal w-fit transition-all duration-200 hover:bg-white hover:text-[var(--primary-blue)]';
               } else {
-                button.className = 'px-3 py-1 rounded-full border text-sm border-[#d9dde3] text-[#677583] bg-white hover:text-[var(--primary-blue)] hover:border-[var(--primary-blue)]';
+                button.className = 'flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 py-1 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white';
               }
             });
           };
 
           buttons.forEach((button) => {
             button.addEventListener('click', () => {
-              const category = button.textContent;
-              const filteredContent = category === 'All'
-                ? content
-                : content.filter((item) => (item.categories || []).includes(category));
+              const currentFilter = filterDefs.find((filter) => filter.label === button.dataset.filterLabel);
+              const filteredContent = currentFilter ? currentFilter.getItems() : content;
 
               setActive(button);
               renderProjectItems(filteredContent);
@@ -240,7 +272,8 @@ async function fetchContent(section) {
           });
         }
 
-        renderProjectItems(content);
+        const defaultSelected = content.filter((item) => item.selected === true);
+        renderProjectItems(defaultSelected.length > 0 ? defaultSelected : content);
       } else {
         // ...existing code...
         content.forEach((item, idx) => {
