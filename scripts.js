@@ -230,7 +230,7 @@ async function fetchContent(section) {
               getItems: () => content.filter((item) => (item.categories || []).includes('System Building'))
             },
             {
-              label: 'ML/AI',
+              label: 'AI/ML',
               getItems: () => content.filter((item) => (item.categories || []).includes('ML/AI'))
             },
             {
