@@ -30,7 +30,7 @@
     "title": "Human Trust Calibration Under LLM Inconsistency",
     "selected": true,
     "description": "KAIST Interaction Lab",
-    "conference": "Designed controlled experiment (N=252), led statistical analysis in Python and R, built full-stack experimental infrastructure.",
+    "conference": "Designed controlled experiment (N=252) examining how LLM inconsistency affects trust calibration and overreliance. Led statistical analysis in Python and R. Built full-stack experimental infrastructure.",
     "tags": ["#trust-calibration", "#overreliance", "#controlled-experiment", "#system-building"],
     "categories": ["Quantitative"],
     "image": "https://jisulog.kim/img/condition_wise.png",
@@ -42,7 +42,7 @@
     "title": "AI-Augmented Financial Auditing",
     "selected": true,
     "description": "FlexTecs",
-    "conference": "Developed and deployed AI systems augmenting auditor workflows. Integrated domain expert feedback through weekly collaborative sessions.",
+    "conference": "Developed and deployed AI systems augmenting financial auditors' workflows without replacing auditor judgment. Integrated domain expertise into model features through weekly collaborative sessions.",
     "tags": ["#AI-augmented-work", "#expert-AI-collaboration", "#ML"],
     "categories": ["ML/AI"],
     "links": []
@@ -52,7 +52,7 @@
     "selected": true,
     "description": "Tesla",
     "image": "https://jisulog.kim/img/content.png",
-    "conference": "Built churn prediction model (XGBoost) with SHAP explanations on multi-terabyte datasets. Built lifecycle tracking pipeline reducing data inconsistencies by 93.9%.",
+    "conference": "Built churn prediction model (XGBoost) with SHAP-based explanations supporting service team decision-making. Developed lifecycle tracking pipeline reducing data inconsistencies by 93.9%.",
     "tags": ["#explainable-AI", "#SHAP", "#large-scale-data"],
     "categories": ["ML/AI", "Quantitative"],
     "links": []
