@@ -274,6 +274,9 @@ async function fetchContent(section) {
             recentActionsContainer.innerHTML = '';
 
             recentActionsContainer.innerHTML = `
+              <button type="button" class="flex min-w-[auto] max-w-[auto] cursor-default items-center justify-center overflow-hidden h-auto px-2 border border-[var(--primary-blue)] bg-[var(--primary-blue)] text-white text-xs font-normal leading-normal w-fit transition-all duration-200 mt-0" style="min-width:unset; max-width:220px;">
+                <span class="truncate">Selected</span>
+              </button>
               <a href="https://jisulog.kim/publications.html" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white mt-0" style="min-width:unset; max-width:220px;">
                 <span class="truncate">All Publications</span>
               </a>
