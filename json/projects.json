@@ -42,6 +42,7 @@
     "title": "AI-Augmented Financial Auditing",
     "selected": true,
     "description": "FlexTecs",
+    "image": "https://jisulog.kim/img/sankeymatic.png",
     "conference": "Developed and deployed AI systems augmenting financial auditors' workflows. Integrated domain expertise into model features through weekly collaborative sessions.",
     "tags": ["#AI-augmented-work", "#expert-AI-collaboration", "#ML"],
     "categories": ["ML/AI"],
@@ -131,6 +132,7 @@
   {
     "title": "PINTOS: Operating System Implementation",
     "description": "KAIST OS Lab",
+    "image": "https://jisulog.kim/img/9_01_VirtualMemoryLarger.png",
     "conference": "Implemented kernel threads, user programs, file system, and virtual memory in C on QEMU.",
     "tags": ["#operating-systems", "#C", "#course-project"],
     "categories": ["System Building"],
