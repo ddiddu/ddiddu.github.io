@@ -1,30 +1,30 @@
 [
   {
   "date": "May 2026",
-  "description": "Attending Northeastern University’s PhD visit day in <strong>Boston, MA</strong>."
+  "description": "Attending <strong>Northeastern University</strong>’s PhD visit day in Boston, MA."
   },
   {
     "date": "Jan 2026",
-    "description": "Presenting <a href='https://proceedings.aaai.org/storage/aaai-production-files-processed/db9a0a59-201e-4460-9b64-3389238e9f1e.out.pdf' target='_blank' class='text-[var(--primary-blue)] hover:underline'>my first first-author full paper</a> and <a href='https://jisulog.kim/pdf/55_A_Metacognitive_Architectur.pdf' target='_blank' class='text-[var(--primary-blue)] hover:underline'>a workshop paper</a> at <strong>AAAI 2026</strong> in <strong>Singapore</strong>."
+    "description": "Presenting <a href='https://proceedings.aaai.org/storage/aaai-production-files-processed/db9a0a59-201e-4460-9b64-3389238e9f1e.out.pdf' target='_blank' class='text-[var(--primary-blue)] hover:underline'>my first first-author full paper</a> and <a href='https://jisulog.kim/pdf/55_A_Metacognitive_Architectur.pdf' target='_blank' class='text-[var(--primary-blue)] hover:underline'>a workshop paper</a> at <strong>AAAI 2026</strong> in Singapore."
   },
   {
     "date": "Dec 2025",
-    "description": "Starting as an AI Engineer at Flextecs in <strong>Atlanta, GA</strong>."
+    "description": "Starting as an AI Engineer at <strong>Flextecs</strong> in Atlanta, GA."
   },
   {
     "date": "Oct 2025",
-    "description": "Serving as a Student Volunteer at Advances in Cognitive Systems in <strong>Atlanta, GA</strong>."
+    "description": "Serving as a Student Volunteer at <strong>Advances in Cognitive Systems</strong> in Atlanta, GA."
   },
   {
     "date": "Jan 2025",
-    "description": "Starting as a Graduate Research Assistant at Georgia Tech Design Intelligence Lab with a full tuition scholarship in <strong>Atlanta, GA</strong>."
+    "description": "Starting as a Graduate Research Assistant at Georgia Tech Design Intelligence Lab with a <strong>full tuition scholarship</strong> in Atlanta, GA."
   },
   {
     "date": "Aug 2024",
-    "description": "Starting as a Data Science Intern at Tesla in <strong>Fremont, CA</strong>."
+    "description": "Starting as a Data Science Intern at <strong>Tesla</strong> in Fremont, CA."
   },    
   {
     "date": "Jul 2024",
-    "description": "Presenting <a href='https://drive.google.com/file/d/1KJ-FinxA9A83b8qvTFStIRLaETCgHt6J/view' target='_blank' class='text-[var(--primary-blue)] hover:underline'>a workshop paper</a> at <strong>ACM L@S 2024</strong> in <strong>Atlanta, GA</strong>."
+    "description": "Presenting <a href='https://drive.google.com/file/d/1KJ-FinxA9A83b8qvTFStIRLaETCgHt6J/view' target='_blank' class='text-[var(--primary-blue)] hover:underline'>a workshop paper</a> at <strong>ACM L@S 2024</strong> in Atlanta, GA."
   }
 ]
