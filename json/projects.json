@@ -1,9 +1,9 @@
 [
   {
-    "title": "SierraSlides: AI Feedback for Professional Slide Revision",
+    "title": "AI Feedback to Augment Reflection in Presentation Preparation",
     "selected": true,
     "description": "GT Master's Project",
-    "conference": "Led system design, implementation (Google Slides add-on), formative study (N=11), and technology probe study (N=13) with product managers using real-world slide decks.",
+    "conference": "Led full-stack implementation (Google Slides add-on) and a technology probe (N=13) with product managers using real-world slide decks.",
     "tags": ["#human-AI-interaction", "#technology-probe", "#system-building"],
     "categories": ["System Building", "Qualitative"],
     "image": "https://jisulog.kim/img/contextq.png",
@@ -13,10 +13,10 @@
     ]
   },
   {
-    "title": "Metacognitive Self-Revision for Trustworthy AI Agents",
+    "title": "Human-AI Alignment via Metacognitive Self-Revision",
     "selected": true,
     "description": "GT Design Intelligence Lab",
-    "conference": "Led architecture design, implementation, and deployment in a live course (500+ users). Evaluated with structured user feedback.",
+    "conference": "Architected a self-revising agent that aligns with user intent. Deployed to 500+ users, validating robustness through structured feedback.",
     "tags": ["#trustworthy-AI", "#LLM", "#real-world-deployment"],
     "categories": ["ML/AI"],
     "image": "https://jisulog.kim/img/Picture1.png",
@@ -27,7 +27,7 @@
     ]
   },
   {
-    "title": "Human Trust Calibration Under LLM Inconsistency",
+    "title": "Calibrating Trust Under LLM Inconsistency",
     "selected": true,
     "description": "KAIST Interaction Lab",
     "conference": "Designed controlled experiment (N=252). Led statistical analysis in Python and R. Built full-stack experimental infrastructure.",
@@ -39,21 +39,21 @@
     ]
   },
   {
-    "title": "AI-Augmented Financial Auditing",
+    "title": "Expert-in-the-Loop AI for High-Stakes Financial Auditing",
     "selected": true,
     "description": "FlexTecs",
     "image": "https://jisulog.kim/img/sankeymatic.png",
-    "conference": "Developed and deployed AI systems augmenting financial auditors' workflows. Integrated domain expertise into model features through weekly collaborative sessions.",
+    "conference": "Engineering a prioritization engine for terabyte-scale audit logs. Integrating domain expertise to augment, not replace, auditor judgment.",
     "tags": ["#AI-augmented-work", "#expert-AI-collaboration", "#ML"],
     "categories": ["ML/AI"],
     "links": []
   },
   {
-    "title": "Explainable Churn Prediction for Service Teams",
+    "title": "Explainable AI for Customer Retention Strategy",
     "selected": true,
     "description": "Tesla",
     "image": "https://jisulog.kim/img/content.png",
-    "conference": "Built churn prediction model (XGBoost) with SHAP-based explanations supporting service team decision-making. Developed lifecycle tracking pipeline.",
+    "conference": "Built an explainable churn model (XGBoost/SHAP) and data pipeline (93.9% consistency gain) to empower service teams with actionable, data-driven insights.",
     "tags": ["#explainable-AI", "#SHAP", "#large-scale-data"],
     "categories": ["ML/AI", "Quantitative"],
     "links": []
