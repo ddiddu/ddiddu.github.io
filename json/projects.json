@@ -132,7 +132,7 @@
   {
     "title": "PINTOS: Operating System Implementation",
     "description": "KAIST OS Lab",
-    "image": "https://jisulog.kim/img/9_01_VirtualMemoryLarger.png",
+    "image": "https://jisulog.kim/img/9_01_VirtualMemoryLarger.jpg",
     "conference": "Implemented kernel threads, user programs, file system, and virtual memory in C on QEMU.",
     "tags": ["#operating-systems", "#C", "#course-project"],
     "categories": ["System Building"],
