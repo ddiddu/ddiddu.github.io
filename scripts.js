@@ -252,7 +252,7 @@ async function fetchContent(section) {
 
             const unassignedItems = items.filter((item) => !assignedItems.has(item));
             if (unassignedItems.length > 0) {
-              contentList.innerHTML += `<h3 class="${sectionTitleClass(selectedSectionDefs.length)}">Foundations in AI Engineering (당신의 탄탄한 과거)</h3>`;
+              contentList.innerHTML += `<h3 class="${sectionTitleClass(selectedSectionDefs.length)}">Foundations in AI Engineering</h3>`;
               unassignedItems.forEach((item) => renderCard(item));
             }
 
