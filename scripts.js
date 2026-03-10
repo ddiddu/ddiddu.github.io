@@ -150,7 +150,9 @@ async function fetchContent(section) {
               include: (item) => {
                 const text = `${item.title || ''} ${item.description || ''} ${item.conference || ''}`.toLowerCase();
                 return (
-                  text.includes('professional')
+                  text.includes('presentation preparation')
+                  || text.includes('product managers')
+                  || text.includes('professional')
                   || text.includes('auditing')
                   || text.includes('retention')
                   || text.includes('flextecs')

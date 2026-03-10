@@ -60,6 +60,7 @@
   },
   {
     "title": "Real-Time Background Segmentation",
+    "selected": true,
     "description": "Samsung SDS",
     "conference": "Developed and deployed real-time segmentation model (PyTorch), achieving 1.5× speed and 34% accuracy improvement.",
     "tags": ["#deep-learning", "#model-optimization", "#deployment"],
