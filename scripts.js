@@ -136,10 +136,56 @@ async function fetchContent(section) {
       } else if (section === 'projects') {
         const categoriesContainer = document.getElementById('projects-categories');
 
-        const renderProjectItems = (items) => {
+        const renderProjectItems = (items, activeFilterLabel = '') => {
           contentList.innerHTML = '';
 
-          items.forEach((item) => {
+          const sectionTitleClass = (index) =>
+            index === 0
+              ? 'text-xl font-bold text-[#677583] mt-1 mb-4'
+              : 'text-xl font-bold text-[#677583] mt-8 mb-4';
+
+          const selectedSectionDefs = [
+            {
+              title: 'AI for Professional Work & Expertise',
+              include: (item) => {
+                const text = `${item.title || ''} ${item.description || ''} ${item.conference || ''}`.toLowerCase();
+                return (
+                  text.includes('professional')
+                  || text.includes('auditing')
+                  || text.includes('retention')
+                  || text.includes('flextecs')
+                  || text.includes('tesla')
+                );
+              }
+            },
+            {
+              title: 'Human-AI Alignment & Agency',
+              include: (item) => {
+                const text = `${item.title || ''} ${item.description || ''} ${item.conference || ''}`.toLowerCase();
+                return (
+                  text.includes('alignment')
+                  || text.includes('trust')
+                  || text.includes('agency')
+                  || text.includes('metacognitive')
+                  || text.includes('reflection')
+                );
+              }
+            },
+            {
+              title: 'Foundations in AI Engineering',
+              include: (item) => {
+                const categories = item.categories || [];
+                const tags = item.tags || [];
+                return (
+                  categories.includes('System Building')
+                  || categories.includes('Quantitative')
+                  || tags.some((tag) => typeof tag === 'string' && tag.toLowerCase().includes('system-building'))
+                );
+              }
+            }
+          ];
+
+          const renderCard = (item) => {
             const updatedDescription = item.description
               ? item.description.replace(
                   /Jisu Kim/g,
@@ -179,7 +225,40 @@ async function fetchContent(section) {
                 ${imageContainer}
               </div>
             `;
+
             contentList.innerHTML += contentItem;
+          };
+
+          if (activeFilterLabel === 'Selected') {
+            const assignedItems = new Set();
+
+            selectedSectionDefs.forEach((sectionDef, index) => {
+              const sectionItems = items.filter((item) => {
+                if (assignedItems.has(item)) return false;
+                return sectionDef.include(item);
+              });
+
+              if (sectionItems.length === 0) return;
+
+              contentList.innerHTML += `<h3 class="${sectionTitleClass(index)}">${sectionDef.title}</h3>`;
+
+              sectionItems.forEach((item) => {
+                assignedItems.add(item);
+                renderCard(item);
+              });
+            });
+
+            const unassignedItems = items.filter((item) => !assignedItems.has(item));
+            if (unassignedItems.length > 0) {
+              contentList.innerHTML += `<h3 class="${sectionTitleClass(selectedSectionDefs.length)}">Foundations in AI Engineering (당신의 탄탄한 과거)</h3>`;
+              unassignedItems.forEach((item) => renderCard(item));
+            }
+
+            return;
+          }
+
+          items.forEach((item) => {
+            renderCard(item);
           });
         };
 
@@ -256,13 +335,13 @@ async function fetchContent(section) {
               const filteredContent = currentFilter ? currentFilter.getItems() : content;
 
               setActive(button);
-              renderProjectItems(filteredContent);
+              renderProjectItems(filteredContent, button.dataset.filterLabel || '');
             });
           });
         }
 
         const defaultSelected = content.filter((item) => item.selected === true);
-        renderProjectItems(defaultSelected.length > 0 ? defaultSelected : content);
+        renderProjectItems(defaultSelected.length > 0 ? defaultSelected : content, 'Selected');
       } else {
         // ...existing code...
         let itemsToRender = content;

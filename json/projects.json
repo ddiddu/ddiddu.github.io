@@ -1,5 +1,15 @@
 [
   {
+    "title": "Expert-in-the-Loop AI for High-Stakes Financial Auditing",
+    "selected": true,
+    "description": "FlexTecs",
+    "image": "https://jisulog.kim/img/sankeymatic.png",
+    "conference": "Engineering a prioritization engine for terabyte-scale audit logs. Integrating domain expertise to augment, not replace, auditor judgment.",
+    "tags": ["#AI-augmented-work", "#expert-AI-collaboration", "#ML"],
+    "categories": ["ML/AI"],
+    "links": []
+  },
+  {
     "title": "AI Feedback to Augment Reflection in Presentation Preparation",
     "selected": true,
     "description": "GT Master's Project",
@@ -11,6 +21,16 @@
       { "label": "DIS 2026 (under review)", "url": "" },
       { "label": "Code", "url": "https://github.com/ddiddu/ContextQ" }
     ]
+  },
+  {
+    "title": "Explainable AI for Customer Retention Strategy",
+    "selected": true,
+    "description": "Tesla",
+    "image": "https://jisulog.kim/img/content.png",
+    "conference": "Built an explainable churn model (XGBoost/SHAP) and data pipeline (93.9% consistency gain) to empower service teams with actionable, data-driven insights.",
+    "tags": ["#explainable-AI", "#SHAP", "#large-scale-data"],
+    "categories": ["ML/AI", "Quantitative"],
+    "links": []
   },
   {
     "title": "Human-AI Alignment via Metacognitive Self-Revision",
@@ -39,24 +59,17 @@
     ]
   },
   {
-    "title": "Expert-in-the-Loop AI for High-Stakes Financial Auditing",
-    "selected": true,
-    "description": "FlexTecs",
-    "image": "https://jisulog.kim/img/sankeymatic.png",
-    "conference": "Engineering a prioritization engine for terabyte-scale audit logs. Integrating domain expertise to augment, not replace, auditor judgment.",
-    "tags": ["#AI-augmented-work", "#expert-AI-collaboration", "#ML"],
+    "title": "Real-Time Background Segmentation",
+    "description": "Samsung SDS",
+    "conference": "Developed and deployed real-time segmentation model (PyTorch), achieving 1.5× speed and 34% accuracy improvement.",
+    "tags": ["#deep-learning", "#model-optimization", "#deployment"],
     "categories": ["ML/AI"],
-    "links": []
-  },
-  {
-    "title": "Explainable AI for Customer Retention Strategy",
-    "selected": true,
-    "description": "Tesla",
-    "image": "https://jisulog.kim/img/content.png",
-    "conference": "Built an explainable churn model (XGBoost/SHAP) and data pipeline (93.9% consistency gain) to empower service teams with actionable, data-driven insights.",
-    "tags": ["#explainable-AI", "#SHAP", "#large-scale-data"],
-    "categories": ["ML/AI", "Quantitative"],
-    "links": []
+    "image": "https://jisulog.kim/img/sds.png",
+    "links": [
+      { "label": "PDF (Korean)", "url": "https://jisulog.kim/pdf/인턴십 결과보고서.pdf" },
+      { "label": "Slides (Korean)", "url": "https://jisulog.kim/pdf/[첨부1] 최종 발표 자료.pdf" },
+      { "label": "Blog (Korean)", "url": "https://medium.com/@ddiddu" }
+    ]
   },
   {
     "title": "Sound Clouds: Participatory Music Generation",
@@ -80,19 +93,6 @@
     "image": "https://jisulog.kim/img/pre.png",
     "links": [
       { "label": "Code", "url": "https://github.com/jieyuzhou42/VAL_GUI" }
-    ]
-  },
-  {
-    "title": "Real-Time Background Segmentation",
-    "description": "Samsung SDS",
-    "conference": "Developed and deployed real-time segmentation model (PyTorch), achieving 1.5× speed and 34% accuracy improvement.",
-    "tags": ["#deep-learning", "#model-optimization", "#deployment"],
-    "categories": ["ML/AI"],
-    "image": "https://jisulog.kim/img/sds.png",
-    "links": [
-      { "label": "PDF (Korean)", "url": "https://jisulog.kim/pdf/인턴십 결과보고서.pdf" },
-      { "label": "Slides (Korean)", "url": "https://jisulog.kim/pdf/[첨부1] 최종 발표 자료.pdf" },
-      { "label": "Blog (Korean)", "url": "https://medium.com/@ddiddu" }
     ]
   },
   {
