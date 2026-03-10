@@ -141,8 +141,8 @@ async function fetchContent(section) {
 
           const sectionTitleClass = (index) =>
             index === 0
-              ? 'text-xl font-bold text-[#677583] mt-1 mb-4'
-              : 'text-xl font-bold text-[#677583] mt-8 mb-4';
+              ? 'text-xl font-bold text-[#677583] leading-tight break-keep mt-1 mb-4'
+              : 'text-xl font-bold text-[#677583] leading-tight break-keep mt-8 mb-4';
 
           const selectedSectionDefs = [
             {
