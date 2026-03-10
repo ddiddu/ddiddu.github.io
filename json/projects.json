@@ -24,7 +24,6 @@
   },
   {
     "title": "Explainable AI for Customer Retention Strategy",
-    "selected": true,
     "description": "Tesla",
     "image": "https://jisulog.kim/img/content.png",
     "conference": "Built an explainable churn model (XGBoost/SHAP) and data pipeline (93.9% consistency gain) to empower service teams with actionable, data-driven insights.",
