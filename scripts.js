@@ -334,8 +334,8 @@ async function fetchContent(section) {
               <div class="flex flex-col flex-[2_2_0px] order-2 md:order-1">
                 <div class="flex flex-col gap-1 max-w-[95%]">
                   ${titleHtml}
-                  <p class="text-[#677583] text-sm font-normal leading-normal">${updatedDescription}</p>
-                  <p class="text-[#677583] text-sm font-normal leading-normal"><em>${item.conference || ''}</em></p>
+                  <p class="text-[#121417] text-sm font-normal leading-normal">${updatedDescription}</p>
+                  <p class="text-[#121417] text-sm font-normal leading-normal"><em>${item.conference || ''}</em></p>
                 </div>
                 <div class="flex gap-2">
                   ${buttons}
