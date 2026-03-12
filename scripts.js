@@ -174,10 +174,10 @@ async function fetchContent(section) {
                 <div class="flex min-w-0 flex-col flex-[2_2_0px] order-2 md:order-1">
                   <div class="flex flex-col gap-1 max-w-[95%]">
                     ${titleHtml}
-                    <p class="text-[#121417] text-sm font-normal leading-normal">${updatedDescription}</p>
-                    <p class="text-[#121417] text-sm font-normal leading-normal"><em>${item.conference || ''}</em></p>
+                    <p class="text-[#121417] text-sm font-normal leading-normal"><em>${updatedDescription}</em></p>
+                    <p class="text-[#121417] text-sm font-normal leading-normal">${item.conference || ''}</p>
                   </div>
-                  <div class="flex flex-wrap gap-2">
+                  <div class="flex flex-wrap gap-x-2 gap-y-1">
                     ${buttons}
                   </div>
                 </div>
