@@ -11,7 +11,6 @@
   },
   {
     "title": "AI Feedback to Augment Reflection in Presentation Preparation",
-    "selected": true,
     "description": "GT Master's Project",
     "conference": "Led full-stack implementation (Google Slides add-on) and a technology probe (N=13) with product managers using real-world slide decks.",
     "tags": ["#human-AI-interaction", "#technology-probe", "#system-building"],
