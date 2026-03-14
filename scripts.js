@@ -1,3 +1,20 @@
+// Header and Footer injection logic (merged from scripts-header.js and scripts-footer.js)
+window.addEventListener('DOMContentLoaded', function() {
+  // Inject header
+  fetch('header.html')
+    .then(response => response.text())
+    .then(html => {
+      const container = document.getElementById('header-container');
+      if (container) container.innerHTML = html;
+    });
+  // Inject footer
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      const container = document.getElementById('footer-container');
+      if (container) container.innerHTML = html;
+    });
+});
 // Fetch the JSON file and render news
 async function fetchNews() {
     try {
