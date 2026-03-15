@@ -3,7 +3,7 @@
     "title": "A Metacognitive Architecture for Correcting LLM Errors in AI Agents",
     "selected": true,
     "description": "Jisu Kim, Mahimul Islam, Ashok Goel",
-    "conference": "AAAI 2026 Innovative Applications of AI",
+    "conference": "AAAI 2026 Innovative Applications of AI (19.9% acceptance rate)",
     "links": [
       { "label": "PDF", "url": "https://proceedings.aaai.org/storage/aaai-production-files-processed/db9a0a59-201e-4460-9b64-3389238e9f1e.out.pdf" }
     ]
@@ -11,7 +11,7 @@
   {
     "title": "“If the AI Tool Were an A**hole”: Strategically Leveraging Critical Feedback and Reflection in Slide Deck Refinement",
     "description": "Jisu Kim*, Debbie Hsu*, Vijay Farmah, Christopher J. MacLellan, Richmond Wong",
-    "conference": "Submitted to ACM DIS 2026",
+    "conference": "Under Review",
     "links": [
       { "label": "Code", "url": "https://github.com/ddiddu/ContextQ" }
     ]
@@ -45,7 +45,7 @@
     "title": "One vs. Many: Comprehending Accurate Information from Multiple Erroneous and Inconsistent AI Generations",
     "selected": true,
     "description": "Yoonjoo Lee, Kihoon Son, Tae Soo Kim, Jisu Kim, John Joon Young Chung, Eytan Adar, Juho Kim",
-    "conference": "ACM FAccT 2024",
+    "conference": "ACM FAccT 2024 (24.1% acceptance rate)",
     "links": [
       { "label": "PDF", "url": "https://arxiv.org/pdf/2405.05581" }
     ]
