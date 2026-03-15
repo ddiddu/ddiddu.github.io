@@ -65,6 +65,7 @@
     "categories": ["ML/AI"],
     "image": "https://jisulog.kim/img/sds.png",
     "links": [
+      { "label": "Code", "url": "https://github.com/ddiddu/Portrait-Matting" },
       { "label": "PDF (Korean)", "url": "https://jisulog.kim/pdf/인턴십 결과보고서.pdf" },
       { "label": "Slides (Korean)", "url": "https://jisulog.kim/pdf/[첨부1] 최종 발표 자료.pdf" },
       { "label": "Blog (Korean)", "url": "https://medium.com/@ddiddu" }
