@@ -89,10 +89,7 @@ async function fetchContent(section) {
               || (item.title && item.title.match(/(20\d{2})/))
               || (item.description && item.description.match(/(20\d{2})/));
             if (item.conference && item.conference.toLowerCase() === 'under review') {
-              // If title or description contains 2026, set year to 2026
-              if ((item.title && item.title.includes('2026')) || (item.description && item.description.includes('2026'))) {
-                year = '2026';
-              }
+              year = '2026';
             }
             if (yearMatch && !year) year = yearMatch[1];
             if (!year) year = 'Other';
