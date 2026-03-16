@@ -4,7 +4,7 @@
     "selected": true,
     "description": "FlexTecs",
     "image": "https://jisulog.kim/img/sankeymatic.png",
-    "conference": "Designed and deployed a hybrid AI system (classification + LLM pipeline) for 5,000+ weekly emails, achieving 100% recall. Collaborated with legal auditors through iterative prompt engineering.",
+    "conference": "Designed and deployed a hybrid AI system (classification + LLM pipeline) for weekly emails, achieving 100% recall. Collaborated with legal auditors to ensure AI outputs align with professional judgment criteria.",
     "tags": ["#AI-augmented-work", "#expert-AI-collaboration", "#ML"],
     "categories": ["Industry Applications", "AI & Machine Learning"],
     "links": []
@@ -61,7 +61,7 @@
     "title": "Real-Time Background Segmentation",
     "selected": true,
     "description": "Samsung SDS",
-    "conference": "Developed real-time segmentation model (PyTorch), achieving 1.5× faster inference and 34% higher accuracy. Deployed via ONNX for production inference.",
+    "conference": "Developed real-time segmentation model (PyTorch). Trained with all unlabeled data using transfer learning and knowledge distillation. Deployed via ONNX for production inference.",
     "tags": ["#deep-learning", "#model-optimization", "#deployment"],
     "categories": ["AI & Machine Learning", "Industry Applications"],
     "image": "https://jisulog.kim/img/sds.png",
