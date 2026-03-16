@@ -85,11 +85,17 @@ async function fetchContent(section) {
         content.forEach(item => {
           let year = '';
           // Try conference, title, description for year
-          const yearMatch = (item.conference && item.conference.match(/(20\d{2})/))
-            || (item.title && item.title.match(/(20\d{2})/))
-            || (item.description && item.description.match(/(20\d{2})/));
-          if (yearMatch) year = yearMatch[1];
-          if (!year) year = 'Other';
+            const yearMatch = (item.conference && item.conference.match(/(20\d{2})/))
+              || (item.title && item.title.match(/(20\d{2})/))
+              || (item.description && item.description.match(/(20\d{2})/));
+            if (item.conference && item.conference.toLowerCase() === 'under review') {
+              // If title or description contains 2026, set year to 2026
+              if ((item.title && item.title.includes('2026')) || (item.description && item.description.includes('2026'))) {
+                year = '2026';
+              }
+            }
+            if (yearMatch && !year) year = yearMatch[1];
+            if (!year) year = 'Other';
           if (!pubsByYear[year]) pubsByYear[year] = [];
           pubsByYear[year].push(item);
         });
