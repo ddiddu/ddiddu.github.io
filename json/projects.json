@@ -1,20 +1,21 @@
 [
   {
-    "title": "Expert-in-the-Loop AI for High-Stakes Financial Auditing",
+    "title": "Augmenting Auditor Judgment in High-Stakes Financial Compliance",
     "selected": true,
     "description": "FlexTecs",
     "image": "https://jisulog.kim/img/sankeymatic.png",
-    "conference": "Engineering a prioritization engine for terabyte-scale audit logs. Integrating domain expertise to augment, not replace, auditor judgment.",
+    "conference": "Designed and deployed a hybrid AI system (classification + LLM pipeline) for 5,000+ weekly emails, achieving 100% recall. Collaborated with legal auditors through iterative prompt engineering.",
     "tags": ["#AI-augmented-work", "#expert-AI-collaboration", "#ML"],
-    "categories": ["ML/AI"],
+    "categories": ["Industry Applications", "AI & Machine Learning"],
     "links": []
   },
   {
-    "title": "AI Feedback to Augment Reflection in Presentation Preparation",
+    "title": "Supporting Professional Reflection through Critical AI Feedback",
+    "selected": true,
     "description": "GT Master's Project",
-    "conference": "Led full-stack implementation (Google Slides add-on) and a technology probe (N=13) with product managers using real-world slide decks.",
+    "conference": "Led end-to-end design and implementation (Google Slides add-on) and conducted a technology probe study (N=13) with product managers using real-world slide decks.",
     "tags": ["#human-AI-interaction", "#technology-probe", "#system-building"],
-    "categories": ["System Building", "Qualitative"],
+    "categories": ["System Building", "Empirical Studies"],
     "image": "https://jisulog.kim/img/contextq.png",
     "links": [
       { "label": "DIS 2026 (under review)", "url": "" },
@@ -22,21 +23,12 @@
     ]
   },
   {
-    "title": "Explainable AI for Customer Retention Strategy",
-    "description": "Tesla",
-    "image": "https://jisulog.kim/img/content.png",
-    "conference": "Built an explainable churn model (XGBoost/SHAP) and data pipeline (93.9% consistency gain) to empower service teams with actionable, data-driven insights.",
-    "tags": ["#explainable-AI", "#SHAP", "#large-scale-data"],
-    "categories": ["ML/AI", "Quantitative"],
-    "links": []
-  },
-  {
-    "title": "Human-AI Alignment via Metacognitive Self-Revision",
+    "title": "Aligning AI Agent Outputs with User Intent via Metacognitive Self-Correction",
     "selected": true,
     "description": "GT Design Intelligence Lab",
-    "conference": "Architected a self-revising agent that aligns with user intent. Deployed to 500+ users, validating robustness through structured feedback.",
+    "conference": "Designed and implemented a metacognitive architecture (symbolic knowledge + LLMs) for agent self-correction. Deployed to 500+ students, validated robustness with synthetic dataset.",
     "tags": ["#trustworthy-AI", "#LLM", "#real-world-deployment"],
-    "categories": ["ML/AI"],
+    "categories": ["AI & Machine Learning", "System Building"],
     "image": "https://jisulog.kim/img/Picture1.png",
     "links": [
       { "label": "AAAI 2026 IAAI", "url": "https://proceedings.aaai.org/storage/aaai-production-files-processed/db9a0a59-201e-4460-9b64-3389238e9f1e.out.pdf" },
@@ -45,24 +37,33 @@
     ]
   },
   {
-    "title": "Calibrating Trust Under LLM Inconsistency",
+    "title": "Calibrating User Trust and Mitigating Overreliance Under LLM Inconsistency",
     "selected": true,
     "description": "KAIST Interaction Lab",
-    "conference": "Designed controlled experiment (N=252). Led statistical analysis in Python and R. Built full-stack experimental infrastructure.",
-    "tags": ["#trust-calibration", "#overreliance", "#controlled-experiment", "#system-building"],
-    "categories": ["Quantitative"],
+    "conference": "Designed controlled online experiment (N=252). Led statistical analysis (regression modeling, hypothesis testing in Python/R). Built backend experimental infrastructure (Flask, SQLite).",
+    "tags": ["#trust-calibration", "#overreliance", "#controlled-experiment"],
+    "categories": ["Empirical Studies"],
     "image": "https://jisulog.kim/img/condition_wise.png",
     "links": [
       { "label": "FAccT 2024", "url": "https://arxiv.org/pdf/2405.05581" }
     ]
   },
   {
+    "title": "Explainable AI for Customer Retention Strategy",
+    "description": "Tesla",
+    "image": "https://jisulog.kim/img/content.png",
+    "conference": "Built an explainable churn model (XGBoost/SHAP) and SQL-based data pipeline cleaning multi-terabyte datasets (93.9% consistency gain).",
+    "tags": ["#explainable-AI", "#SHAP", "#large-scale-data"],
+    "categories": ["Industry Applications", "AI & Machine Learning"],
+    "links": []
+  },
+  {
     "title": "Real-Time Background Segmentation",
     "selected": true,
     "description": "Samsung SDS",
-    "conference": "Developed and deployed real-time segmentation model (PyTorch), achieving 1.5× speed and 34% accuracy improvement.",
+    "conference": "Developed real-time segmentation model (PyTorch), achieving 1.5× faster inference and 34% higher accuracy. Deployed via ONNX for production inference.",
     "tags": ["#deep-learning", "#model-optimization", "#deployment"],
-    "categories": ["ML/AI"],
+    "categories": ["AI & Machine Learning", "Industry Applications"],
     "image": "https://jisulog.kim/img/sds.png",
     "links": [
       { "label": "Code", "url": "https://github.com/ddiddu/Portrait-Matting" },
@@ -76,7 +77,7 @@
     "description": "GT Special Problems",
     "conference": "Fine-tuned YOLO12n (98.3% accuracy). Conducted data collection, analysis, and visualization (N=35) on user interaction patterns.",
     "tags": ["#creative-computing", "#object-detection", "#data-analysis"],
-    "categories": ["ML/AI", "Quantitative"],
+    "categories": ["AI & Machine Learning", "Empirical Studies"],
     "image": "https://jisulog.kim/img/topDown.png",
     "links": [
       { "label": "NeurIPS 2025 Creative AI", "url": "https://arxiv.org/pdf/2510.15865" },
@@ -87,9 +88,9 @@
   {
     "title": "VAL: Interactive Task Planning Interface",
     "description": "GT Teachable AI Lab",
-    "conference": "Developed React-based interactive GUI with real-time WebSocket communication for HTN planning agent.",
+    "conference": "Engineered interactive React interface with real-time WebSocket communication for neural-symbolic HTN planning agent. Enabled human-in-the-loop oversight via hierarchical plan visualization and stepwise co-execution.",
     "tags": ["#human-in-the-loop", "#system-building", "#React"],
-    "categories": ["System Building", "Qualitative"],
+    "categories": ["System Building"],
     "image": "https://jisulog.kim/img/pre.png",
     "links": [
       { "label": "Code", "url": "https://github.com/jieyuzhou42/VAL_GUI" }
@@ -98,9 +99,9 @@
   {
     "title": "LTE Network KPI Analysis",
     "description": "Samsung Research",
-    "conference": "Analyzed KPI correlations on LTE eNB datasets using PCA to assess input-output predictability.",
+    "conference": "Analyzed and visualized KPI correlations on LTE eNB datasets using PCA to assess input-output predictability.",
     "tags": ["#data-analysis", "#PCA"],
-    "categories": ["Quantitative"],
+    "categories": ["Industry Applications"],
     "image": "https://jisulog.kim/img/samsungresearch.png",
     "links": [
       { "label": "PDF (Korean)", "url": "https://jisulog.kim/pdf/1. 인턴십 결과보고서.pdf" }
@@ -109,9 +110,9 @@
   {
     "title": "FORECST: Online Hackathon Platform",
     "description": "KAIST Social Computing",
-    "conference": "Led full-stack development (React.js, Firebase) of an online platform hosting virtual hackathons, managing user registration, submission, and real-time interaction.",
+    "conference": "Led full-stack development (React.js, Firebase) of an online platform hosting virtual hackathons.",
     "tags": ["#full-stack", "#React", "#course-project"],
-    "categories": ["System Building"],
+    "categories": ["System Building", "Early Work"],
     "image": "https://jisulog.kim/img/forecst.png",
     "links": [
       { "label": "Code", "url": "https://github.com/youngjae99/FORECST" },
@@ -123,7 +124,7 @@
     "description": "KAIST Immersion Camp",
     "conference": "Built Android app in Java in a team of 3 for visualizing clothing sizes.",
     "tags": ["#Android", "#Java", "#course-project"],
-    "categories": ["System Building"],
+    "categories": ["System Building", "Early Work"],
     "image": "https://jisulog.kim/img/myfit.png",
     "links": [
       { "label": "Code", "url": "https://github.com/myfitocr/myfit" }
@@ -135,7 +136,7 @@
     "image": "https://jisulog.kim/img/9_01_VirtualMemoryLarger.jpg",
     "conference": "Implemented kernel threads, user programs, file system, and virtual memory in C on QEMU.",
     "tags": ["#operating-systems", "#C", "#course-project"],
-    "categories": ["System Building"],
+    "categories": ["Early Work"],
     "links": [
       { "label": "Code", "url": "https://github.com/ddiddu/juntos" }
     ]

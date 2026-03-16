@@ -253,16 +253,20 @@ async function fetchContent(section) {
               getItems: () => content.filter((item) => (item.categories || []).includes('System Building'))
             },
             {
-              label: 'AI/ML',
-              getItems: () => content.filter((item) => (item.categories || []).includes('ML/AI'))
+              label: 'AI & Machine Learning',
+              getItems: () => content.filter((item) => (item.categories || []).includes('AI & Machine Learning'))
             },
             {
-              label: 'Quantitative',
-              getItems: () => content.filter((item) => (item.categories || []).includes('Quantitative'))
+              label: 'Empirical Studies',
+              getItems: () => content.filter((item) => (item.categories || []).includes('Empirical Studies'))
             },
             {
-              label: 'Qualitative',
-              getItems: () => content.filter((item) => (item.categories || []).includes('Qualitative'))
+              label: 'Industry Applications',
+              getItems: () => content.filter((item) => (item.categories || []).includes('Industry Applications'))
+            },
+            {
+              label: 'Early Work',
+              getItems: () => content.filter((item) => (item.categories || []).includes('Early Work'))
             },
             {
               label: 'All',
