@@ -143,7 +143,7 @@ async function fetchContent(section) {
                     <p class="text-[#121417] text-sm font-normal leading-normal">${updatedDescription}</p>
                     <p class="text-[#121417] text-sm font-normal leading-normal"><em>${item.conference || ''}</em></p>
                   </div>
-                  <div class="flex gap-2">
+                  <div class="flex gap-5">
                     ${buttons}
                   </div>
                 </div>
