@@ -1,9 +1,5 @@
 [
   {
-  "date": "Mar 2026",
-  "description": "Attending <strong>Northeastern University</strong>’s PhD visit day in Boston, MA."
-  },
-  {
     "date": "Jan 2026",
     "description": "Presenting <a href='https://proceedings.aaai.org/storage/aaai-production-files-processed/db9a0a59-201e-4460-9b64-3389238e9f1e.out.pdf' target='_blank' class='text-[var(--primary-blue)] hover:underline'>my first first-author full paper</a> and <a href='https://jisulog.kim/pdf/55_A_Metacognitive_Architectur.pdf' target='_blank' class='text-[var(--primary-blue)] hover:underline'>a workshop paper</a> at <strong>AAAI 2026</strong> in Singapore."
   },
