@@ -37,6 +37,30 @@
     ]
   },
   {
+    "title": "VAL: Interactive Task Planning Interface",
+    "description": "GT Teachable AI Lab",
+    "conference": "Engineered an interactive React interface for a neural-symbolic planning agent. Enabled transparent human-in-the-loop oversight via real-time WebSocket communication.",
+    "tags": ["#human-in-the-loop", "#system-building", "#React"],
+    "categories": ["System Building"],
+    "image": "https://jisulog.kim/img/pre.png",
+    "links": [
+      { "label": "Code", "url": "https://github.com/jieyuzhou42/VAL_GUI" }
+    ]
+  },
+  {
+    "title": "Sound Clouds: Participatory Music Generation",
+    "description": "GT Special Problems",
+    "conference": "Fine-tuned YOLO12n (98.3% accuracy). Conducted data collection, analysis, and visualization (N=35) on user interaction patterns.",
+    "tags": ["#creative-computing", "#object-detection", "#data-analysis"],
+    "categories": ["AI & Machine Learning", "Empirical Studies"],
+    "image": "https://jisulog.kim/img/topDown.png",
+    "links": [
+      { "label": "NeurIPS 2025 Creative AI", "url": "https://arxiv.org/pdf/2510.15865" },
+      { "label": "C&C 2026 (under review)", "url": "" },
+      { "label": "Demo", "url": "https://www.youtube.com/watch?v=uatWN6m2P5M" }
+    ]
+  },
+  {
     "title": "Calibrating User Trust and Mitigating Overreliance Under LLM Inconsistency",
     "selected": true,
     "description": "KAIST Interaction Lab",
@@ -70,30 +94,6 @@
       { "label": "PDF (Korean)", "url": "https://jisulog.kim/pdf/인턴십 결과보고서.pdf" },
       { "label": "Slides (Korean)", "url": "https://jisulog.kim/pdf/[첨부1] 최종 발표 자료.pdf" },
       { "label": "Blog (Korean)", "url": "https://medium.com/@ddiddu" }
-    ]
-  },
-  {
-    "title": "Sound Clouds: Participatory Music Generation",
-    "description": "GT Special Problems",
-    "conference": "Fine-tuned YOLO12n (98.3% accuracy). Conducted data collection, analysis, and visualization (N=35) on user interaction patterns.",
-    "tags": ["#creative-computing", "#object-detection", "#data-analysis"],
-    "categories": ["AI & Machine Learning", "Empirical Studies"],
-    "image": "https://jisulog.kim/img/topDown.png",
-    "links": [
-      { "label": "NeurIPS 2025 Creative AI", "url": "https://arxiv.org/pdf/2510.15865" },
-      { "label": "C&C 2026 (under review)", "url": "" },
-      { "label": "Demo", "url": "https://www.youtube.com/watch?v=uatWN6m2P5M" }
-    ]
-  },
-  {
-    "title": "VAL: Interactive Task Planning Interface",
-    "description": "GT Teachable AI Lab",
-    "conference": "Engineered an interactive React interface for a neural-symbolic planning agent. Enabled transparent human-in-the-loop oversight via real-time WebSocket communication.",
-    "tags": ["#human-in-the-loop", "#system-building", "#React"],
-    "categories": ["System Building"],
-    "image": "https://jisulog.kim/img/pre.png",
-    "links": [
-      { "label": "Code", "url": "https://github.com/jieyuzhou42/VAL_GUI" }
     ]
   },
   {
