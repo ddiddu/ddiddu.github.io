@@ -18,7 +18,6 @@
     "categories": ["System Building", "Empirical Studies"],
     "image": "https://jisulog.kim/img/contextq.png",
     "links": [
-      { "label": "DIS 2026 (under review)", "url": "" },
       { "label": "Code", "url": "https://github.com/ddiddu/ContextQ" }
     ]
   },
@@ -56,7 +55,6 @@
     "image": "https://jisulog.kim/img/topDown.png",
     "links": [
       { "label": "NeurIPS 2025 Creative AI", "url": "https://arxiv.org/pdf/2510.15865" },
-      { "label": "C&C 2026 (under review)", "url": "" },
       { "label": "Demo", "url": "https://www.youtube.com/watch?v=uatWN6m2P5M" }
     ]
   },
