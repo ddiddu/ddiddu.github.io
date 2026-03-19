@@ -143,7 +143,7 @@ async function fetchContent(section) {
                     <p class="text-[#121417] text-sm font-normal leading-normal">${updatedDescription}</p>
                     <p class="text-[#121417] text-sm font-normal leading-normal"><em>${item.conference || ''}</em></p>
                   </div>
-                  <div class="flex flex-wrap gap-2">
+                  <div class="flex flex-wrap gap-2 mt-2"> <!-- Added margin-top here -->
                     ${buttons}
                   </div>
                 </div>
@@ -197,7 +197,7 @@ async function fetchContent(section) {
                     <p class="text-[#121417] text-sm font-normal leading-normal"><em>${updatedDescription}</em></p>
                     <p class="text-[#121417] text-sm font-normal leading-normal">${item.conference || ''}</p>
                   </div>
-                  <div class="flex flex-wrap gap-2">
+                  <div class="flex flex-wrap gap-2 mt-2"> <!-- Added margin-top here -->
                     ${buttons}
                   </div>
                 </div>
@@ -361,7 +361,7 @@ async function fetchContent(section) {
                   <p class="text-[#121417] text-sm font-normal leading-normal">${updatedDescription}</p>
                   <p class="text-[#121417] text-sm font-normal leading-normal"><em>${item.conference || ''}</em></p>
                 </div>
-                <div class="flex gap-2">
+                <div class="flex gap-2 mt-2"> <!-- Added margin-top here -->
                   ${buttons}
                 </div>
               </div>
