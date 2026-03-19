@@ -197,7 +197,7 @@ async function fetchContent(section) {
                     <p class="text-[#121417] text-sm font-normal leading-normal"><em>${updatedDescription}</em></p>
                     <p class="text-[#121417] text-sm font-normal leading-normal">${item.conference || ''}</p>
                   </div>
-                  <div class="mt-2 flex flex-wrap gap-x-2 gap-y-1">
+                  <div class="flex flex-wrap gap-2">
                     ${buttons}
                   </div>
                 </div>
