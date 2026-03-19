@@ -4,14 +4,13 @@
     "selected": true,
     "description": "FlexTecs",
     "image": "https://jisulog.kim/img/sankeymatic.png",
-    "conference": "Designed and deployed a hybrid AI system (classification model + LLM pipeline), working with legal auditors to align model outputs with expert judgment and compliance criteria.",
+    "conference": "Designed and deployed a hybrid AI system (classification model + LLM pipeline) for financial audit decision support. Collaborated with legal auditors to align model outputs with expert judgment.",
     "tags": ["#AI-augmented-work", "#expert-AI-collaboration", "#ML"],
     "categories": ["Industry Applications", "AI & Machine Learning"],
     "links": []
   },
   {
     "title": "Supporting Professional Reflection through Critical AI Feedback",
-    "selected": true,
     "description": "GT Master's Project",
     "conference": "Led the end-to-end design and implementation of a Google Slides add-on. Conducted a probe study with 13 PMs.",
     "tags": ["#human-AI-interaction", "#technology-probe", "#system-building"],
