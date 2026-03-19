@@ -120,7 +120,7 @@ async function fetchContent(section) {
             const buttons = item.links
               ? item.links
                   .map((link) => {
-                    const buttonTopMarginClass = link.label === 'All Publications' ? 'mt-0' : 'mt-2';
+                    const buttonTopMarginClass = 'mt-0';
                     return `
                       <a href="${link.url}" class="flex min-w-[auto] max-w-[auto] cursor-pointer items-center justify-center overflow-hidden h-auto px-2 border border-[#121417] text-[#121417] text-xs font-normal leading-normal w-fit transition-all duration-200 bg-white hover:bg-[var(--primary-blue)] hover:text-white ${buttonTopMarginClass}" style="min-width:unset; max-width:220px;">
                         <span class="truncate">${link.label}</span>
@@ -143,7 +143,7 @@ async function fetchContent(section) {
                     <p class="text-[#121417] text-sm font-normal leading-normal">${updatedDescription}</p>
                     <p class="text-[#121417] text-sm font-normal leading-normal"><em>${item.conference || ''}</em></p>
                   </div>
-                  <div class="flex gap-5">
+                  <div class="flex flex-wrap gap-2">
                     ${buttons}
                   </div>
                 </div>
@@ -187,7 +187,7 @@ async function fetchContent(section) {
               ? `<div class="w-full md:min-w-[300px] md:w-[300px] aspect-video bg-center bg-no-repeat bg-cover order-1 md:order-2"
                     style="background-image: url('${item.image}');">
                 </div>`
-              : `<div class="hidden md:block md:min-w-[300px] md:w-[300px] order-1 md:order-2"></div>`;
+              : '';
             const titleHtml = item.title ? `<p class="text-[#121417] text-base font-bold leading-tight">${item.title}</p>` : '';
             const contentItem = `
               <div class="flex w-full overflow-hidden flex-col md:flex-row justify-between gap-4 mb-6">
