@@ -3,7 +3,6 @@
     "title": "Augmenting Auditor Judgment in High-Stakes Financial Compliance",
     "selected": true,
     "description": "FlexTecs",
-    "image": "https://jisulog.kim/img/sankeymatic.png",
     "conference": "Designed and deployed a hybrid AI system (classification model + LLM pipeline) for financial audit decision support. Collaborated with legal auditors to align model outputs with expert judgment.",
     "tags": ["#AI-augmented-work", "#expert-AI-collaboration", "#ML"],
     "categories": ["Industry Applications", "AI & Machine Learning"],
