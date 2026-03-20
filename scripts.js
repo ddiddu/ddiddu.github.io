@@ -141,9 +141,9 @@ async function fetchContent(section) {
                   <div class="flex flex-col gap-1 max-w-[95%]">
                     ${titleHtml}
                     <p class="text-[#121417] text-sm font-normal leading-normal">${updatedDescription}</p>
-                    <p class="text-[#121417] text-sm font-normal leading-normal"><em>${item.conference || ''}</em></p>
+                    <p class="text-[#121417] text-sm font-normal leading-normal" style="margin-bottom: 0 !important;"><em>${item.conference || ''}</em></p>
                   </div>
-                  <div class="flex flex-wrap gap-2 mt-2"> <!-- Added margin-top here -->
+                  <div class="flex flex-wrap gap-2 mt-2" style="margin-top: 8px !important;"> <!-- Force consistent spacing -->
                     ${buttons}
                   </div>
                 </div>
@@ -197,7 +197,7 @@ async function fetchContent(section) {
                     <p class="text-[#121417] text-sm font-normal leading-normal"><em>${updatedDescription}</em></p>
                     <p class="text-[#121417] text-sm font-normal leading-normal">${item.conference || ''}</p>
                   </div>
-                  <div class="flex flex-wrap gap-2 mt-2"> <!-- Added margin-top here -->
+                  <div class="flex flex-wrap gap-2 mt-2" style="margin-top: 8px !important;"> <!-- Force consistent spacing -->
                     ${buttons}
                   </div>
                 </div>
@@ -359,9 +359,9 @@ async function fetchContent(section) {
                 <div class="flex flex-col gap-1 max-w-[95%]">
                   ${titleHtml}
                   <p class="text-[#121417] text-sm font-normal leading-normal">${updatedDescription}</p>
-                  <p class="text-[#121417] text-sm font-normal leading-normal"><em>${item.conference || ''}</em></p>
+                  <p class="text-[#121417] text-sm font-normal leading-normal" style="margin-bottom: 0 !important;"><em>${item.conference || ''}</em></p>
                 </div>
-                <div class="flex flex-wrap gap-2 mt-2"> <!-- Added margin-top here -->
+                <div class="flex flex-wrap gap-2 mt-2" style="margin-top: 8px !important;"> <!-- Force consistent spacing -->
                   ${buttons}
                 </div>
               </div>
