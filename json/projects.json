@@ -61,7 +61,7 @@
     "title": "Calibrating User Trust and Mitigating Overreliance Under LLM Inconsistency",
     "selected": true,
     "description": "KAIST Interaction Lab",
-    "conference": "Designed a controlled online experiment (N=252). Led statistical analysis (regression modeling, hypothesis testing in Python/R). Engineered a backend experimental infrastructure (Flask, SQLite).",
+    "conference": "Designed a controlled online experiment (N=252). Conducted statistical analysis (regression modeling, hypothesis testing in Python/R). Engineered a backend experimental infrastructure (Flask, SQLite).",
     "tags": ["#trust-calibration", "#overreliance", "#controlled-experiment"],
     "categories": ["Empirical Studies"],
     "image": "https://jisulog.kim/img/condition_wise.png",
