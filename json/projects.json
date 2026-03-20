@@ -25,7 +25,7 @@
   {
     "title": "VAL: Interactive Task Planning Interface",
     "description": "GT Teachable AI Lab",
-    "conference": "Engineered an interactive planning interface for a neural-symbolic agent. Designed human-in-the-loop planning mechanisms to support transparent oversight.",
+    "conference": "Engineered a real-time interactive planning interface (React, WebSocket) for a neural-symbolic agent. Designed human-in-the-loop planning mechanisms to support transparent oversight.",
     "tags": ["#human-in-the-loop", "#system-building", "#React"],
     "categories": ["System Building"],
     "image": "https://jisulog.kim/img/pre.png",
@@ -107,7 +107,7 @@
   {
     "title": "FORECST: Online Hackathon Platform",
     "description": "KAIST Social Computing",
-    "conference": "Led full-stack development (React.js, Firebase) of an online platform hosting virtual hackathons.",
+    "conference": "Led frontend development (React.js) for a full-stack virtual hackathons platform.",
     "tags": ["#full-stack", "#React", "#course-project"],
     "categories": ["System Building", "Early Work"],
     "image": "https://jisulog.kim/img/forecst.png",
