@@ -41,7 +41,8 @@
     "categories": ["System Building"],
     "image": "https://jisulog.kim/img/pre.png",
     "links": [
-      { "label": "Code", "url": "https://github.com/jieyuzhou42/VAL_GUI" }
+      { "label": "Code", "url": "https://github.com/jieyuzhou42/VAL_GUI" },
+      { "label": "Slides", "url": "https://docs.google.com/presentation/d/1n1xITfEFnN7z6Bn9MqfafT7FFFGbB98K/edit?slide=id.g35cfd12e6ba_0_12#slide=id.g35cfd12e6ba_0_12" }
     ]
   },
   {
