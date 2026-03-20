@@ -35,18 +35,6 @@
     ]
   },
   {
-    "title": "Sound Clouds: Participatory Music Generation",
-    "description": "GT Special Problems",
-    "conference": "Led the computer vision pipeline by fine-tuning YOLOv12n on a custom dataset and integrating it into a real-time GoPro streaming system, achieving an mAP@0.5 of 0.983. Deployed the system in an interactive installation with 200+ participants.",
-    "tags": ["#creative-computing", "#object-detection", "#data-analysis"],
-    "categories": ["AI & Machine Learning"],
-    "image": "https://jisulog.kim/img/topDown.png",
-    "links": [
-      { "label": "NeurIPS 2025 Creative AI", "url": "https://arxiv.org/pdf/2510.15865" },
-      { "label": "Demo", "url": "https://www.youtube.com/watch?v=uatWN6m2P5M" }
-    ]
-  },
-  {
     "title": "Calibrating User Trust and Mitigating Overreliance Under LLM Inconsistency",
     "selected": true,
     "description": "KAIST Interaction Lab",
@@ -59,9 +47,21 @@
     ]
   },
   {
+    "title": "Sound Clouds: Participatory Music Generation",
+    "description": "GT Special Problems",
+    "conference": "Led the computer vision pipeline by fine-tuning YOLOv12n on a custom dataset and integrating it into a real-time GoPro streaming system, achieving an mAP@0.5 of 0.983. Deployed the system in an interactive installation with 200+ participants. Led survey design, data analysis, and visualization (N=35).",
+    "tags": ["#creative-computing", "#object-detection", "#data-analysis"],
+    "categories": ["AI & Machine Learning", "Empirical Studies"],
+    "image": "https://jisulog.kim/img/topDown.png",
+    "links": [
+      { "label": "NeurIPS 2025 Creative AI", "url": "https://arxiv.org/pdf/2510.15865" },
+      { "label": "Demo", "url": "https://www.youtube.com/watch?v=uatWN6m2P5M" }
+    ]
+  },
+  {
     "title": "Supporting Professional Reflection through Critical AI Feedback",
     "description": "GT Master's Project",
-    "conference": "Led the end-to-end design and implementation of a Google Slides add-on (Apps Script). Conducted an empirical study with 13 PMs.",
+    "conference": "Led the end-to-end design and implementation of a Google Slides add-on (Apps Script). Conducted an empirical study with 24 PMs.",
     "tags": ["#human-AI-interaction", "#technology-probe", "#system-building"],
     "categories": ["System Building", "Empirical Studies"],
     "image": "https://jisulog.kim/img/contextq.png",
