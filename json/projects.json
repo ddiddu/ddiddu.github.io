@@ -82,7 +82,7 @@
     "title": "Real-Time Background Segmentation",
     "selected": true,
     "description": "Samsung SDS",
-    "conference": "Architected and developed a real-time background segmentation model (PyTorch) using a lightweight backbone and dense connections. Enabled robust training on entirely unlabeled datasets by engineering a knowledge-distillation pipeline with a consistency loss. Deployed the optimized model via ONNX.",
+    "conference": "Independently developed a real-time background segmentation model (PyTorch), owning the end-to-end development pipeline. Designed a lightweight backbone with dense connections. Enabled robust training on entirely unlabeled datasets by engineering a knowledge-distillation pipeline with a consistency loss. Deployed the optimized model via ONNX.",
     "tags": ["#deep-learning", "#model-optimization", "#deployment"],
     "categories": ["AI & Machine Learning", "Industry Applications"],
     "image": "https://jisulog.kim/img/sds.png",
