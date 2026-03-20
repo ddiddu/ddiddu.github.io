@@ -119,7 +119,7 @@
   {
     "title": "MYFIT: Clothing Size Recommendation App",
     "description": "KAIST Immersion Camp",
-    "conference": "Built Android app in Java in a team of 3 for visualizing clothing sizes.",
+    "conference": "Built an end-to-end Android app in 1 week (team of 3) for clothing size visualization and recommendations.",
     "tags": ["#Android", "#Java", "#course-project"],
     "categories": ["System Building", "Early Work"],
     "image": "https://jisulog.kim/img/myfit.png",
