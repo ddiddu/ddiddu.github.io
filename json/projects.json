@@ -61,7 +61,7 @@
   {
     "title": "Supporting Professional Reflection through Critical AI Feedback",
     "description": "GT Master's Project",
-    "conference": "Led the end-to-end design and implementation of a Google Slides add-on. Conducted an empirical study with 13 PMs.",
+    "conference": "Led the end-to-end design and implementation of a Google Slides add-on (Apps Script). Conducted an empirical study with 13 PMs.",
     "tags": ["#human-AI-interaction", "#technology-probe", "#system-building"],
     "categories": ["System Building", "Empirical Studies"],
     "image": "https://jisulog.kim/img/contextq.png",
@@ -119,7 +119,7 @@
   {
     "title": "MYFIT: Clothing Size Recommendation App",
     "description": "KAIST Immersion Camp",
-    "conference": "Built an end-to-end Android app in 1 week (team of 3) for clothing size visualization and recommendations.",
+    "conference": "Built an end-to-end Android app (Java) in 1 week with team of 3 for clothing size visualization and recommendations.",
     "tags": ["#Android", "#Java", "#course-project"],
     "categories": ["System Building", "Early Work"],
     "image": "https://jisulog.kim/img/myfit.png",
