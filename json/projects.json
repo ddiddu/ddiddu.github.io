@@ -107,7 +107,7 @@
   {
     "title": "FORECST: Online Hackathon Platform",
     "description": "KAIST Social Computing",
-    "conference": "Led frontend development (React.js) for a full-stack virtual hackathons platform.",
+    "conference": "Led frontend development (React.js) for a full-stack virtual hackathon platform.",
     "tags": ["#full-stack", "#React", "#course-project"],
     "categories": ["System Building", "Early Work"],
     "image": "https://jisulog.kim/img/forecst.png",
