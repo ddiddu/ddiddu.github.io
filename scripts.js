@@ -247,12 +247,12 @@ async function fetchContent(section) {
               }
             },
             {
-              label: 'System Building',
-              getItems: () => content.filter((item) => (item.categories || []).includes('System Building'))
-            },
-            {
               label: 'AI & Machine Learning',
               getItems: () => content.filter((item) => (item.categories || []).includes('AI & Machine Learning'))
+            },
+            {
+              label: 'System Building',
+              getItems: () => content.filter((item) => (item.categories || []).includes('System Building'))
             },
             {
               label: 'Empirical Studies',
