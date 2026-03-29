@@ -28,6 +28,7 @@
     "conference": "Built an AI-powered team dashboard using Lovable and Claude API. Designed an end-to-end pipeline that parses Teams/Slack chat, classifies projects and members, and surfaces who's active, blocked, or quiet in real time.",
     "tags": ["#AI-powered-dashboard", "#team-intelligence", "#hackathon"],
     "categories": ["System Building", "AI & Machine Learning"],
+    "image": "https://jisulog.kim/img/A804A7C4-5652-48CF-B00D-4FD3FFF6D83A.png",
     "links": [
       { "label": "Code", "url": "https://github.com/ddiddu/lumos-team" },
       { "label": "Demo", "url": "https://lumos-team.lovable.app" }
