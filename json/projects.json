@@ -24,7 +24,7 @@
   },
   {
     "title": "Lumos: Team Intelligence Tool",
-    "description": "Vibe ATL Hackathon 2026",
+    "description": "Vibe ATL Hackathon",
     "conference": "Built an AI-powered team dashboard using Lovable and Claude API. Designed an end-to-end pipeline that parses Teams/Slack chat, classifies projects and members, and surfaces who's active, blocked, or quiet in real time.",
     "tags": ["#AI-powered-dashboard", "#team-intelligence", "#hackathon"],
     "categories": ["System Building", "AI & Machine Learning"],
