@@ -23,6 +23,17 @@
     ]
   },
   {
+    "title": "Lumos — Team Intelligence Tool",
+    "description": "Vibe ATL Hackathon 2026",
+    "conference": "Built an AI-powered team dashboard using Lovable and Claude API. Designed an end-to-end pipeline that parses Teams/Slack chat, classifies projects and members, and surfaces who's active, blocked, or quiet in real time.",
+    "tags": ["#AI-powered-dashboard", "#team-intelligence", "#hackathon"],
+    "categories": ["System Building", "AI & Machine Learning"],
+    "links": [
+      { "label": "Code", "url": "https://github.com/ddiddu/lumos-team" },
+      { "label": "Demo", "url": "https://lumos-team.lovable.app" }
+    ]
+  },
+  {
     "title": "VAL: Interactive Task Planning Interface",
     "description": "GT Teachable AI Lab",
     "conference": "Engineered a real-time interactive planning interface (React, WebSocket) for a neural-symbolic agent. Designed human-in-the-loop planning mechanisms to support transparent oversight.",
