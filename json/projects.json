@@ -45,7 +45,7 @@
     "categories": ["AI & Machine Learning", "Empirical Studies"],
     "image": "https://jisulog.kim/img/topDown.png",
     "links": [
-      { "label": "NeurIPS 2025 Creative AI", "url": "https://arxiv.org/pdf/2510.15865" },
+      { "label": "C&C 2026", "url": "https://dl.acm.org/doi/pdf/10.1145/3803784.3807553" }, { "label": "NeurIPS 2025 Creative AI", "url": "https://arxiv.org/pdf/2510.15865" },
       { "label": "Demo", "url": "https://www.youtube.com/watch?v=uatWN6m2P5M&t=83s" }
     ]
   },
