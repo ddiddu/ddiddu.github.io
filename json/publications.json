@@ -10,6 +10,15 @@
     ]
   },
   {
+    "title": "“Jaw Dropping” Sound Clouds: Exploring the Role of Awe in Ambient Computational Systems through Installation Art",
+    "description": "Dashiel Carrera, Jasmine Kaur, Daksh Kapoor, Chengzhi Zhang, Jisu Kim, Brian Magerko",
+    "conference": "ACM C&C 2026 (19.6% acceptance rate)",
+    "links": [
+      { "label": "PDF", "url": "https://dl.acm.org/doi/pdf/10.1145/3803784.3807553" },
+      { "label": "DOI", "url": "https://doi.org/10.1145/3803784.3807553" }
+    ]
+  },
+  {
     "title": "A Metacognitive Architecture for ToM Revision in AI Agents",
     "description": "Jisu Kim, Mahimul Islam, Ashok Goel",
     "conference": "AAAI 2026 Theory of Mind for AI Workshop",
