@@ -1,14 +1,5 @@
 [
   {
-    "title": "Augmenting Auditor Judgment in High-Stakes Financial Compliance",
-    "selected": true,
-    "description": "FlexTecs",
-    "conference": "Led development of a hybrid AI system (classification + LLM) to support financial auditors in surfacing and prioritizing claims.",
-    "tags": ["#AI-augmented-work", "#expert-AI-collaboration", "#ML"],
-    "categories": ["Industry Applications", "AI & Machine Learning"],
-    "links": []
-  },
-  {
     "title": "Aligning AI Agent Outputs with User Intent via Metacognitive Self-Adaptation",
     "selected": true,
     "description": "GT Design Intelligence Lab",
@@ -20,18 +11,6 @@
       { "label": "AAAI 2026 IAAI", "url": "https://jisulog.kim/pdf/41465-Article Text-45556-1-2-20260314.pdf" },
       { "label": "AAAI 2026 Workshop", "url": "https://jisulog.kim/pdf/55_A_Metacognitive_Architectur.pdf" },
       { "label": "L@S 2024 Workshop", "url": "https://drive.google.com/file/d/1KJ-FinxA9A83b8qvTFStIRLaETCgHt6J/view" }
-    ]
-  },
-  {
-    "title": "Lumos: Team Intelligence Tool",
-    "description": "Vibe ATL Hackathon",
-    "conference": "Built an AI-powered team dashboard using Lovable and Claude API. Designed an end-to-end pipeline that parses Teams/Slack chat, classifies projects and members, and surfaces who's active, blocked, or quiet in real time.",
-    "tags": ["#AI-powered-dashboard", "#team-intelligence", "#hackathon"],
-    "categories": ["System Building"],
-    "image": "https://jisulog.kim/img/1635B57C-7D05-49CB-9E6B-0F7D63D424EA.png",
-    "links": [
-      { "label": "Code", "url": "https://github.com/ddiddu/lumos-team" },
-      { "label": "Demo", "url": "https://lumos-team.lovable.app" }
     ]
   },
   {
