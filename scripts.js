@@ -240,13 +240,6 @@ async function fetchContent(section) {
 
           const filterDefs = [
             {
-              label: 'Selected',
-              getItems: () => {
-                const selectedItems = content.filter((item) => item.selected === true);
-                return selectedItems.length > 0 ? selectedItems : content;
-              }
-            },
-            {
               label: 'AI & Machine Learning',
               getItems: () => content.filter((item) => (item.categories || []).includes('AI & Machine Learning'))
             },
@@ -300,8 +293,8 @@ async function fetchContent(section) {
           });
         }
 
-        const defaultSelected = content.filter((item) => item.selected === true);
-        renderProjectItems(defaultSelected.length > 0 ? defaultSelected : content, 'Selected');
+        const defaultItems = content.filter((item) => (item.categories || []).includes('AI & Machine Learning'));
+        renderProjectItems(defaultItems, 'AI & Machine Learning');
       } else {
         // ...existing code...
         let itemsToRender = content;
